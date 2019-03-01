@@ -1,0 +1,219 @@
+/* pages/Mycenter/Luckymoneypage/Luckymoneypage.wxss */
+
+.fubiheader {
+  width: 100%;
+  height: 728rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/wwwdfbedbg.png) no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  /* position: relative; */
+}
+
+.fubinum {
+  font-size: 30rpx;
+  color: #fcd150;
+  text-align: center;
+  padding-top: 52rpx;
+  box-sizing: border-box;
+}
+
+.weltextnum {
+  text-align: center;
+  font-size: 60rpx;
+  font-weight: 550;
+  color: #fef7db;
+  padding-top: 80rpx;
+}
+
+.weltext {
+  font-size: 24rpx;
+  color: #fdd1cc;
+  padding-top: 25rpx;
+}
+
+.ketixian {
+  font-size: 30rpx;
+  color: #fe4d36;
+  background: #fcd150;
+  width: 356rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-top: 200rpx;
+}
+
+.czfubi {
+  font-size: 24rpx;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  width: 100rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  margin-bottom: 35rpx;
+}
+
+.fubiguize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa9af;
+  font-size: 20rpx;
+  width: 150rpx;
+  margin: 0 auto;
+  /* margin-top: 30rpx; */
+}
+
+.wenhaoicon {
+  width: 22rpx;
+  height: 22rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/wenhaoicon.png) no-repeat;
+  background-size: 100%;
+  margin-right: 15rpx;
+}
+
+.fubibtn {
+  width: 100%;
+  /* height: 100%; */
+  background: url(https://www.fuxingfuli.com/images/giftstore/wdfbwrapbg.png) no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  padding: 18rpx 30rpx;
+  min-height: 490rpx;
+}
+
+.fubilishi {
+  width: 100%;
+  /* height: 70rpx; */
+  background: #10062c;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  margin-bottom: 10rpx;
+}
+
+.fubileft {
+  color: #fff;
+  float: left;
+}
+
+.fubiright {
+  color: #fea104;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fuicon {
+  width: 32rpx;
+  height: 32rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/fubiicones.png) no-repeat;
+  background-size: 100%;
+  margin-right: 15rpx;
+}
+.fubilistinfo{
+  width: 100%;
+  padding: 18rpx 30rpx;
+  background: #10062c;
+  overflow: hidden;
+}
+.fubiitem{
+  position: relative;
+  width: 100%;
+
+}
+.leftline{
+  width: 18rpx;
+  height: 90rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/pullcolor.png) no-repeat;
+  background-size: 100%;
+  /* margin-right: 45rpx;
+  margin-top: 38rpx; */
+  float: left;
+  position: absolute;
+  top:35rpx;
+}
+.fubicenter{
+  float: left;
+  width: 560rpx;
+  padding:  12rpx  0;
+  margin-left: 45rpx;
+  border-bottom:1px solid #6745d7;
+}
+.fubileft{
+  float: left;
+  font-size: 24rpx;
+}
+.fubiright{
+  float: right;
+  color: #fea104;
+  font-size: 26rpx;
+  margin-top: 13rpx;
+}
+.votetime{
+  color: #939293;
+  font-size: 18rpx;
+  margin-top: 5rpx;
+}
+.zhezhaobox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.zhezhocen{
+    width: 564rpx;
+    height: 872rpx;
+    background: url(https://www.fuxingfuli.com/images/giftstore/fubiguizebg.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 60rpx auto;
+    position: relative;
+}
+.textfuzuan{
+    color: #e94d58;
+  font-size: 26rpx;
+  padding-top: 280rpx; 
+  text-align: center;
+}
+.gzlist{
+   width: 100%;
+   padding: 30rpx 30rpx;
+   box-sizing: border-box;
+   margin-top: 10rpx;
+   
+}
+.gzitem{
+margin-bottom: 10rpx;
+}
+.radius{
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    background: #e94d58;
+    display: block;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 30rpx;
+    font-size: 20rpx;
+}
+.gztext{
+    font-size: 22rpx;
+    float: left;
+    margin-left: 10rpx;
+    width: 460rpx;
+    color: #666;
+}
+.closeicon{
+    width: 47rpx;
+    height: 47rpx;
+    background: url(https://www.fuxingfuli.com/images/giftstore/close.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -80rpx;
+    left: 45%;
+}

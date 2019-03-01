@@ -1,0 +1,528 @@
+/* pages/Sendgift/Sendgift.wxss */
+page{
+  width:100%;
+  height:100%;
+}
+.content{
+  width:100%;
+  height:100%;
+  background:url('https://www.fuxingfuli.com/images/giftstore/send_bg.png') no-repeat;
+  background-size:100% 100%;
+  background-attachment:fixed;
+  overflow: auto;
+}
+.con_bg{
+  width:100%;
+  height:100%;
+}
+.fixed_bg{
+  width:100%;
+  height:220rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/fixed_bg.png') no-repeat;
+  background-size:100% 100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index:200;
+}
+.gift_con{
+  position:relative;
+  z-index:100;
+  background:#fff;
+  border-radius:10rpx;
+  margin:30rpx;
+  box-shadow: 2rpx 4rpx 8rpx rgba(0,0,0,0.3);
+  padding-bottom:50rpx;
+}
+.top_bar{
+  width:100%;
+  height:100rpx;
+  position:absolute;
+  left:0;
+  top:0;
+  background:url('https://www.fuxingfuli.com/images/giftstore/background_bar.png') no-repeat;
+  background-size:100% 100%;
+  color:#fff;
+  font-size:30rpx;
+  line-height:100rpx;
+  text-align:center;
+  font-family: '黑体';
+}
+.detail{
+  width:600rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/bless_bg.png') no-repeat center center;   
+  background-size:97% 93%; 
+  margin:auto;
+  margin-top:120rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 0rpx 12rpx rgba(0,0,0,0.2);
+  padding-bottom: 20rpx;
+  z-index: 10;
+   position:relative;
+}
+
+.detailred{
+  width: 68rpx;
+  height: 68rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/redrotate.png') no-repeat center;
+  background-size:100% 100%;
+  position:absolute;
+  top:-20rpx;
+  left:0;
+  z-index: 11;
+}
+.detail_bar{
+  width: 100%;
+  height: 9rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/buleyebg.png') no-repeat center;
+  background-size:96% 100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.from{
+  color:#715300;
+  font-size:24rpx;
+  font-weight:bold;
+  margin:0 40rpx;
+  padding-top:40rpx;
+  padding-bottom:10rpx;
+  border-bottom:2rpx solid #e8c781;
+}
+.main{
+  margin:15rpx 40rpx;
+  color:#715300;
+  font-size:28rpx;
+  /* font-family: '黑体'; */
+  font-weight:bold;
+  border-bottom:2rpx solid #e8c781;
+  padding-bottom:15rpx;
+}
+.radio{
+  width:310rpx;
+  margin:auto;
+}
+.radio .action{
+  width:60rpx;
+  height:60rpx;
+  float:left;
+  background-color:#5cb6fc;
+  border:2rpx solid #fff;
+  border-radius:60rpx;
+  box-sizing: border-box;
+}
+.actionTs{
+  width:260rpx;
+  height:50rpx;
+  font-size:24rpx;
+  line-height:50rpx;
+  padding-left:60rpx;
+  margin-left:15rpx;
+  margin-top: 4rpx;
+  color:#fff;
+  background:#3ca8fb;
+  border-radius:80rpx;
+}
+.dt_img{
+  width:60rpx;
+  height:60rpx;
+  display:inline-block;
+}
+.dt_img image{
+  width:100%;
+  border-radius:50%;
+}
+.dd_text{
+  font-size:24rpx;
+  display:inline-block;
+  color:#715300;
+  line-height:80rpx;
+  padding-left: 10rpx;
+  font-weight:bold;
+  vertical-align:25rpx;
+}
+.dl_view{
+  margin-top:10rpx;
+  text-align:right;
+  padding-right:20rpx;
+}
+.Ts{
+  width:400rpx;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  padding:40rpx 0;
+  height:30rpx;
+}
+.line{
+  border:1rpx dashed #b9b7b7;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:50%;
+  margin-top:-1rpx;
+  z-index:10;
+}
+.ts_word{
+  width:240rpx;
+  background:#fff;
+  position:absolute;
+  top:50%;
+  line-height:40rpx;
+  margin-top:-20rpx;
+  z-index:11;
+  left:50%;
+  margin-left:-120rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.product_word{
+  font-size:32rpx;
+  margin-bottom:20rpx;
+  text-align:Center;
+  margin-top: 25rpx;
+}
+.product{
+  padding:40rpx;
+  padding-top:0;
+}
+.product_img image{
+  width:100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+.set_address{
+  background:#fffb9e;
+  width:600rpx;
+  border-radius:50rpx;
+  text-align:center;
+  padding:15rpx 0;
+  color:#cd092f;
+  margin:auto;
+  margin-top:80rpx;
+  font-size:34rpx;
+}
+.setaddress{
+    background:#fffb9e;
+  width:600rpx;
+  border-radius:50rpx;
+  text-align:center;
+  padding:15rpx 0;
+  color:#cd092f;
+  margin:auto;
+  margin-top:100rpx;
+  font-size:34rpx;
+}
+.set_word{
+  color:#fff;
+  text-align:center;
+  font-size:24rpx;
+  padding-top:15rpx;
+}
+.radio .action{
+  position:relative;
+}
+
+/* .bg {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAYCAYAAAAF6fiUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzlFRDZDRDNENzlFMTFFNkJDN0NFMjA2QTFFRTRDQkIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzlFRDZDRDJENzlFMTFFNkJDN0NFMjA2QTFFRTRDQkIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTAxQkEzQ0RENzM2MTFFNjgyMEI5MTNDRkQ0OTM5QUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTAxQkEzQ0VENzM2MTFFNjgyMEI5MTNDRkQ0OTM5QUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4K4iKVAAACUUlEQVR42uSazytEURTHvTHjR4kaU8xsSDZSdmbjx4oSK8XGQrJlpSwYTSmxEWWhUIpsZK3kD7DRNBuSBZFCNjZ+JPKcV6ecXu/d3sy7595bc+vbfXPue5/749z77o83lm3bZYYFC8RZqAbQAigP2tXNj5aZF7gdkAZNk9+7WvnOCCgxRUCb9n/o1sk3pUH6QDHF/GNsoM+QeYfiy6qkFeLZDBb0GlTB4AAR/xXT9nXxZVa0WCekQd9Y0HOJjg3CHySviiZmfjO3AyIhnu0gBc0wjAIR/wLtW8z87aAOWAI9gqaYRoAff4ZUoi7EKCiUP462j4CdSCrfK4N1Ahpi6I0i/hPa50M4oFB+Dbm/SzXfL5MD4rUogxP8+Itozynm59E+q5ovyuQdHxphWh568XvR5kxq1SEn40L4e0XMA1L4EcEe7RTjLqYdqRf/gezQUwr5LxjXq+aLHPCFcTmTA7z4tutIQhXfLiJPKXyRA/oxzgW8v9DgxU+S62eF/ATGr6r5fg26Corj9RHD4Z0fvwfjS9CbQn4bxrfK+R6TyzxZNk260solTL4i/g3al10TsMXIryA72T7VfK8MnJO8X9CKy14lafXjxx8jFUsSeyUzfxhtPwHPoqTy/TJJMJzJiPgNpJdsuNJizPwztB/q4JtwHN2KW3sn3HuMOouR30l6bbsOvgkOyGIBnaPbRldalJl/h2knuvgmOKAWNAFKMUz4Iv4O6Z1xXXxTPxtazHy6khnVyS/Fb8IDpHGyuvmWgX9L4Q4toDnQFWhNN/9PgAEAR4w1ULjdCbEAAAAASUVORK5CYII=) right 0 no-repeat;
+    width: 30rpx;
+    height: 30rpx;
+  background-size: 400%;
+  position:absolute;
+  top:50%;
+  margin-top:-15rpx;
+  left:50%;
+  margin-left:-15rpx;
+} */
+.bg{
+  width:18rpx;
+  height: 24rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/playicon.png) no-repeat center ;
+  background-size: 100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-12rpx;
+  margin-left:-9rpx;
+
+}
+
+.voicePlay {
+  animation-name: voicePlay;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(3);
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAYCAYAAAAF6fiUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzlFRDZDRDNENzlFMTFFNkJDN0NFMjA2QTFFRTRDQkIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzlFRDZDRDJENzlFMTFFNkJDN0NFMjA2QTFFRTRDQkIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTAxQkEzQ0RENzM2MTFFNjgyMEI5MTNDRkQ0OTM5QUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTAxQkEzQ0VENzM2MTFFNjgyMEI5MTNDRkQ0OTM5QUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4K4iKVAAACUUlEQVR42uSazytEURTHvTHjR4kaU8xsSDZSdmbjx4oSK8XGQrJlpSwYTSmxEWWhUIpsZK3kD7DRNBuSBZFCNjZ+JPKcV6ecXu/d3sy7595bc+vbfXPue5/749z77o83lm3bZYYFC8RZqAbQAigP2tXNj5aZF7gdkAZNk9+7WvnOCCgxRUCb9n/o1sk3pUH6QDHF/GNsoM+QeYfiy6qkFeLZDBb0GlTB4AAR/xXT9nXxZVa0WCekQd9Y0HOJjg3CHySviiZmfjO3AyIhnu0gBc0wjAIR/wLtW8z87aAOWAI9gqaYRoAff4ZUoi7EKCiUP462j4CdSCrfK4N1Ahpi6I0i/hPa50M4oFB+Dbm/SzXfL5MD4rUogxP8+Itozynm59E+q5ovyuQdHxphWh568XvR5kxq1SEn40L4e0XMA1L4EcEe7RTjLqYdqRf/gezQUwr5LxjXq+aLHPCFcTmTA7z4tutIQhXfLiJPKXyRA/oxzgW8v9DgxU+S62eF/ATGr6r5fg26Corj9RHD4Z0fvwfjS9CbQn4bxrfK+R6TyzxZNk260solTL4i/g3al10TsMXIryA72T7VfK8MnJO8X9CKy14lafXjxx8jFUsSeyUzfxhtPwHPoqTy/TJJMJzJiPgNpJdsuNJizPwztB/q4JtwHN2KW3sn3HuMOouR30l6bbsOvgkOyGIBnaPbRldalJl/h2knuvgmOKAWNAFKMUz4Iv4O6Z1xXXxTPxtazHy6khnVyS/Fb8IDpHGyuvmWgX9L4Q4toDnQFWhNN/9PgAEAR4w1ULjdCbEAAAAASUVORK5CYII=) right 0 no-repeat;
+    width: 30rpx;
+    height: 30rpx;
+  background-size: 400%;
+  position:absolute;
+  top:50%;
+  margin-top:-15rpx;
+  left:50%;
+  margin-left:-15rpx;
+}
+
+@keyframes voicePlay {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.video_play{
+  width: 20rpx;
+  height: 20rpx;
+  position:absolute;
+  top:50%;
+  margin-top:-10rpx;
+  left:50%;
+  margin-left:-10rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/video_play.png') no-repeat center center;
+  background-size:100% 100%;
+
+}
+.video_bg{
+  background:rgba(0,0,0,0.3);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:201;
+}
+.video_bg .dl_view{
+  text-align:left;
+  margin-top:0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+}
+.video_bg .dl_view .dd_text{
+  color:#333;
+}
+.dd_textes{
+  color:#333;
+  font-size:28rpx;
+  display:inline-block;
+  margin-left: 15rpx;
+}
+.c_view{
+  margin:0 40rpx;
+  background:#fff;
+  padding:20rpx;
+  font-size:0;
+  border-radius:10rpx;
+  margin-top:35%;
+  /* position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+}
+.video_bg video{
+  width:100%;
+  margin:20rpx 0;
+  height:350rpx;
+  
+}
+.SendWord{
+  font-size:28rpx;
+  color:#715300;
+  line-height:40rpx;
+  font-weight:bold;
+}
+.close{
+  width:50rpx;
+  height:50rpx;
+  margin:30rpx auto;
+  background:url(https://www.fuxingfuli.com/images/giftstore/close.png) no-repeat;
+  background-size:100% 100%;
+}
+
+.posterfixed{
+  width: 200rpx;
+  height: 140rpx;
+  position: absolute;
+  right: -10rpx;
+  bottom:-90rpx;
+  z-index: 21;
+}
+.posterfixed image{
+  width: 100%;
+  height: 100%;
+  
+}
+.double_btn{
+  text-align: center;
+  margin-top:80rpx;
+}
+.double_btn>view{
+  display: inline-block;
+  margin:0 30rpx;
+  padding:20rpx 65rpx;
+  border-radius:50rpx;
+  background:#fffb9e;
+  color:#cd092f;
+  font-size:34rpx;
+}
+.double_btn>view:first-child{
+  background-image: -webkit-linear-gradient(top,#fdfdfd,#f6bcbe); 
+}
+/* 开屏 */
+.headertop{
+  width: 750rpx;
+  height: 1000rpx;
+
+ z-index: 9999;
+}
+.BigBox {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow-y: hidden;
+}
+    .snow {
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+    }
+    .snow_img {
+        width:90rpx;
+        height: 90rpx;
+        position: absolute;
+        top: -50rpx;
+        margin-left: 2rpx;
+        z-index: 9999;
+    }
+
+    #audio_btn {
+        width: 70rpx;
+        height: 70rpx;
+        background: url('https://www.fuxingfuli.com/images/giftstore/Ymusic.png') no-repeat;
+        background-size: 100%;
+        position: fixed;
+        right: 15rpx;
+        top: 15rpx;
+        z-index: 9999;
+    }
+    .rotate {
+        -webkit-animation: rotating 1.2s linear infinite;
+        -moz-animation: rotating 1.2s linear infinite;
+        -o-animation: rotating 1.2s linear infinite;
+        animation: rotating 1.2s linear infinite;
+        position: relative;
+    }
+    #media{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @keyframes rotating {
+        from {
+            transform: rotate(0)
+        }
+
+        to {
+            transform: rotate(360deg)
+        }
+    }
+    /* 红包样式 */
+    .open {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index: 4000;
+    }
+
+    .open_top {
+        height: 56.3%;
+        /* background:url(${ctx}/images/songli/top_putong.png) no-repeat; */
+        background: url('https://www.fuxingfuli.com/images/giftstore/ygiftbgs.png') no-repeat;
+        background-size: 100% 100%;
+        top: 0;
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+
+    .open_bottom {
+        height: 43.8%;
+        /* background:url(${ctx}/images/songli/bottom_putong.png) no-repeat; */
+        background: url('https://www.fuxingfuli.com/images/giftstore/newBgyear_btn.png') no-repeat;
+        background-size: 100% 100%;
+        bottom: 0;
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+    }
+
+    .open_bottom.on {
+        transform: translateY(101%);
+    }
+
+    .open_top.on {
+        transform: translateY(-101%);
+    }
+
+    .open_icon {
+        width: 150rpx;
+        height: 150rpx;
+        position: fixed;
+        z-index: 4001;
+        left: 50%;
+        margin-left: -75rpx;
+        background:url(https://www.fuxingfuli.com/images/giftstore/openRedy.png) no-repeat;
+        background-size: 100% 100%;
+        top: 57.5%;
+        margin-top: -75rpx;
+        transform: scale(.8);
+        animation-name: mychange;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .open_icon.on {
+        display: none;
+    }
+
+    .send_gift {
+        padding-top: 188rpx;
+        color: #fff;
+        font-size: 42rpx;
+        text-align: Center;
+    }
+
+    .send_giftText {
+        font-size: 34rpx;
+        color: #fff;
+        text-align: Center;
+        padding-top: 188rpx;
+        opacity: 0.8;
+    }
+
+    @keyframes mychange {
+        0% {
+            transform: scale(.8);
+            -ms-transform: scale(.8);
+            -moz-transform: scale(.8);
+            -webkit-transform: scale(.8);
+            -o-transform: scale(.8);
+        }
+
+        100% {
+            transform: scale();
+            -ms-transform: scale(1);
+            -moz-transform: scale(1);
+            -webkit-transform: scale(1);
+            -o-transform: scale(1);
+        }
+    }

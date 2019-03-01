@@ -1,0 +1,52 @@
+<view class='allorder'>
+     <view class='all_box'>
+            <view class='order_zg'>
+                <view style='display:flex' catchtap='tocompany'>
+                    <image class='order_zi' src='/images/order/order_zg.png'/>
+                    <view style='margin-top:2rpx'>商家名称</view>
+                    <image class='od_rg' style='margin-top:10rpx' src='/images/order/od_right.png'/>
+                </view>
+                <view style='color:#f84058;margin-top:2rpx'>待支付</view>
+            </view>
+            <view>
+              <view class='order_list'>
+                  <view style='display:flex'>
+                      <image class='order_list_img' src='/images/order/order_gift.png' />
+                      <view>牛奶味大核桃</view>
+                  </view>
+                  <view class='or_txt'>
+                      <text>¥20.00</text>
+                      <text style='text-align:right;color:#9a9999'>x1</text>
+                  </view>
+              </view>
+              <view style='text-align:right;font-size:26rpx;padding-right:21rpx;padding-bottom:34rpx'>共5件商品 合计¥100.00</view>
+            </view>
+        </view>
+        <view class='all_box'>
+            <view class='order_zg'>
+                <view style='display:flex'>
+                    <image class='order_zi' src='/images/order/order_sl.png'/>
+                    <view style='margin-top:2rpx'>商家名称</view>
+                    <image class='od_rg' style='margin-top:10rpx' src='/images/order/od_right.png'/>
+                </view>
+                <view style='color:#f84058;margin-top:2rpx'>待发货</view>
+            </view>
+            <view>
+              <view class='order_list'>
+                  <view style='display:flex'>
+                      <image class='order_list_img' src='/images/order/order_gift.png' />
+                      <view class='or_txt'>
+                        <text>牛奶味大核桃</text>
+                       
+                      </view>
+                  </view>
+                  <view class='or_txt'>
+                      <text>¥20.00</text>
+                      <text style='text-align:right;color:#9a9999'>x1</text>
+                  </view>
+              </view>
+              <view style='text-align:right;font-size:26rpx;padding-right:21rpx;padding-bottom:34rpx'>共5件商品 合计¥100.00</view>
+            </view>
+        </view>
+        
+</view>

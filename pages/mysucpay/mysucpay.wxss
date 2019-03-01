@@ -1,0 +1,84 @@
+/* pages/mysucpay/mysucpay.wxss */
+
+.headertop {
+  width: 100%;
+  height: 670rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/sucicon.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.myshare {
+  width: 430rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  color: #fff;
+  font-size: 30rpx;
+  background: #fc6054;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.sharebox {
+  width: 100%;
+  padding-top: 350rpx;
+}
+
+.graytext {
+  position: absolute;
+  top: -72rpx;
+  right: 0;
+  width: 261rpx;
+  height: 79rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/grayac.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 16rpx;
+  line-height: 25rpx;
+  padding:  10rpx;
+
+  /* background-color: #ddd; */
+}
+.lookorder{
+   width: 430rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  color: #fc6054;
+  font-size: 30rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  text-align: center;
+ border:1rpx solid #fc6054;
+ margin-top: 40rpx;
+}
+
+.gztx{
+  width: 100%;
+  background: #f2f2f2;
+  padding:30rpx 20rpx ;
+}
+.btnbg{
+  width:100%;
+  height: 324rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/fubtnc.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 25rpx 20rpx;
+  color: #fc6054;
+  font-size: 32rpx;
+  text-align: center;
+}
+.togauznhu{
+  
+  width:600rpx;
+  height: 160rpx;
+  background:url('https://www.fuxingfuli.com/images/giftstore/step.png') no-repeat center;
+  background-size:100% 100%;
+  display: block;
+  margin: 20rpx auto;
+}
+.product_word{
+  font-size:30rpx;
+  text-align:Center;
+  color: #000;
+}

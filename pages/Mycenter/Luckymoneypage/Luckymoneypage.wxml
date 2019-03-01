@@ -1,0 +1,98 @@
+<!--pages/Mycenter/Luckymoneypage/Luckymoneypage.wxml-->
+<view class='fubiheader'>
+  <view class='fubinum'>今日福钻：100个</view>
+  <view class='weltextnum'>1400</view>
+  <view class='weltext'>可提现福钻（个）</view>
+  <view class='ketixian' catchtap='onStoreTap'>在线提现</view>
+  <view class='czfubi' catchtap='torecharge'>充值福钻</view>
+  <view class='fubiguize' catchtap='toshowgz'>
+    <view class='wenhaoicon'></view>福钻规则
+  </view>
+</view>
+<view class='fubibtn'>
+  <view class='fubilishi clearfix'>
+    <view class='fubileft'>获得福钻历史</view>
+    <view class='fubiright'>
+      <view class='fuicon'></view>
+      <text>历史总福钻：1400</text>
+    </view>
+  </view>
+
+  <view class='fubilistinfo'>
+    <view class='fubiitem clearfix'>
+      <view class='leftline'></view>
+      <view class='fubicenter clearfix'>
+        <view class='fubileft'>
+          <view class='votejl'>邀请福星奖励</view>
+          <view class='votetime'>2019.02.19</view>
+        </view>
+        <view class='fubiright'>
+          500福钻
+        </view>
+      </view>
+    </view>
+    <view class='fubiitem clearfix'>
+      <view class='leftline'></view>
+      <view class='fubicenter clearfix'>
+        <view class='fubileft'>
+          <view class='votejl'>邀请福星奖励</view>
+          <view class='votetime'>2019.02.19</view>
+        </view>
+        <view class='fubiright'>
+          500福钻
+        </view>
+      </view>
+    </view>
+    <view class='fubiitem clearfix'>
+      <view class='leftline'></view>
+      <view class='fubicenter clearfix'>
+        <view class='fubileft'>
+          <view class='votejl'>邀请福星奖励</view>
+          <view class='votetime'>2019.02.19</view>
+        </view>
+        <view class='fubiright'>
+          500福钻
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+<view class='zhezhaobox' wx:if='{{ishowgz}}'>
+  <view class='zhezhocen'>
+    <view class='textfuzuan'>福钻规则</view>
+    <view class='gzlist'>
+      <view class='gzitem clearfix'>
+        <text class='radius'>1</text>
+        <text class='gztext'>福星社平台1福钻可兑换1分钱。 </text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>2</text>
+        <text class='gztext'>福星可通过分享福利或邀请福星赢取福钻。</text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>3</text>
+        <text class='gztext'>分享奖励：福星分享福利，即可按照福利奖励标准获得对应数量的福钻，每个福利奖励标准在福利券详情界面有详细描述。 </text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>4</text>
+        <text class='gztext'>邀请奖励：邀请好友入驻福星社，好友通过你的链接或者邀请卡成为平台福星，你将获得平台奖励的5个福钻。 </text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>5</text>
+        <text class='gztext'>福星奖励：注册成为福星社福星即可获得平台奖励的50福钻。 </text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>6</text>
+        <text class='gztext'>福钻可至【我的】-【福钻】进行提现。 </text>
+      </view>
+      <view class='gzitem clearfix'>
+        <text class='radius'>7</text>
+        <text class='gztext'>对于恶意刷奖励的用户，福星社有权取消其奖励资格。 </text>
+      </view>
+    </view>
+    <view class='closeicon' catchtap='closegz'></view>
+  </view>
+</view>

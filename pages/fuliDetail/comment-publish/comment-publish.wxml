@@ -1,0 +1,9 @@
+<view class='container'>
+  <form bindsubmit="bindFormSubmit">
+    <view class='form'>
+      <textarea placeholder="留下您的评论" name="textarea" placeholder-class='reply-ta' />
+      <view class='uploadImg' catchtap='uploadImg'></view>
+      <button form-type="submit">提交评论</button>
+    </view>
+  </form>
+</view>

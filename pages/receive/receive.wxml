@@ -1,0 +1,186 @@
+<!-- <import src="../tmpl/tmpl.wxml" /> -->
+<view class='showpage'>
+  <view class="content">
+    <!-- 有礼物 -->
+    <view class="gift_con" wx:if='{{emptygoods ==true}}'>
+      <view class="top_bar">
+        <view class='gongxi'>恭喜您</view>
+        <view class='lingqu' wx:if="{{statetype ==0||statetype ==2}}">礼物已领取成功</view>
+        <view class='lingqu' wx:if="{{statetype ==1}}">礼物已放入礼物仓库</view>
+      </view>
+
+      <view style="border:1rpx solid transparent;"></view>
+
+      <view class='goodbox'>
+        <!-- 卡券信息 -->
+        <view class="card_info" wx:if="{{statetype ==0}}">
+          <view class="card_info_title clearfix">
+            <text class='cardtext'>卡券信息</text>
+            <view class="select" catchtap='torecgift'>
+              查看收礼详情
+              <text></text>
+            </view>
+          </view>
+          <view class="clearfix card">
+            <view class="view-left">
+              <b>·</b>卡券码：</view>
+            <view class="view-right">SK2118900123444</view>
+          </view>
+          <view class="clearfix carded">
+            <view class="view-left"></view>
+            <view class="view-right last-view" bindtap='ShowEcode'>长按复制卡券码
+              <text></text>
+            </view>
+          </view>
+        </view>
+        <!-- 礼物信息 -->
+        <view class="card_info" wx:if="{{statetype ==1}}">
+          <view class="card_info_title clearfix">
+            <text class='cardtext'>礼物信息</text>
+            <view class="select" catchtap='torecgift'>
+              查看收礼详情
+              <text></text>
+            </view>
+          </view>
+        </view>
+        <!-- 物流信息 -->
+        <view class="card_info" wx:if="{{statetype ==2}}">
+          <view class="card_info_title clearfix">
+            <text class='cardtext'>物流信息</text>
+            <view class="select" catchtap='torecgift'>
+              查看收礼详情
+              <text></text>
+            </view>
+          </view>
+          <view class="clearfix card wl_info">
+            <view class="view-left-last">
+              <b>·</b>已向【北京市 海淀区 园区13号楼】发起配送</view>
+          </view>
+        </view>
+        <view class='widthline'></view>
+        <!-- 语音 -->
+        <view class="detail" wx:if="{{statetype ==0}}">
+          <view class="detail_bar"></view>
+          <view class="detailred"></view>
+          <view class="from">To：兔子Amy</view>
+          <view class="main">“祝您新春快乐，万事如意！！”</view>
+          <view class="radio clearfix" catchtap='playvoice'>
+            <view class="action">
+              <view class="{{isplay?'voicePlay':'bg'}}"></view>
+            </view>
+            <view style="border:1rpx solid transparent;"></view>
+            <view class="actionTs">
+              祝福语音 00′32″
+            </view>
+          </view>
+          <view class="dl_view clearfix">
+            <view class="dt_img">
+              <image mode="widthFix" src="../../images/order/draw_x.png"></image>
+            </view>
+            <view class="dd_text">
+              来自露露酱的祝福
+            </view>
+          </view>
+        </view>
+        <!-- 视频 -->
+        <view class="detail" wx:if="{{statetype ==1}}">
+          <view class="detail_bar"></view>
+          <view class="detailred"></view>
+          <view class="from">To：兔子Amy</view>
+          <view class="main">“祝您新春快乐，万事如意！！”</view>
+          <view class="radio clearfix" catchtap='lookvideo'>
+            <view class="action">
+              <view class="video_play"></view>
+            </view>
+            <view style="border:1rpx solid transparent;"></view>
+            <view class="actionTs">
+              祝福视频 00′32″
+            </view>
+          </view>
+          <view class="dl_view clearfix">
+            <view class="dt_img">
+              <image mode="widthFix" src="../../images/order/draw_x.png"></image>
+            </view>
+            <view class="dd_text">
+              来自露露酱的祝福
+            </view>
+          </view>
+        </view>
+        <!-- 无语音视频 -->
+        <view class="detail" wx:if="{{statetype ==2}}">
+          <view class="detail_bar"></view>
+          <view class="detailred"></view>
+          <view class="from">To：兔子Amy</view>
+          <view class="main">“祝您新春快乐，万事如意！！”</view>
+          <view class="from"></view>
+          <view class="dl_view clearfix">
+            <view class="dt_img">
+              <image mode="widthFix" src="../../images/order/draw_x.png"></image>
+            </view>
+            <view class="dd_text">
+              来自露露酱的祝福
+            </view>
+          </view>
+        </view>
+        <view class="product">
+          <view class="product_word">添加到我的小程序</view>
+          <view class="product_img">
+          </view>
+          <view class="ps">查看订单状态 / 购买更多福利</view>
+        </view>
+      </view>
+    </view>
+    <!-- 无礼物 -->
+    <view class="giftcon" wx:if='{{emptygoods ==false}}'>
+      <view class="topbar">
+        <!-- <view class='gongxi'>恭喜您</view> -->
+        <view class='lingqu'>我送了您一份礼物赶快来领取吧</view>
+      </view>
+      <view class='nogoods'>
+        <view class='noimgs'></view>
+        <view class='notext' wx:if="{{stategift==1}}">该礼物已失效</view>
+        <view class='notext' wx:if="{{stategift==2}}">礼物已被领完</view>
+      </view>
+    </view>
+  </view>
+  <view class="fixed_bg" wx:if="{{statetype ==0||statetype ==2}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="set_address" catchtap='tohomepage'>我也要赠送好友礼物</view>
+  </view>
+  <view class="fixed_bg" wx:if="{{emptygoods ==false}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="set_address" catchtap='tohomepage'>我也要赠送好友礼物</view>
+  </view>
+  <view class="fixed_bg" wx:if="{{statetype ==1}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="double_btn">
+      <view class='shaohou' catchtap='togivegift'>去派送礼物</view>
+      <view class='submitbtn' catchtap='tomygift'>自己领取</view>
+    </view>
+  </view>
+  <!-- 视频弹框 -->
+  <view class="video_bg" wx:if="{{isShowVideo}}">
+    <view class="c_view">
+      <view class="dl_view clearfix">
+        <view class="dt_img">
+          <image mode="widthFix" src="../../images/order/draw_x.png"></image>
+        </view>
+        <view class="dd_textes">
+          来自露露酱的祝福
+        </view>
+      </view>
+      <video src='https://ugcws.video.gtimg.com/uwMRJfz-r5hgYaQXGdGnCwQsKf_dEsnq3UJztMoyPd8/y0838dd29ik.p702.1.mp4?sdtfrom=v1010&guid=89f6428b080a0295efd4605e5858899c&vkey=B88FE7E5D2C06E4CEC54D8B95857066A1189F116E807E7E80CD54F8451DE273EE6DCF7660E76AD855313794D36746FA2B42E7C8DEA48C335FDCFF7348215C0D16C22919736DDB51B5CE6E45635D9D9E926A2E56347489DFC9809E9AD0B623F0745B680E14A5D2550AF4B6DDA679D71A8D1D3E61F0DF54E14'></video>
+      <view class="SendWord">来自露露酱的祝福</view>
+    </view>
+    <view class="close" bindtap='closeVideo'></view>
+  </view>
+  <view class="ecode" wx:if="{{isShowEcode}}">
+    <view class="ecode-view">
+      <view class="ecode-title">二维码
+        <view class="close_2" bindtap='closeVideo'></view>
+      </view>
+      <image class="ecodes" mode="widthFix" src="../../images/icon/ecode.png"></image>
+      <view class="ecode-word">长按或截图保存二维码，出示二维码给商家</view>
+    </view>
+  </view>
+</view>

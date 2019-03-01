@@ -1,0 +1,125 @@
+page {
+  /* background: #fff; */
+}
+
+.setting-content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 180rpx;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding-top: 40rpx;
+  background: #fff;
+}
+
+.avatar-img {
+  width: 207rpx;
+  height: 207rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-add {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 46rpx;
+  left: 400rpx;
+}
+
+.setting-item {
+  height: auto;
+  overflow: hidden;
+  color: #666;
+  font-size: 24rpx;
+  padding: 28rpx 30rpx 10rpx;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+}
+
+.setting-item input, .setting-item picker {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.inp-plch {
+  color: #999;
+}
+
+.op-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  padding: 30rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.op-box view {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 34rpx;
+  background: -webkit-linear-gradient(left top, #fc4f75, #fa1446); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right, #fc4f75, #fa1446); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right, #fc4f75, #fa1446); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right, #fc4f75, #fa1446); /* 标准的语法 */
+  border-radius: 15rpx;
+}
+
+.radio-box {
+  float: right;
+  margin-bottom: 12rpx;
+}
+
+.radio {
+  color: #000;
+  font-size: 28rpx;
+  margin-left: 80rpx;
+}
+
+/* radio未选中时样式 */
+
+radio .wx-radio-input {
+  height: 20rpx;
+  width: 20rpx;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+}
+
+/* 选中后的 背景样式 */
+
+radio .wx-radio-input.wx-radio-input-checked {
+  border: none;
+  background: #f9829c;
+}
+
+/* 选中后的 对勾样式 */
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%; /* 圆角 */
+  width: 20rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 20rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 0rpx; /* 对勾大小  */
+  color: #fff; /* 对勾颜色 */
+  background: #f9829c;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

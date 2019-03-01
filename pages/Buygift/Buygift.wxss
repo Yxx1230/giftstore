@@ -1,0 +1,236 @@
+.BuyGift{
+    position: relative
+}
+.BuyGift_bg{
+    height:201rpx;
+    width: 100%;
+}
+.BuyGift_content{
+  margin: 0 18rpx;
+  position: relative;
+  top:-50rpx
+
+}
+.BuyGift_first{
+  width: 100%;
+  height: 211rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  padding:29rpx 20rpx 30rpx 20rpx;
+  display:flex;
+}
+.buy_Gift{
+    width:199rpx;
+    height:151rpx;
+    margin-right: 22rpx
+}
+.BuyGift_second{
+  width: 100%;
+  height: 221rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 28rpx;
+  padding: 22rpx 25rpx 30rpx 20rpx
+}
+.gift_nav{
+  font-size: 27rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.bloder{
+  font-weight: bolder;
+}
+.t_color{
+  color: #858585;
+  margin-right: 24rpx;
+  display: inline-block;
+ line-height: 27rpx;
+ height: 27rpx
+}
+.Gift_right{
+  width: 17rpx;
+  height: 27rpx;
+  position: relative;
+  top: 3rpx
+}
+.special_circle{
+  width: 48rpx;
+  height: 46rpx;
+}
+.special_inCircle{
+  width: 66rpx;
+  height: 48rpx
+}
+.special_textS{
+ margin-left: 15rpx !important
+}
+.special_gift{
+  display: flex;
+  justify-content: space-around
+}
+.special_word{
+  font-size: 22rpx;
+  color: #ff6186;
+  margin-left: 5rpx
+}
+.special_flex{
+  display: flex;
+  width: 100rpx;
+  margin: 30rpx 0 15rpx 30rpx;
+  position: relative
+}
+.red_arrow{
+  width: 15rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 13rpx;
+  right: 0rpx
+}
+.BuyGift_third{
+  width: 100%;
+  background: #fff;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+}
+.BuiGift_ps{
+  height: 92rpx;
+  line-height: 92rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25rpx 0 22rpx;
+  border-bottom: 1rpx solid #f0f0f0
+}
+.BuiGift_ps view{
+  font-size: 26rpx
+}
+.none{
+  border: none
+}
+.ps_right{
+  width:17rpx;
+  height:27rpx;
+  margin-top: 32rpx
+}
+.gift_kf{
+  width: 35rpx;
+  height: 35rpx;
+  position: relative;
+  top: 6rpx;
+  right: 15rpx
+}
+.gift_call{
+  width: 238rpx;
+  height: 60rpx;
+  border: 1rpx solid #d7d6d6;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #828282;
+
+}
+.center{
+  display: flex;
+  justify-content: center
+}
+.gift_fixed{
+  width: 100%;
+  height: 110rpx;
+  background: #fff;
+  position: fixed;
+  font-size: 28rpx;
+  bottom: 0;
+  line-height: 110rpx;
+  padding-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.gift_fixed text{
+  color: #f5063a;
+}
+.small{
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+.Submit_gift{
+  width: 223rpx;
+  background: #f5063a;
+  color: #fff;
+  text-align: center
+}
+.totalnumbg {
+  width: 100%;
+  border-radius: 7rpx;
+  font-size: 26rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.totalnumed {
+  height: 54rpx;
+  line-height: 52rpx;
+}
+.Numberstext {
+  color: #999;
+}
+.stepper {
+  width: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.AddNumbers{
+  margin-right: 20rpx
+}
+/*加号和减号*/
+
+.stepper text {
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 50rpx;
+  text-align: center;
+  float: left;
+  color: #333;
+  font-size: 40rpx;
+  border: 1rpx solid #d2d1d1;
+}
+
+.subnum {
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+/*数值*/
+
+.stepper input {
+  padding: 0;
+  margin: 0 auto;
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #333;
+  outline: none;
+  font-size: 23rpx;
+  border: none;
+  border-top: 1rpx solid #d2d1d1;
+  border-bottom: 1rpx solid #d2d1d1;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  float: left;
+  resize: none;
+    min-height: 52rpx;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: #333;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #333;
+}

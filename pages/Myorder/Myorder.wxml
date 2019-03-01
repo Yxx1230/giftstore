@@ -1,0 +1,245 @@
+<view class='order_page'>
+  <view class='order_nav'>
+    <navigator hover-class='order_icon' url='/pages/Myorder/Allorder/Allorder?type=1'>
+      <image class='order_img' src="/images/order/order_df.png" />
+      <view class='order_txt'>待付款</view>
+    </navigator>
+    <navigator hover-class='order_icon' url='/pages/Myorder/Allorder/Allorder?type=2'>
+      <view class='order_icons'>
+        <image class='order_img1' src="/images/order/order_fh.png" />
+        <view class='order_txt'>待发货</view>
+        <view class='circle'>4</view>
+      </view>
+    </navigator>
+    <navigator hover-class='order_icon' url='/pages/Myorder/Allorder/Allorder?type=6'>
+      <image class='order_img2' src="/images/order/order_lq.png" />
+      <view class='order_txt'>待领取</view>
+
+    </navigator>
+    <navigator hover-class='order_icon' url='/pages/Myorder/Allorder/Allorder?type=3'>
+      <image class='order_img3' src="/images/order/order_yh.png" />
+      <view class='order_txt'>已发货</view>
+    </navigator>
+    <navigator hover-class='order_icon' url='/pages/Myorder/Allorder/Allorder?type=0'>
+      <image class='order_img4' src="/images/order/order_dd.png" />
+      <view class='order_txt'>全部订单</view>
+    </navigator>
+  </view>
+  <view class='order_mid'>
+    <image class='order_bg' src='/images/order/order_bg.png' />
+    <view class='order_title'>
+      <view class='order_my'>
+        <view class='order_s'></view>
+        我的礼物
+      </view>
+      <view class='order_my' catchtap='tostoreHouse'>
+        查看全部
+        <view style='width:15rpx;height:19rpx;margin-left:20rpx'>></view>
+      </view>
+    </view>
+    <view class='order_gift'>
+      <view class='order_num'>礼物数</view>
+      <view class='order_num1'>24</view>
+      <view class='order_num'>礼物仓库剩余数量</view>
+    </view>
+    <scroll-view class='recommend-scroll' scroll-x>
+      <view class='order_item' catchtap='togiftset'>
+        <view style='  display: flex; flex-wrap: wrap'>
+          <image class='order_detail' src='/images/order/order_gift.png' />
+          <view class='orderc'>
+            <view class='order_name'>唯心茶点</view>
+            <view class='ordernum'>礼物共
+              <view style='color:#fd6669'>12</view>件</view>
+            <view class='ordernumed'>未领取
+              <view style='color:#fd6669'>2</view>件</view>
+          </view>
+          <view class='orderright'>x14</view>
+        </view>
+      </view>
+      <view class='order_item'>
+        <view style='  display: flex; flex-wrap: wrap'>
+          <image class='order_detail' src='/images/order/order_gift.png' />
+          <view class='orderc'>
+            <view class='order_name'>蒙自在石榴</view>
+            <view class='ordernum'>礼物共
+              <view style='color:#fd6669'>12</view>件</view>
+            <view class='ordernumed'>未领取
+              <view style='color:#fd6669'>2</view>件</view>
+          </view>
+          <view class='orderright'>x14</view>
+        </view>
+      </view>
+      <view class='order_item'>
+        <view style='  display: flex; flex-wrap: wrap'>
+          <image class='order_detail' src='/images/order/order_gift.png' />
+          <view class='orderc'>
+            <view class='order_name'>蒙自在石榴</view>
+            <view class='ordernum'>礼物共
+              <view style='color:#fd6669'>12</view>件</view>
+            <view class='ordernumed'>未领取
+              <view style='color:#fd6669'>2</view>件</view>
+          </view>
+          <view class='orderright'>x14</view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class='order_btn' catchtap='tostoreHouse'>
+      去派送礼物
+    </view>
+  </view>
+  <view class='order_late'>
+    <view class='order_all'>
+      <view>最近订单</view>
+      <view style='display:flex' catchtap='getAllorder'>
+        <view style='color:#666666'>全部订单</view>
+        <image class='od_rg' src='/images/order/od_right.png' />
+      </view>
+    </view>
+    <view>
+      <view class='order_zg'>
+        <view style='display:flex' catchtap='tocompany'>
+          <image class='order_zi' src='/images/order/order_zg.png' />
+          <view style='margin-top:2rpx'>商家名称</view>
+          <image class='od_rg' style='margin-top:10rpx' src='/images/order/od_right.png' />
+        </view>
+        <view style='color:#f84058;margin-top:2rpx'>待支付</view>
+      </view>
+      <view>
+        <view class='order_list' catchtap='toPay'>
+          <view style='display:flex'>
+            <image class='order_list_img' src='/images/order/order_gift.png' />
+            <view>牛奶味大核桃</view>
+          </view>
+          <view class='or_txt'>
+            <text>¥20.00</text>
+            <text style='text-align:right;color:#9a9999'>x1</text>
+          </view>
+        </view>
+        <view style='text-align:right;font-size:26rpx;padding-right:21rpx'>共5件商品 合计¥100.00</view>
+        <view class='order_sp'>
+          <view style='display:flex;margin-top:6rpx' catchtap='tocall'>
+            <image class='order_kf' src='/images/order/order_kf.png' />
+            <view>联系商家</view>
+          </view>
+          <view style='display:flex'>
+            <view class='or_bt bw'>删除订单</view>
+            <view class='or_bt br' catchtap='Topay'>去支付</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view class='order_zg'>
+        <view style='display:flex' catchtap='tocompany'>
+          <image class='order_zi' src='/images/order/order_sl.png' />
+          <view style='margin-top:2rpx'>商家名称</view>
+          <image class='od_rg' style='margin-top:10rpx' src='/images/order/od_right.png' />
+        </view>
+        <view style='color:#f84058;margin-top:2rpx'>待发货</view>
+      </view>
+      <view>
+        <view class='order_list' catchtap='shoulipage'>
+          <view style='display:flex'>
+            <image class='order_list_img' src='/images/order/order_gift.png' />
+            <view>牛奶味大核桃</view>
+          </view>
+          <view class='or_txt'>
+            <text>¥20.00</text>
+            <text style='text-align:right;color:#9a9999'>x1</text>
+          </view>
+        </view>
+        <view style='text-align:right;font-size:26rpx;padding-right:21rpx'>共5件商品 合计¥100.00</view>
+        <view class='order_sp'>
+          <view style='display:flex;margin-top:6rpx' catchtap='tocall'>
+            <image class='order_kf' src='/images/order/order_kf.png' />
+            <view>联系商家</view>
+          </view>
+          <view style='display:flex'>
+            <view class='or_bt bw'>删除订单</view>
+            <!-- <view class='or_bt br'>去支付</view> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='order_late'>
+    <view class='order_all'>
+      <view>福钻商城兑礼订单</view>
+      <view style='display:flex' catchtap='getFuzuan'>
+        <view style='color:#666666' catchtap='TocashOrder'>全部订单</view>
+        <image class='od_rg' src='/images/order/od_right.png' />
+      </view>
+    </view>
+    <view>
+      <view class='order_zg'>
+        <view style='display:flex' catchtap='tocompany'>
+          <image class='order_zi' src='/images/order/order_dui.png' />
+          <view style='margin-top:2rpx'>商家名称</view>
+          <image class='od_rg' style='margin-top:10rpx' src='/images/order/od_right.png' />
+        </view>
+        <view style='color:#f84058;margin-top:2rpx'>交易已完成</view>
+      </view>
+      <view>
+        <view class='order_list'>
+          <view style='display:flex'>
+            <image class='order_list_img' src='/images/order/order_gift.png' />
+            <view>牛奶味大核桃</view>
+          </view>
+          <view class='or_txt'>
+            <text>¥20.00</text>
+            <text style='text-align:right;color:#9a9999'>x1</text>
+          </view>
+        </view>
+        <view style='text-align:right;font-size:26rpx;padding-right:21rpx;padding-bottom:34rpx'>共5件商品 合计¥2000福钻</view>
+        <view class='order_sp' wx:if='{{fuzanHas}}'>
+          <view style='display:flex;margin-top:6rpx' catchtap='tocall'>
+            <image class='order_kf' src='/images/order/order_kf.png' />
+            <view>联系商家</view>
+          </view>
+          <view style='display:flex'>
+            <view class='or_bt bw'>删除订单</view>
+            <view class='or_bt bw' catchtap='getcheckLogisticsTap'>查看物流</view>
+            <view class='or_bt br'>再次兑换</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 查看物流弹框 -->
+  <view class='checkLogistics-alert' wx:if='{{checkLogisticsTap}}'>
+    <view class='checkLogistics-alert-content'>
+      <view class='cehckheader clearfix'>
+        <view class="closetab" catchtap='ClosecheckLogisticsTap'>
+          <image class="close" src='/images/icon/close.png' catchtap='getcheckLogisticsTap'></image>
+        </view>
+        <view class="logistics-company">
+          <view class='company-name'>
+            <text>{{orderName}}：</text>
+            <text class="order-number">{{courierNumber}}</text>
+          </view>
+          <view class='company-name kuaidiPhone'>
+            <text>官方电话：</text>
+            <text class="order-tel">65332123</text>
+          </view>
+        </view>
+      </view>
+      <view class="logistics-info">
+        <view class="logistics-status" wx:if="{{status==0}}">在途中</view>
+        <view class="logistics-status " wx:if="{{status==1}}">已揽件</view>
+        <view class="logistics-status" wx:if="{{status==2}}">疑难件</view>
+        <view class="logistics-status " wx:if="{{status==3}}">已签收</view>
+        <view class="logistics-status" wx:if="{{status==4}}">已拒签</view>
+        <view class="logistics-info-item" wx:for="{{backMSG}}" wx:key='{{index}}'>
+          <view class="data">
+            <text>{{item.time}}</text>
+          </view>
+          <view class="icon"></view>
+          <view class="status-addr">
+            <view class='addr'>{{item.context}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

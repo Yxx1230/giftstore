@@ -1,0 +1,21 @@
+<!--pages/openpage/openpage.wxml-->
+<!-- <import src="../tmpl/tmpl/tmpl.wxml" /> -->
+<view class='showpage'>
+  <view class='headertop'>
+    <template is="Tmpl" data="{{wxAppendData}}" />
+  </view>
+  <view class="snow">
+    <view id="audio_btn" class="{{playllp?'rotate':''}}">
+      <audio loop src="bg_audio.mp3" id="media" autoplay="" preload="" catchtap='closeauido'></audio>
+    </view>
+  </view>
+  <!-- 拆红包动画效果-->
+  <view class="open open_top {{idopen?'on':''}}">
+  </view>
+  <view class="open_icon {{idopen?'on':''}}" catchtap='openhb'></view>
+  <view class="open open_bottom {{idopen?'on':''}}">
+    <view class="send_gift">送您一份礼物</view>
+    <!-- <view class="send_giftText">${adminUser.customerName}</view> -->
+  </view>
+
+</view>

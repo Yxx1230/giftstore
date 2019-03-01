@@ -1,0 +1,122 @@
+/* pages/Editcard/Editcard.wxss */
+page{
+  background:#f3f3f3;
+  cursor:default;
+  -webkit-user-select:none;
+  user-select:none;
+  width:100%;
+  overflow-x:hidden;
+}
+.container{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+}
+.contentWarp {
+  display: inline-block;
+  width: 640rpx;
+  height:1138rpx;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 8rpx 8rpx #b6c7cb;
+  top:50%;
+  left:50%;
+  margin-left:-320rpx;
+  margin-top:-569rpx;
+}
+.view-bg{
+  font-size:0;
+}
+.bgImg {
+  width:100%;
+}
+.canvasWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    padding-top: 10px;
+}
+.btn {
+    font-size: 30rpx;
+    color: #81b7c4;
+    width: 50%;
+    margin-top: 20rpx;
+    background-color: #fff;
+    height: 90rpx;
+    line-height: 90rpx;
+    border: 3rpx solid #81b7c4;
+}
+.maskCanvas {
+  margin:auto;
+}
+.touchWrap {
+    transform-origin: center;
+    position: absolute;
+    z-index: 100;
+}
+.imgWrap,.textWrap {
+    box-sizing: border-box;
+    width: 100%;
+    transform-origin: center;
+    float: left;
+    border: 4rpx transparent dashed;
+}
+.imgWrap{
+    font-size:0;
+}
+.textWrap{
+  text-align:left;
+}
+.touchActive {
+    z-index: 400;
+    border: 4rpx #fff dashed;
+}
+
+.touchActive .x {
+    display: block;
+}
+
+.touchActive .o {
+    display: block;
+}
+
+.x {
+    position: absolute;
+    top: -25rpx;
+    left: -25rpx;
+    z-index: 500;
+    display: none;
+    width: 50rpx;
+    height: 50rpx;
+    overflow: hidden;
+    font-weight: bold;
+    color: #d1e3f1;
+}
+
+/* 
+.x::after {
+    content: "X";
+    font-size: 40rpx;
+    color: red;
+} */
+
+.o {
+    position: absolute;
+    bottom: -25rpx;
+    right: -25rpx;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    font-weight: bold;
+    color: #d1e3f1;
+}

@@ -1,0 +1,47 @@
+/**app.wxss**/
+page {
+  background: #f2f2f2;
+}
+
+view, navigator, scroll-view, textarea, form, input ,text{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Microsoft YaHei';
+}
+button::after {border: none}
+
+/* input{ outline: none;border: none;list-style: none} */
+
+.fleft{
+  float: left;
+}
+.fright{
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+input {
+/* cursor:auto;
+display:block;
+height:33rpx;
+text-overflow:clip;
+overflow:hidden;
+white-space:nowrap;
+font-family:UICTFontTextStyleBody;
+min-height:33rpx; */
+
+}
+
+
+

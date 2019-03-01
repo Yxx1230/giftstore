@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='headernav clearfix'>
+        <view class='fleft'>
+          <view class='giftlogo'></view>
+          <!-- <image src='/images/icon/giftlogo.png' class='giftlogo'></image> -->
+        </view>
+        <view class='fright rightsec'>
+          <image src='/images/order/draw_x.png' class='yuserphotos'></image>
+          <view><text class='redcolor' catchtap='toliushui'>66666</text> 福钻</view>
+          <view class='kefubox' catchtap='callphone'>
+            <view class='ykefus'></view>
+            <!-- <image src='/images/icon/ykefus.png' class='ykefus'></image> -->
+          </view>
+          <view class='ordertext' catchtap='toorderpage'>订单
+            <view class='ordernum'>{{ordernum}}</view>
+          </view>
+        </view>
+    </view>
+    <!-- 店铺列表 -->
+    <view class='goodshoplist'>
+        <!-- 精选好店 -->
+        <view class='contentnav'>
+          <view class='yegoodshopes'></view>
+        </view>
+        <!-- 店铺 -->
+        <view class='company-info-item' wx:for="{{commentList}}" wx:key="index">
+          <view class='company-info'>
+            <view class='company-thumb'>
+              <image src='{{item.cmpimg}}'></image>
+            </view>
+            <!-- 店铺信息 -->
+            <view class='name-authentication'>
+              <text class='company-name'>{{item.cmpname}}</text>
+              <view>
+                <view class='renzheng'></view>
+                <view class='yqilogo'></view>
+                <view  class='yyelogo'></view>
+              </view>
+            </view>
+            <view class='look' catchtap='cmpdetail' data-id='{{index}}' >进入店铺</view>
+          </view>
+          <!-- 店铺商品 -->
+          <scroll-view class='recommend-scroll' scroll-x>
+            <view class='item-view' wx:for="{{welnameList}}" wx:key="index" catchtap='tofulidetail'>
+              <image class='recommend-thumb' src='{{item.welfare_img}}'></image>
+              <view class='goodsInfo'>
+                <view class='goodsName'>{{item.welfare_name}}</view>
+                <text class='zhuan'>赚{{item.welnum}}福币</text>
+                <view class='price clearfix'>
+                  <view class='fleft priceleft'>
+                    <text class='pricesm'>¥</text>
+                    <text>{{item.welprice}}</text>
+                  </view>
+                  <text class='bought'>{{item.welbuy}}人买</text>
+                </view>
+              </view>
+            </view>                   
+          </scroll-view>
+        </view>
+        <!-- 推荐福利 -->
+        <view class='contentnav'>
+          <view class='ygoodshops'></view>
+        </view>
+         <view class='recommendlist clearfix'>
+          <view class='recommendinfo' wx:for="{{welnameList}}" wx:key="index" catchtap='tofulidetail'>
+              <image src='{{item.welfare_img}}' class='recommendimg'></image>
+              <view class='retitle'>{{item.welfare_name}}</view>
+              <view class='repricesm clearfix'>
+                  <view class='fleft priceleft'>
+                    <text class='pricesmes'>¥</text>
+                    <text>{{item.welprice}}</text>
+                  </view>
+                  <text class='bought'>{{item.welbuy}}人买</text>
+              </view>
+          </view>
+         </view>         
+    </view>
+</view>

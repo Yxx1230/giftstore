@@ -1,0 +1,35 @@
+<view class='comment'>
+  <view class='comment-list'>
+    <view class='comment-item'>
+      <view class='master'>
+        <image class='master-avatar' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548664320890&di=a11dd700c47d298b1ed48b0a026fb278&imgtype=0&src=http%3A%2F%2Fpic22.photophoto.cn%2F20120105%2F0017030057473498_b.jpg'></image>
+        <text class='master-name text000'>发送到了</text>
+      </view>
+      <view class='text000'>终于收到了我要的东西了，东西很好用，谢谢了！</view>
+      <image class='comment-img' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548664320890&di=a11dd700c47d298b1ed48b0a026fb278&imgtype=0&src=http%3A%2F%2Fpic22.photophoto.cn%2F20120105%2F0017030057473498_b.jpg'></image>
+      <view class='time'>2018-12-12 11:21:11
+        <text class='btn-reply' catchtap='showReplyAlert'>回复</text>
+      </view>
+      <view class='comment-child'>
+        <view class='master'>
+          <image class='child-avatar' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548664320890&di=a11dd700c47d298b1ed48b0a026fb278&imgtype=0&src=http%3A%2F%2Fpic22.photophoto.cn%2F20120105%2F0017030057473498_b.jpg'></image>
+          <text class='text666'>小欣回复露露酱：</text>
+          <text class='text000'>种草了</text>
+        </view>
+        <view class='time'>2018-12-12 11:21:11
+          <text class='btn-reply' catchtap='showReplyAlert'>回复</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 回复弹框 -->
+  <view class='reply-alert' wx:if='{{showReplyAlert == 1}}'>
+    <form bindsubmit="bindFormSubmit">
+      <view class='text34'>回复露露酱</view>
+      <textarea placeholder="留下您的回复" name="textarea" placeholder-class='reply-ta' />
+      <button form-type="submit">提交回复</button>
+    </form>
+    <view class='alert-close' catchtap='closeReplyAlert'></view>
+  </view>
+  <navigator class='publish' hover-class="none" url='/pages/fuliDetail/comment-publish/comment-publish'>发表评论</navigator>
+</view>

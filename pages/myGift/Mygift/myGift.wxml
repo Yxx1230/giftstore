@@ -1,0 +1,36 @@
+<view class='container'>
+  <view class='tab-bar'>
+    <view class='tab-item active'>礼物仓库</view>
+    <view class='tab-item'>我送出的</view>
+    <view class='tab-item'>我收到的</view>
+  </view>
+  <view class='gift-list'>
+    <view class='totla'>礼物仓库共
+      <text>8</text> 件礼物可送
+    </view>
+    <block>
+      <view class='gift-item'>
+        <image class='gift-img' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548664320890&di=a11dd700c47d298b1ed48b0a026fb278&imgtype=0&src=http%3A%2F%2Fpic22.photophoto.cn%2F20120105%2F0017030057473498_b.jpg'></image>
+        <view class='gift-name'>蒙自石榴</view>
+        <view class='gift-num'>该礼物还剩余
+          <text>8</text>件可赠送
+        </view>
+        <view class='gift-btn'>
+          <text catchtap='receiveSelf'>自己领取</text>
+          <text>赠送好友</text>
+        </view>
+      </view>
+      <view class='gift-item'>
+        <image class='gift-img' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548664320890&di=a11dd700c47d298b1ed48b0a026fb278&imgtype=0&src=http%3A%2F%2Fpic22.photophoto.cn%2F20120105%2F0017030057473498_b.jpg'></image>
+        <view class='gift-name'>蒙自石榴</view>
+        <view class='gift-num'>该礼物还剩余
+          <text>8</text>件可赠送
+        </view>
+        <view class='gift-btn'>
+          <text>自己领取</text>
+          <text>赠送好友</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

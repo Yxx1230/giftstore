@@ -1,0 +1,100 @@
+<view class='BuyGift'>
+      <image class='BuyGift_bg' src="/images/order/Buygift.png"/>
+      <view class='BuyGift_content'>
+          <view class='BuyGift_first'>
+            <view>
+              <image class='buy_Gift' src='/images/order/order_gift.png'/>
+            </view>
+            <view class='totalnumbg '>
+              <view>新鲜路宝甜时令水果批发包邮5斤小甜瓜脆皮绿宝石香瓜</view>
+              <view class='clearfix'>
+                <view class='fleft totalnumed'>
+                  <view class='fleft ' style='color:#f5063a;font-size:28rpx;'>¥28</view>
+                </view>
+                <view class="AddNumbers fright">
+                  <view class="stepper clearfix">
+                    <!-- 减号 -->
+                    <text class="subnum {{minusStatus}}" bindtap="bindMinus" data-index="0">-</text>
+                    <!-- 数值 -->
+                    <input type="number" bindchange="bindManual" data-index="0" value="{{num}}" />
+                    <!-- 加号 -->
+                    <text class="normal" bindtap="bindPlus" data-index="0">+</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='BuyGift_second'>
+              <view class='gift_nav'>
+                <text class='bloder'>送礼流程</text>
+                <view style='display:none;'>
+                  <view class='t_color' >送礼攻略</view>
+                  <image class='Gift_right' src='/images/order/od_right.png'/>
+                </view>
+              </view>
+              <view class='special_gift'>
+                <view class='special_text'>
+                    <view class='special_flex'>
+                      <image src='/images/order/gift.png' class='special_circle'/>
+                      <image class='red_arrow' src='/images/order/od_right.png'/>
+                    </view>
+                    <view class='special_word special_textS'>购买礼物</view>
+                </view>
+                <view class='special_text'>
+                    <view class='special_flex'>
+                      <image src='/images/order/card.png' class='special_circle'/>
+                      <image class='red_arrow' src='/images/order/od_right.png'/>
+                    </view>
+                    <view class='special_word'>精选祝福卡</view>
+                </view>
+                <view class='special_text'>
+                    <view class='special_flex'>
+                      <image src='/images/order/person.png' class='special_circle'/>
+                      <image class='red_arrow' src='/images/order/od_right.png'/>
+                    </view>
+                    <view class='special_word'>发送给好友</view>
+                </view>
+                <view class='special_text'>
+                    <view class='special_flex'>
+                       <image src='/images/order/adress.png' class='special_circle'/>
+                      <image class='red_arrow' src='/images/order/od_right.png'/>
+                    </view>
+                    <view class='special_word'>好友填地址</view>
+                </view>
+                <view class='special_text'>
+                    <view class='special_flex'>
+                       <image src='/images/order/car.png' class='special_inCircle'/>
+                    </view>
+                    <view class='special_word'>免费送上门</view>
+                </view>
+              </view>     
+          </view>
+          <view class='BuyGift_third'>
+            <view class='BuiGift_ps' catchtap='togetset'>
+                <view>支付成功后可用文字、语言、视频表达祝福,精选礼卡</view>
+                <image class='ps_right' src='/images/order/od_right.png'/>
+            </view>
+            <view class='BuiGift_ps' catchtap='togetpre'>
+                <view>抢先预览好友领礼物场景</view>
+                <image class='ps_right' src='/images/order/od_right.png'/>
+            </view>
+
+            <view class='BuiGift_ps none' style="display:none;">
+                  <view>共6534福钻 可用14500福钻抵用149元</view>
+                 <switch class="tui-fr" checked="{{isChecked}}"/>
+            </view>
+          </view>
+      </view>
+      <view class='center'>
+        <view class='gift_call' catchtap='tocall'>
+            <image class='gift_kf' src='/images/order/gift_kf.png'/>
+            <text>咨询客服</text>
+        </view>
+      </view>
+      <view class='gift_fixed'>
+        <view>
+          <view>实付款：<text>¥149</text><text class='small'>免运费</text></view>
+        </view>
+        <view class='Submit_gift' catchtap='tosubmit'>提交订单</view>
+      </view>
+</view>

@@ -1,0 +1,280 @@
+/* pages/Capitaled/Capitaled.wxss */
+.capital-container {
+  width: 100%;
+  height: 100%;
+  background: #f0eff6;
+}
+
+.banner-box {
+  width: 100%;
+  height: 348rpx;
+  overflow: hidden;
+  position: relative;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/banner.png') no-repeat center;
+  background-size: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.to-record {
+  color: #fff;
+  font-size: 24rpx;
+  position: absolute;
+  right: 31rpx;
+  top: 42rpx;
+}
+
+.coin-text {
+  display: block;
+  font-size: 26rpx;
+  margin-top: 83rpx;
+}
+
+.coin-count {
+  font-size: 80rpx;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 5px 9px rgb(246, 86, 64);
+}
+
+.recharge {
+  display: block;
+  width: 392rpx;
+  height: 96rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.capital-tools {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.dowm-icon {
+  width: 15rpx;
+  height: 10rpx;
+  margin: 0 12rpx;
+}
+
+.capital-tools form {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-inp {
+  width: 70%;
+  height: 60rpx;
+  display: inline-block;
+  position: absolute;
+  right: 150rpx;
+  top: 10rpx;
+  border: 1px solid #eee;
+  border-radius: 5rpx;
+}
+
+.capital-tools button {
+  display: inline-block;
+  border: 1px solid #fff;
+  font-size: 26rpx;
+  color: #999;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  width: 150rpx;
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+  background-color: #fff;
+  outline: none;
+}
+
+.search-img {
+  width: 21rpx;
+  height: 20rpx;
+  margin: 0 12rpx;
+}
+
+.pay-date {
+  clear: both;
+  width: 100%;
+  height: 89rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+
+.date {
+  color: #333;
+}
+
+.pay-count {
+  color: #999;
+}
+
+.date-icon {
+  position: relative;
+}
+
+.date-icon picker {
+  position: absolute;
+  right: 0;
+  width: 36rpx;
+  height: 38rpx;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.date-icon image {
+  width: 36rpx;
+  height: 38rpx;
+}
+
+.capital-list {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 0 30rpx;
+}
+
+.capital-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 28rpx 0 30rpx;
+}
+
+.capital-item:last-child {
+  border-bottom: none;
+}
+
+.capital-icon {
+  /* width: 70rpx;
+  height: 70rpx; */
+}
+
+.coupon {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/coupon.png') no-repeat center;
+  background-size: 100%;
+}
+
+.chong {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/chong.png') no-repeat center;
+  background-size: 100%;
+}
+
+.click {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/click.png') no-repeat center;
+  background-size: 100%;
+}
+.send {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/send.png') no-repeat center;
+  background-size: 100%;
+}
+.buy {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/buy.png') no-repeat center;
+  background-size: 100%;
+}
+
+.gift {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/gift.png') no-repeat center;
+  background-size: 100%;
+}
+
+.piao {
+   width: 70rpx;
+  height: 70rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/sh_images/capital/piao.png') no-repeat center;
+  background-size: 100%;
+}
+
+
+.capital-info {
+  flex: 1;
+  padding-left: 25rpx;
+}
+
+.capital-info text {
+  display: block;
+  padding-left: 25rpx;
+}
+
+.user-name {
+  margin-right: 10rpx;
+  font-size: 23rpx;
+  color: #333;
+  /* float: left; */
+
+}
+
+.action {
+  display: inline;
+  font-size: 23rpx;
+  color: #333;
+}
+
+.goods-name {
+  font-size: 20rpx;
+  color: #4e4e4e;
+  margin: 13rpx 0 16rpx;
+}
+
+.info-data {
+  font-size: 20rpx;
+  color: #999;
+  margin-top:10rpx;
+}
+
+.item-pay {
+  font-size: 22rpx;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.item-pay-count {
+  font-size: 28rpx;
+  color: #fc2717;
+  margin-right: 7rpx;
+}

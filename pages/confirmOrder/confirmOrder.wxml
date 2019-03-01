@@ -1,0 +1,60 @@
+<view>
+    <view class='receive-content'>
+      <view class='please clearfix'>
+        <text>请选择收货地址</text>
+        <text class='wechat' catchtap='openSetting'>一键获取微信地址</text>
+      </view>
+      <view class='info-box'>
+        <view class='info-item'>
+          <text>联系人</text>
+          <input placeholder='请输入联系人'></input>
+        </view>
+        <view class='info-item'>
+          <text>联系电话</text>
+          <input placeholder='请输入联系电话'></input>
+        </view>
+        <view class='info-item'>
+          <text>联系地址</text>
+          <input placeholder='请输入联系地址'></input>
+        </view>
+      </view>
+    </view>  
+    <view class='confirm_order'>
+        <view class='Form_line'>
+            <image class='Form_org' src='/images/order/org.png' />
+            <view class='order_shop'>四川有兮生活供应链管理有限公司</view>
+        </view>
+        <view class='conGift_first'>
+            <view>
+              <image class='buy_Gift' src='/images/order/order_gift.png'/>
+            </view>
+            <view class='confirm_detail'>
+                <view>多蘑川派秘制香菇酱160g/瓶 原味/香辣/菌香3种口味任选 包邮</view>
+                <text>¥52</text>
+            </view>
+          </view>
+           <view class='totalnumbg '>
+              <view class='clearfix'>
+                <view class='fleft totalnumed'>
+                  <view class='fleft'>购买数量</view>
+                </view>
+                <view class="AddNumbers fright">
+                  <view class="stepper clearfix">
+                    <!-- 减号 -->
+                    <text class="subnum {{minusStatus}}" bindtap="bindMinus" data-index="0">-</text>
+                    <!-- 数值 -->
+                    <input type="number" bindchange="bindManual" data-index="0" value="{{num}}" />
+                    <!-- 加号 -->
+                    <text class="normal" bindtap="bindPlus" data-index="0">+</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+    </view>
+     <view class='gift_fixed'>
+        <view>
+          <view>实付款：<text>¥149</text><text class='small'>免运费</text></view>
+        </view>
+        <view class='Submit_gift' catchtap='tosubmit'>去支付</view>
+      </view>  
+</view>

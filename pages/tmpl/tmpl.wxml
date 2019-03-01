@@ -1,0 +1,4 @@
+<!--pages/tmpl/tmpl/tmpl.wxml-->
+<template name="Tmpl">
+    <!-- <image class='snow_img' src='https://www.fuxingfuli.com/images/giftstore/yGiftes.png'></image> -->
+</template>

@@ -1,0 +1,319 @@
+<!--pages/Spcompanypage/Spcompanypage.wxml-->
+<view>
+  <view class='headernav clearfix'>
+    <view class='fleft'>
+      <image src='/images/icon/shopgiftlogo.png' class='giftlogo'></image>
+    </view>
+    <view class='fright rightsec'>
+      <image src='/images/order/draw_x.png' class='yuserphotos'></image>
+      <view>
+        <text class='redcolor' catchtap='toliushui'>66666</text> 福钻</view>
+      <view class='kefubox' catchtap='callphone'>
+        <view class='ykefus'></view>
+        <!-- <image src='/images/icon/shopphone.png' class='ykefus'></image> -->
+      </view>
+      <view class='ordertext' catchtap='toorderpage'>订单
+        <view class='ordernum'>{{ordernum}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='spcontent'>
+    <view class='companycontent'>
+      <view class='companybanner' style='display:none;'>
+        <!-- <image class='cmpbanner' src=''></image> -->
+      </view>
+
+      <view class='cmpmanger'>
+        <view class='postmarklogo'>
+          <image src='{{companyinfo.cmplogo}}'></image>
+        </view>
+        <view class='company-info clearfix'>
+          <view class='companythumb fleft'>
+            <image src='{{companyinfo.cmpmarklogo}}'></image>
+          </view>
+          <!-- 店铺信息 -->
+          <view class='cmpcation fleft'>
+            <text class='companyname'>{{companyinfo.cmpname}}</text>
+            <view>
+              <view class='renzheng'></view>
+              <view class='yqilogo'></view>
+              <view class='yyelogo'></view>
+            </view>
+          </view>
+        </view>
+        <!-- 福利件数 -->
+        <view class='welfarmnumber clearfix'>
+          <view class='fleft followitem'>福利件数
+            <text class='boldcolor'>{{companyinfo.welnum}}</text>
+          </view>
+          <view class='fleft followitem'>关注人数
+            <text class='boldcolor'>{{companyinfo.viewlook}}</text>
+          </view>
+          <view class='fleft followitem'>所在地
+            <text class='boldcolor'>{{companyinfo.address}}</text>
+          </view>
+        </view>
+        <!-- 品牌信息 -->
+        <view class='cmpmessage'>
+          <text class="{{arrowshow? 'morecontentpin': 'contentpin' }}">{{companyinfo.cmpcontent}}</text>
+          <view class='moretext' catchtap='toshowmore'>
+            <text>更多品牌信息</text>
+            <text class='arrowbtns' wx:if='{{arrowshow == false}}'></text>
+            <text class='arrowbtntop' wx:if='{{arrowshow == true}}'></text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='searchcontent'>
+    <!-- 搜索导航栏 -->
+    <view class="searchtab  {{isfixed ?'nosearchtab':''}}" id='searchfixed'>
+      <view class='serachleft' catchtap='tosearch'>
+        <view class='yserachicon'></view>
+        <text>搜索</text>
+      </view>
+      <view class='searchitem {{currentTab == 0 ? "tabactive" : ""}}' data-currenttab='0' catchtap='onMainTap'>店铺首页</view>
+      <view class='searchitem {{currentTab == 1 ? "tabactive" : ""}}' data-currenttab='1' catchtap='onMainTap'>全部商品</view>
+      <view class='searchitem {{currentTab == 2 ? "tabactive" : ""}}' data-currenttab='2' catchtap='onMainTap'>新品上架</view>
+    </view>
+    <!-- 店铺首页 -->
+    <view wx:if='{{currentTab == 0}}'>
+      <!-- 店铺动态 -->
+      <view class='shopdynamics clearfix'>
+        <view class='dynamicslogo'></view>
+        <view class='dynamicsbox'>
+          <view class='dynamicsimg'>
+            <!-- <image src='/images/icon/shopgiftlogo.png' class='giftlogo'></image> -->
+            <image src='/images/icon/ygoodsimge.png' mode='widthFix'></image>
+          </view>
+          <view class='dynamicstext'>
+            <view class='dynamicstop'>上架新福利好福[哥窑冰裂茶杯]新福利</view>
+            <view class='dynamicstime'>01月11日</view>
+          </view>
+
+        </view>
+      </view>
+      <!-- 评论说 -->
+      <view class='shopcomment'>
+        <view class='commenttop clearfix'>
+          <view class='fleft commenticon'></view>
+          <text class='fleft commenttitle'>顾客说</text>
+          <view class='fright totaltext' catchtap='tocomment'>4人在说
+            <text class='taoalicon'></text> </view>
+        </view>
+        <scroll-view class='comment-scroll' scroll-x style="width: 100%">
+          <view class='comment-item' wx:for="{{commentList}}" wx:key="index">
+            <view class='comment-item-lf'>
+              <view class='comment-item-top'>
+                <image class='comment-avatar' src='{{item.avatar}}'></image>
+                <text>{{item.nickName}}</text>
+              </view>
+              <view class='comment-item-bot'>{{item.text}}</view>
+            </view>
+            <view class='comment-item-rg' wx:if='{{item.commentImg}}'>
+              <image src='{{item.commentImg}}' mode='aspectFill'></image>
+              <text class='commentImgNum'>4张</text>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <!-- 掌柜推荐 -->
+      <view class='recommendlist'>
+        <view class='recommendtop clearfix'>
+          <view class='fleft recommendicon'></view>
+          <text class='fleft commenttitle'>掌柜推荐</text>
+        </view>
+        <view class='welfareitem' wx:for="{{welfareList}}" wx:key="index" catchtap='onSwiperTap'>
+          <view class='welfare-banner'>
+            <!-- 图片 -->
+            <image class='welfarethumb' src='{{item.welfare_img}}' mode='widthFix'></image>
+            <view class='distance'>
+              <image src='/images/icon/map.png'></image>
+              <text>{{item.distance}}-{{item.regionBak}}</text>
+            </view>
+            <view class='enroll'>
+              <image src='/images/icon/people.png'></image>
+              <text>{{item.welfare_virtual_num + item.receive_num}}人领取</text>
+            </view>
+            <view class='browse'>
+              <image src='/images/icon/liulan.png'></image>
+              <text>{{item.view_count + (item.welfare_virtual_num*9)}}</text>
+            </view>
+            <view class='time'>开始时间:{{item.start_time_bak}} -- 结束时间:{{item.end_time_bak}}</view>
+          </view>
+          <view class='welfare-bot'>
+            <view class='welfare-name'>{{item.welfare_name}}</view>
+            <view class='welfare-location'>{{item.address}}</view>
+            <view class='btn-box'>
+              <view class='star'>一级福星以上</view>
+              <view class='coins'>{{item.welfare_reward_coin + item.card_coins}}福钻</view>
+              <view class='address'>不限制</view>
+              <view class='share'>立即购买</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 全部商品/新品上架 -->
+    <view wx:if='{{currentTab == 1 ||currentTab == 2}}'>
+      <view class="welfare-content ">
+        <view class="no-data" wx:if="{{len==0}}">
+          <image class='nonebg' src="/images/icon/nonebg.png"></image>
+          <text>暂无商品</text>
+        </view>
+
+        <view class='welfare-item clearfix' wx:for='{{welfareList}}' catchtap='onSwiperTap' wx:key="index">
+          <view class='welfare-thumb'>
+            <image src='{{item.welfare_img}}'></image>
+          </view>
+          <view class='welfare-info'>
+            <view class='welfare-nametitle'>{{item.welfare_name}}</view>
+            <view class='welfare-addr'>
+              <text class='addricon'></text>
+              <!-- <image src='/images/icon/address.png'></image> -->
+              <text class='addrtext'>{{item.region}}</text>
+            </view>
+            <view class='welfare-price'>
+              <text class='welfare-price-sm'>¥</text>
+              <text class='welfare-price-pink'>{{item.paymoney}}</text>
+              <text class='welfare-bought'>{{item.welfare_virtual_num}}人买</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部导航栏 -->
+  <view class='footertab'>
+    <view class="btntabitem" data-btncurrenttab='0' catchtap='onBtnTap'>
+      <view class="homepageicon {{btntab == 0?'active':''}}"></view>
+      <view class="icontext">首页</view>
+    </view>
+    <view class="btntabitem" data-btncurrenttab='1' catchtap='onBtnTap'>
+      <view class="tatalicon {{btntab == 1?'active':''}}"></view>
+      <view class="icontext">全部</view>
+    </view>
+    <view class="btntabitem" data-btncurrenttab='2' catchtap='onBtnTap'>
+      <view class="classyicon {{btntab == 2?'active':''}}"></view>
+      <view class="icontext">分类</view>
+    </view>
+    <view class='btntabitem' wx:if='{{isfollow ==false}}'>
+      <view class='followbox' data-state='0' catchtap='tofollow'>
+        <view class="viewlook"></view>关注
+      </view>
+    </view>
+    <view class='btntabitem' wx:if='{{isfollow ==true}}'>
+      <view class='followbox' data-state='1' catchtap='tofollow'>
+        <view class="viewlooked"></view>已关注
+      </view>
+    </view>
+    <!-- <view class='btntabitem followbox' wx:if='{{isfollow ==true}}' data-state='1' catchtap='tofollow'>
+      <view class="viewlooked"></view>已关注
+    </view> -->
+  </view>
+  <!-- 发现 -->
+  <view class='rightbtn' catchtap='tohomepage'>
+    <view class='viewfind'></view>
+    <view>发现</view>
+  </view>
+  <!-- 未收藏小程序提醒 -->
+  <view class='remindbox' wx:if='{{showclick}}'>
+    <view class='remindbtn'>
+      <view class='remindtop'>
+        <view class='successicon'></view>
+        <text>已成功关注该店铺</text>
+      </view>
+      <view class='addmyces'>添加到我的小程序</view>
+      <view class='addgray'>
+        <view class='additerm'>
+          <view class='clickr'></view>
+          <view>点击右上角</view>
+        </view>
+        <view class='additrms'></view>
+        <view class='additerm'>
+          <view class='addxcr'></view>
+          <view>添加到我的小程序</view>
+        </view>
+      </view>
+      <view class='addbtnea'>方便使用，更加便捷!</view>
+    </view>
+    <view catchtap='remindClose' class='remind_mask'></view>
+    <image src='/images/icon/f_close.png' class='close_remind' catchtap='remindClose'></image>
+  </view>
+  <!-- 分类侧边弹框 -->
+  <view class='classifybox' wx:if="{{showclassifybox}}">
+    <view class='classleft'>
+      <view class='classifytop clearfix'>
+        <view class='classsearch'>
+          <input class='classifyinp' placeholder='请输入福利名称'></input>
+        </view>
+        <view class='clsearch' catchtap='searchpage'>搜索</view>
+      </view>
+      <view class='csearchbtn'>
+        <view class='btnsetop clearfix'>
+          <view class='fleft'>全部分类</view>
+          <view class='fright rightarr' catchtap='isshowarrow'>
+            <view class='btnaarrow' wx:if="{{classifyf == true}}"></view>
+            <view class='topaarrow' wx:if="{{classifyf == false}}"></view>
+          </view>
+        </view>
+        <view class='classifyinfo clearfix' wx:if="{{classifyf == true}}">
+          <view class='classifyitem' wx:for="{{classifyitemList}}" wx:key="index" catchtap='searchpage'>{{item.classname}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='classright' catchtap='returnpage'>
+      <view class='returnrighticon'></view>
+    </view>
+  </view>
+  <!-- 搜索页面 -->
+  <view class='searchbox' wx:if="{{showsearchbo}}">
+    <view class='classifytop clearfix'>
+      <view class='boxsearch'>
+        <input class='classifyinp' type='text' bindconfirm="searchBtn" confirm-type='search' onblur="Blurtab" placeholder='请输入福利名称'></input>
+      </view>
+      <view class='clboxsearch' catchtap='searchBtn'>搜索</view>
+    </view>
+    <view class='csearchbtn' wx:if="{{searchcontent}}">
+      <view class='btnboxsearch clearfix'>
+        <view class='fleft'>历史记录</view>
+        <view class='fright rightarr' catchtap='isdelitem'>
+          <view class='btndelbox'></view>
+        </view>
+      </view>
+      <view class='classifyinfo clearfix'>
+        <view class='boxsearchitem' wx:for="{{searchitemList}}" wx:key="index" catchtap='searchBtn'>{{item.searchname}}</view>
+      </view>
+    </view>
+    <view wx:if="{{searchList !='' && searchcontent==false}}">
+      <view class="welfare-content ">
+        <view class="no-data" wx:if="{{len==0}}">
+          <image class='nonebg' src="/images/icon/nonebg.png"></image>
+          <text>暂无商品</text>
+        </view>
+
+        <view class='welfare-item clearfix' wx:for='{{welfareList}}' catchtap='onSwiperTap' wx:key="index">
+          <view class='welfare-thumb'>
+            <image src='{{item.welfare_img}}'></image>
+          </view>
+          <view class='welfare-info'>
+            <view class='welfare-nametitle'>{{item.welfare_name}}</view>
+            <view class='welfare-addr'>
+              <text class='addricon'></text>
+              <!-- <image src='/images/icon/address.png'></image> -->
+              <text class='addrtext'>{{item.region}}</text>
+            </view>
+            <view class='welfare-price'>
+              <text class='welfare-price-sm'>¥</text>
+              <text class='welfare-price-pink'>{{item.paymoney}}</text>
+              <text class='welfare-bought'>{{item.welfare_virtual_num}}人买</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='nohavefuli' wx:if="{{searchList == ''}}">无更多福利内容</view>
+  </view>
+
+</view>

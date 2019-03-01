@@ -1,0 +1,54 @@
+
+<view class="recharge-box">
+		<view class="header" >
+			<view class="header-left">
+				<text>福钻余额：</text>
+				<text class="amount">0福钻</text>
+			</view>
+		</view>
+		<view class="amount-info">
+			<view class='viewstcontent' id="viewst">
+				<view class="amount-item {{current==0 ?'active':''}}" data-currenttab='0' data-conis='1000' data-totalprice='10'catchtap="navTap">
+          <view class='fuicon'></view>
+					<!-- <image src="/images/capital/f_coins.png" alt=""></image> -->
+					<text class="coin">1000福钻</text>
+					<view class="money">
+						<text class="{{current==0 ?'active':''}}">¥10</text>
+					</view>
+				</view>
+				<view class="amount-item {{current==1 ?'active':''}}" data-currenttab='1'  data-conis='5000' data-totalprice='50' catchtap="navTap">
+					<view class='fuicon'></view>
+					<text class="coin">5000福钻</text>
+					<view class="money">
+						<text class="{{current==1 ?'active':''}}">¥50</text>
+					</view>
+				</view>
+				<view class="amount-item {{current==2 ?'active':''}}" data-currenttab='2' data-conis='10000' data-totalprice='100' catchtap="navTap">
+					<view class='fuicon'></view>
+					<text class="coin">10000福钻</text>
+					<view class="money">
+						<text class="{{current==2 ?'active':''}}">¥100</text>
+					</view>
+				</view>
+				<view class="amount-item {{current==3 ?'active':''}}" data-currenttab='3' data-conis='20000' data-totalprice='200' catchtap="navTap">
+					<view class='fuicon'></view>
+					<text class="coin">20000福钻</text>
+					<view class="money">
+						<text class="{{current==3 ?'active':''}}">¥200</text>
+					</view>
+				</view>
+				<view class="amount-item {{current==4 ?'active':''}}" data-currenttab='4' data-conis='{{custom}}' data-totalprice='{{custom/100}}' catchtap="navTap">
+					<view class='fuicon'></view>
+					<input type="number" class="coin" placeholder="请输入充值福钻数（1元=100福钻）" value='{{custom}}' placeholder-style='color:#666;' bindinput="searchBtn"/>
+					<view class="money">
+						<text class="{{current==4 ?'active':''}}">¥{{custom/100}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="test">福钻充值成功后，到账可能会有一定延迟，请您耐心等待。</view>
+			<view class="footer" catchtap="rechargeData">立即充值</view>
+		</view>
+
+		<view class="tips" class="{{tipsShow}}">{{tips}}</view>
+	</view>
+

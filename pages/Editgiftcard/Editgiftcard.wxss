@@ -1,0 +1,162 @@
+/* pages/Editgiftcard/Editgiftcard.wxss */
+
+/* pages/Editcard/Editcard.wxss */
+
+page {
+  background: #f3f3f3;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.contentWarp {
+  display: inline-block;
+  width: 570rpx;
+  height: 1013rpx;
+  overflow: hidden;
+  position: absolute;
+  /* box-shadow: 0px 0px 8rpx 8rpx #b6c7cb; */
+  top: 0;
+  left: 50%;
+  margin-left: -285rpx;
+  margin-bottom: 150rpx;
+}
+
+.view-bg {
+  font-size: 0;
+}
+
+.bgImg {
+  width: 100%;
+}
+
+.canvasWrap {
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.footerbtn {
+  width: 100%;
+  padding: 15rpx 50rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 11;
+}
+
+.warehouse {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fe3657;
+  background: #fff;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  box-shadow: #d4d4d4 0rpx 0rpx 20rpx;
+}
+
+.Sendfriend {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  background: #fe3657;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  margin-left: 45rpx;
+  box-shadow: #999 0rpx 0rpx 20rpx;
+}
+
+.btn {
+  font-size: 30rpx;
+  color: #81b7c4;
+  width: 50%;
+  margin-top: 20rpx;
+  background-color: #fff;
+  height: 90rpx;
+  line-height: 90rpx;
+  border: 3rpx solid #81b7c4;
+}
+
+.maskCanvas {
+  margin: auto;
+}
+
+/* 新加的 **************************/
+
+.fixedbtn {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+
+.grayexplain {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 26rpx;
+  background: #797979;
+}
+
+.btnexplain {
+  padding: 15rpx 20rpx;
+  width: 100%;
+  font-size: 26rpx;
+}
+
+.leftgifty {
+  height: 90rpx;
+  /* line-height: 90rpx; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeicon {
+  width: 34rpx;
+  height: 38rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ychangeimg.png) no-repeat;
+  background-size: 100%;
+  margin-right: 20rpx;
+}
+
+.giftcard {
+  width: 290rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+  background: #fe3657;
+  text-align: center;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+}
+
+.shareimg {
+  width: 570rpx;
+  height: 1013rpx;
+}

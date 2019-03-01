@@ -1,0 +1,51 @@
+<view class='container'>
+  <view class='setting-content'>
+    <view class='avatar'>
+      <image class='avatar-img' src='/images/icon/yuserphoto.png'></image>
+      <image class='avatar-add' bindtap='img_item' src='/images/icon/avatar_add.png'></image>
+    </view>
+    <view class='setting-item'>
+      <view>昵称</view>
+      <input placeholder='请输入昵称' value='Zhang' placeholder-class='inp-plch' placeholder-class='inp-plch'></input>
+    </view>
+    <view class='setting-item'>
+      <view>姓名</view>
+      <input placeholder='请输入姓名' value='Lisa' placeholder-class='inp-plch'></input>
+    </view>
+    <view class='setting-item'>
+      <view>手机</view>
+      <input placeholder='请输入手机' value='18600321211' placeholder-class='inp-plch'></input>
+    </view>
+    <view class='setting-item'>
+      <view>生日</view>
+      <input placeholder='请输入生日' value='1998-12-12' placeholder-class='inp-plch'></input>
+    </view>
+    <view class='setting-item'>
+      <text>性别</text>
+      <view class='radio-box'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}" color='#fff' /> {{item.value}}
+        </label>
+      </radio-group>
+      </view>
+    </view>
+    <view class='setting-item'>
+      <view>城市</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
+      </picker>
+    </view>
+    <view class='setting-item'>
+      <view>职业</view>
+      <input placeholder='请输入职业' placeholder-class='inp-plch'></input>
+    </view>
+    <view class='setting-item'>
+      <view>学历</view>
+      <input placeholder='请输入学历' value='本科' placeholder-class='inp-plch'></input>
+    </view>
+  </view>
+  <view class='op-box' catchtap='tomycenter'>
+    <view>保存个人信息</view>
+  </view>
+</view>

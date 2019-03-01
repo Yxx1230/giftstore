@@ -1,0 +1,668 @@
+/* pages/Givegiftset/Givegiftset.wxss */
+
+page {
+  width: 100%;
+  /* height: 100%; */
+  background: #f3f3f3;
+}
+
+.globalfontsize, .setsharetitle {
+  font-size: 28rpx;
+  font-family: "黑体";
+}
+
+.bannertop {
+  width: 100%;
+  height: 304rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ybannertop.png) no-repeat;
+  background-size: 100%;
+}
+
+.contentbox {
+  width: 100%;
+  padding: 0rpx 30rpx 155rpx;
+  position: absolute;
+  top: 135rpx;
+  left: 0;
+  z-index: 1;
+  /* width: 690rpx;
+  height: 600rpx;
+  margin:0 auto;
+  margin-top:-140rpx; */
+}
+
+.giftmethod {
+  width: 100%;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 0rpx 5rpx #cfcfcf;
+  margin-bottom: 20rpx;
+}
+
+.giftuser {
+  width: 100%;
+  height: 140rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ytitlebg.png) no-repeat;
+  background-size: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.userphoto {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.usertext {
+  font-size: 27rpx;
+  float: left;
+  margin-top: 35rpx;
+}
+
+.numcolor {
+  color: #fb2445;
+}
+
+.moremethod {
+  margin: 30rpx 0rpx;
+  font-size: 28rpx;
+  font-family: "黑体";
+}
+
+.setmore {
+  color: #ff554e;
+  font-family: "微软雅黑";
+  font-size: 26rpx;
+}
+
+.moreperson {
+  margin-top: 28rpx;
+}
+
+.totalnumbg {
+  width: 100%;
+  padding: 20rpx 20rpx;
+  background: #f0f0f0;
+  border-radius: 7rpx;
+  font-size: 26rpx;
+  /* font-family: "黑体"; */
+}
+
+.totalnumed {
+  height: 54rpx;
+  line-height: 52rpx;
+}
+
+.Numberstext {
+  color: #999;
+}
+
+.AddNumbers {
+}
+
+.numList {
+  background: #fff;
+  width: auto;
+  text-align: center;
+  border: 1px solid #d2d1d1;
+}
+
+
+
+.numinp {
+  width: 32rpx;
+  height: 33rpx;
+  line-height: 33rpx;
+  text-align: center;
+  /* border-top: 1px solid #d2d1d1;
+    border-bottom: 1px solid #d2d1d1; */
+  float: left;
+  font-size: 18rpx;
+  min-height: 33rpx;
+  cursor: auto;
+  text-overflow: clip;
+  overflow: initial;
+  white-space: nowrap;
+  font-family: UICTFontTextStyleBody;
+}
+
+.giftmethod textarea {
+  width: 100%;
+  height: 65rpx;
+  min-height: 65rpx;
+  font-size: 28rpx;
+}
+.giftmethodTxt{
+  width: 100%;
+  height: 65rpx;
+  min-height: 65rpx;
+  font-size: 28rpx;
+}
+.giftvideo {
+  width: 100%;
+  padding: 25rpx 20rpx 10rpx 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 0rpx 5rpx #cfcfcf;
+  margin-bottom: 20rpx;
+}
+
+.videotext {
+  color: #999;
+  font-size: 26rpx;
+  margin-left: 17rpx;
+  font-family: '微软雅黑';
+}
+
+.bannerswiper {
+  margin-top: 20rpx;
+}
+
+.tabstate {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.remake {
+  color: #fd576f;
+  border: 1rpx solid #fd576f;
+  padding: 8rpx 16rpx;
+  z-index: 521;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  /* 
+    margin-right: 0.01rem;
+    margin-top: -0.12rem; */
+}
+
+.videoswiper {
+  width: 100%;
+  height: 290rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/viedobg.png) no-repeat;
+  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0rpx 0rpx 10rpx;
+  z-index: 10;
+  border-radius: 10rpx;
+  /* border:1px solid #ccc; */
+  position: relative;
+}
+
+.luyinswiper {
+  width: 100%;
+  height: 290rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yluyinbg.png) no-repeat;
+  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0rpx 0rpx 10rpx;
+  z-index: 10;
+  border-radius: 10rpx;
+  /* border:1px solid #ccc; */
+  position: relative;
+}
+
+swiper {
+  /* height: auto; *//* height: 340rpx; */
+  width: 100%;
+  min-height: 320rpx;
+}
+
+swiper-item {
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.luvideo {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.audiotop {
+  width: 100%;
+  padding-top: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videocoin {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 60rpx 0rpx 20rpx 0rpx;
+}
+
+.audioleft, .audioright {
+  height: 46rpx;
+  width: 135rpx;
+}
+
+.ao, .ab, .ac, .ad, .af {
+  width: 8rpx;
+  margin-left: 6rpx;
+  border-radius: 50rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.ao {
+  height: 100%;
+  background: rgba(48, 179, 254, 0.6);
+}
+
+.ab {
+  height: 50%;
+  background: rgba(48, 179, 254, 0.7);
+}
+
+.ac {
+  height: 0%;
+  background: rgba(48, 179, 254, 0.8);
+}
+
+.ad {
+  height: 50%;
+  background: rgba(48, 179, 254, 0.9);
+}
+
+.af {
+  height: 100%;
+  background: rgba(48, 179, 254, 1);
+}
+
+.playone {
+  animation: yuying1 0.7s infinite 0.5s;
+  -webkit-animation: yuying1 0.7s infinite 0.5s;
+}
+
+.playtwo {
+  animation: yuying1 0.7s infinite 0.4s;
+  -webkit-animation: yuying1 0.7s infinite 0.4s;
+}
+
+.playthree {
+  animation: yuying1 0.7s infinite 0.3s;
+  -webkit-animation: yuying1 0.7s infinite 0.3s;
+}
+
+.playfour {
+  animation: yuying1 0.7s infinite 0.2s;
+  -webkit-animation: yuying1 0.7s infinite 0.2s;
+}
+
+.playfive {
+  animation: yuying1 0.7s infinite 0.1s;
+  -webkit-animation: yuying1 0.7s infinite 0.1s;
+}
+
+@keyframes yuying1 {
+  0% {
+    height: 0%;
+  }
+
+  20% {
+    height: 50%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  80% {
+    height: 50%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+.audioicon {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: 20rpx 0rpx 20rpx 0rpx;  */
+  background: url(https://www.fuxingfuli.com/images/giftstore/stopvideo.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.stopaudioicon {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: 8rpx 0rpx 20rpx 0rpx; */
+  background: url(https://www.fuxingfuli.com/images/givePresents/playOn.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.videocenter {
+  width: 350rpx;
+  height: 290rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.playaudio {
+  width: 400rpx;
+  height: 290rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tranvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290rpx;
+  /* border-radius: 10rpx; */
+  background-color: transparent;
+  z-index: 10;
+}
+
+.havevideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290rpx;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.playbtn {
+  width: 100rpx;
+  height: 100rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/bigplay.png) no-repeat;
+  background-size: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+}
+
+.videoposter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290rpx;
+  background-color: transparent;
+  filter: blur(5rpx);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.videoimgr {
+  width: 80%;
+  height: 290rpx;
+  /* margin: 0 auto; */
+  display: block;
+  z-index: 10;
+  filter: blur;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.videosrc {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 290rpx;
+  /* border-radius: 10rpx; */
+  background-color: transparent;
+  /* z-index: 10; */
+}
+
+.swipericon {
+  width: 100%;
+  height: 30rpx;
+  /* background: #ddd; */
+}
+
+.swiperbtn {
+  width: 90rpx;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftradius {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #d0d0d0;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.leftsquare {
+  width: 24rpx;
+  height: 12rpx;
+  border-radius: 6rpx;
+  background: #fe3557;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.setshare {
+  width: 100%;
+  background: #fff;
+  padding: 25rpx 20rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+}
+
+.arrowicon {
+  width: 30rpx;
+  height: 26rpx;
+  margin-top: 10rpx;
+}
+
+.arrowbtn {
+  width: 20rpx;
+  height: 12rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yarrowbtn.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.arrowtop {
+  width: 20rpx;
+  height: 12rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yarrowtop.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.sharetitle {
+  width: 100%;
+  padding: 24rpx;
+  background: #f0f0f0;
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+}
+
+.sharetext {
+  width: 100%;
+  min-height: 30rpx;
+  height: auto;
+}
+
+.footerbtn {
+  width: 100%;
+  padding: 30rpx 50rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* background: #f3f3f3; */
+  z-index: 11;
+}
+
+.warehouse {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fe3657;
+  background: #fff;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  box-shadow: #d4d4d4 0rpx 0rpx 20rpx;
+}
+.awarehouse{
+    width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fe3657;
+  background: #fff;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  box-shadow: #d4d4d4 0rpx 0rpx 20rpx;
+  margin: 0 auto;
+}
+
+.Sendfriend {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  background: #fe3657;
+  border-radius: 50rpx;
+  font-size: 36rpx;
+  margin-left: 45rpx;
+  box-shadow: #999 0rpx 0rpx 20rpx;
+}
+
+/*主容器*/
+
+.stepper {
+  width: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 50rpx;
+  text-align: center;
+  float: left;
+  color: #333;
+  font-size: 40rpx;
+  border: 1rpx solid #666;
+}
+
+.subnum {
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+/*数值*/
+
+.stepper input {
+  /* width: 38rpx;
+  height: 33rpx;
+  min-height: 33rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18rpx;
+  border-left: 1px solid #d2d1d1;
+  border-right: 1px solid #d2d1d1;
+  padding-top: -10rpx; */
+  padding: 0;
+  margin: 0 auto;
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #333;
+  outline: none;
+  font-size: 23rpx;
+  border: none;
+  border-top: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  float: left;
+  resize: none;
+    min-height: 52rpx;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: #333;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #333;
+}
+
+
+.btnselce{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 12;
+}
+.selectbtn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+.onetop{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #ededed;
+    text-align: center;
+    font-size: 32rpx;
+}
+.moretop{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 10rpx solid #efefef;
+    text-align: center;
+    font-size: 32rpx; 
+}
+.button-hover,button {
+  color:#000;
+  background-color:#fff;
+  background:#fff;
+}
+.zhezc{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

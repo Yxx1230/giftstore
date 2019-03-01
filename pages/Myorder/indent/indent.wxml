@@ -1,0 +1,53 @@
+<view style='overflow:hidden'>
+    <view class='indentner'>
+      <image class='order_indent' src='/images/order/order_ban.png' />
+      <image  class='indent_df'  src='/images/order/indent_gift.png' />
+      <view class='indent_txt'>
+          <text wx:if='{{!isIndent}}'>共3件礼物,还有1件礼物未领取</text>
+          <text wx:if='{{isIndent}}'>礼物已领完</text>
+           <text wx:if='{{!isIndent}}' style='font-size:24rpx;margin-top:17rpx'>赠送中的礼物共有2件已领取</text>
+          <text wx:if='{{isIndent}}' style='font-size:24rpx;margin-top:17rpx'>您的礼物已全部被领完</text>
+      </view>
+    </view>
+    <view class='indent_detail'>
+        <view class='indent_circle'></view>
+        <view class='indent_circle_right'></view>
+        <view class='indent_first'>
+          <view style='padding:22rpx 20rpx;display:flex;flex-wrap:wrap' catchtap='toFulidetail'> 
+              <image class='indent_gift' src='/images/order/order_gift.png' />
+              <view class='indent_flex'>
+                  <view style='font-size:28rpx;margin-bottom:22rpx'>美术培训初级培训超值团购基础素描、设计构成</view>
+                  <view>¥26.00</view>
+              </view>   
+          </view>
+        </view>
+        <view class='indent_dashed'></view>
+        <view class='indent_second'>
+          <view class='indent_t'>看看谁领到了礼物</view>
+          <view class='indent_line'>
+            <view class='line_left'></view>
+            <text class='line_middle'></text>
+            <view class='line_left'></view>
+          </view>
+          <view class='indent_list'>
+              <view class='indent_per'>
+                  <image class='indent_draw' src='/images/order/draw_x.png'/>
+                  <view style='font-size:28rpx;width:450rpx;padding-right:20rpx'>
+                      <view style=' display: flex;justify-content: space-between;'><text>小苏菲</text><text>x1</text></view>
+                       <view style='font-size:22rpx;color:#999999;margin-top:12rpx; display: flex;justify-content: space-between;'><text>2018-07-15</text><text>已领取</text></view>
+                  </view>
+              </view>
+              <view class='indent_per'>
+                    <image class='indent_draw' src='/images/order/draw_x.png'/>
+                    <view style='font-size:28rpx;width:450rpx;padding-right:20rpx'>
+                      <view style=' display: flex;justify-content: space-between;'><text>小苏菲</text><text>x1</text></view>
+                       <view style='font-size:22rpx;margin-top:12rpx;color:#999999; display: flex;justify-content: space-between;'><text>2018-07-15</text><text>已领取</text></view>
+                  </view>
+              </view>
+          </view>
+          <view style='display:flex;justify-content:center;' >
+              <view class='indent_foot' catchtap='togiftset'> 查看送礼详情</view>
+          </view>
+        </view>
+    </view>
+</view>

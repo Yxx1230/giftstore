@@ -1,0 +1,240 @@
+/* pages/Mycenter/myshare/myshare.wxss */
+page{
+  background: #fff;
+}
+.view {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fff;
+  margin-bottom: 114rpx;
+}
+
+.share_top {
+  /* height: 246rpx; */
+  /* margin-top: 15rpx; */
+  padding: 40rpx 30rpx 0 40rpx;
+  box-sizing: border-box;
+}
+
+
+.share_top .share_topleft {
+  height: 212rpx;
+  width: 320rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/orangebg.png) no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.share_top .share_topright {
+  height: 212rpx;
+  width: 320rpx;
+ background: url(https://www.fuxingfuli.com/images/giftstore/bulebg.png) no-repeat;
+  background-size: 100% 100%;
+  float: right;
+}
+
+.share_top>view view {
+  text-align: center;
+  color: #fff;
+}
+.sharefuli{
+  font-size: 24rpx;
+  width: 100%;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.shareicfuli{
+  width: 28rpx;
+  height: 28rpx;
+  background: url(https://www.fuxingfuli.com/images/web/images/icon1.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 20rpx;
+
+}
+.jianglinum{
+  width: 28rpx;
+  height: 28rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ymycoine.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 20rpx;
+}
+
+.share_top>view view:nth-child(2) {
+  font-size: 50rpx;
+  font-weight: 500;
+}
+
+.bg {
+  height: 15rpx;
+  background: #f2f2f2;
+}
+
+.share_list {
+  width: 710rpx;
+  margin: auto;
+}
+ .begin_bg {
+  width: 100%;
+  background: url(https://www.fuxingfuli.com/images/giftstore/colorbgse.png) no-repeat;
+  background-size: 100% 100%;
+  box-shadow: #cfcfcf 0 0 10rpx;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.begin_graybg{
+  width: 100%;
+  background: url(https://www.fuxingfuli.com/images/giftstore/graybgeds.png) no-repeat;
+  background-size: 100% 100%;
+  box-shadow: #cfcfcf 0 0 10rpx;
+  padding:0 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.share_msgtop {
+  /* height: 135rpx; */
+  padding: 30rpx 0 20rpx 0;
+  box-sizing: border-box;
+  border-bottom: 2rpx dashed #eee;
+  display: flex;
+  position: relative;
+}
+
+.share_msgtop .img {
+  display: block;
+  /* float: left; */
+  width: 262rpx;
+  height: 140rpx;
+  vertical-align: middle;
+  border-radius: 10rpx;
+}
+.graybgimg{
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  width: 262rpx;
+  height: 140rpx;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10rpx;
+  
+}
+
+.share_msgtop .msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: left;
+  width: 230rpx;
+  margin-left: 20rpx;
+  height: 140rpx;
+  border-right: 2rpx dashed #f2f2f2;
+}
+
+.sharetitle{
+  font-size: 27rpx;
+  font-weight: 500;
+  margin-top: 3rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sharetime{
+  font-size: 24rpx;
+  color: #666666;
+  /* margin-top: 3rpx; */
+  margin:5rpx 0;
+}
+
+.sharetext {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 7rpx;
+  background: url(https://www.fuxingfuli.com/images/web/images/share_icon.png) no-repeat center left;
+  text-indent: 20rpx;
+  background-size: 24rpx 24rpx;
+  padding-left: 14rpx;
+}
+
+.share_msgtop .fubinum {
+  width: 140rpx;
+  height: 140rpx;
+  float: right;
+  text-align: center;
+  color: #f75223;
+  font-weight: 400;
+  font-size: 24rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+
+}
+.fubicolor{
+  width: 48rpx;
+  height: 46rpx;
+ background: url(https://www.fuxingfuli.com/images/giftstore/yafuzuan.png) no-repeat center;
+  background-size: 100%;
+  margin: 20rpx auto;
+}
+.share_msgbtm{
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  color: #999;
+  font-size: 18rpx;
+}
+
+.btnicone{
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  margin-right: 45rpx;
+  float: left;
+  align-items: center;
+}
+
+.btnview{
+  width: 24rpx;
+  height: 24rpx;
+  background: url(https://www.fuxingfuli.com/images/web/images/fangw.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 15rpx;
+}
+
+.btnbuy {
+  width: 24rpx;
+  height: 24rpx;
+  background: url(https://www.fuxingfuli.com/images/web/images/baom.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 15rpx;
+}
+
+ .shares{
+  float: right;
+  width: 190rpx;
+  height: 50rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/colorconis.png) no-repeat;
+  background-size: 100%; 
+}
+.grayshares{
+    float: right;
+  width: 190rpx;
+  height: 50rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/graycoins.png) no-repeat;
+  background-size: 100%; 
+}

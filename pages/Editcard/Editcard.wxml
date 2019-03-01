@@ -1,0 +1,37 @@
+<view class='container' bindtap='removeActive'>
+  <view class="contentWarp" id="the-id">
+    <view class="view-bg">
+      <image src='{{bgImg}}' mode='widthFix' bindload='loadbg' class='bgImg'></image>
+    </view>
+    <!-- *************操作区域*************  -->
+    <block wx:for="{{itemList}}" wx:key="{{item.id}}">
+        <!-- 圆心坐标 <text style='position:absolute;top:{{item.y}}px;left:{{item.x}}px;width:2px;height:2px;background-color:yellow;z-index:500'></text> -->
+        <!--图片-->
+        <view wx:if="{{item.type=='image'}}" class='touchWrap' style='transform: scale({{item.scale}});top:{{item.htmlTop}}rpx;left:{{item.htmlLeft}}rpx;'>
+            <view class='imgWrap {{item.active? "touchActive":""}}' style="transform: rotate({{item.angle}}deg);">
+                <image src='{{item.image}}' data-id='{{item.id}}' style='width:{{item.htmlWidth}}px;height:{{item.htmlHeight}}px;' catchtouchstart='WraptouchStart' catchload='loadImg' catchtouchmove='WraptouchMove' catchtouchend='WraptouchEnd'></image>
+                <image class='x' src='../../images/icon/x.png' style='transform: scale({{item.oScale}});transform-origin:center;' data-id='{{item.id}}' catchtap='deleteItem'></image>
+                <image class='o' src='../../images/icon/scale.png' style='transform: scale({{item.oScale}});transform-origin:center;' data-id='{{item.id}}' catchtouchstart='touchStart' catchtouchmove='touchMove' catchtouchend='touchEnd'></image>
+            </view>
+        </view>
+        <!--图片-->
+        <!--文字-->
+        <view wx:else class='touchWrap' style='transform: scale({{item.scale}});top:{{item.htmlTop}}rpx;left:{{item.htmlLeft}}rpx;'>
+          <view class='textWrap {{item.active? "touchActive":""}}' style="transform: rotate({{item.angle}}deg);">
+            <view data-id='{{item.id}}' style='width:{{item.htmlWidth}}px;height:{{item.htmlHeight}}px;' catchtouchstart='WraptouchStart' catchload='loadImg' catchtouchmove='WraptouchMove' catchtouchend='WraptouchEnd'>文字</view>
+            <image class='x' src='../../images/icon/x.png' style='transform: scale({{item.oScale}});transform-origin:center;' data-id='{{item.id}}' catchtap='deleteItem'></image>
+                <image class='o' src='../../images/icon/scale.png' style='transform: scale({{item.oScale}});transform-origin:center;' data-id='{{item.id}}' catchtouchstart='touchStart' catchtouchmove='touchMove' catchtouchend='touchEnd'></image>
+          </view>
+        </view>
+        <!--文字-->
+    </block>
+    <!-- **************操作区域************  -->
+  </view>
+  <!--*************canvas**************-->
+  <view class='canvasWrap' wx:if="{{showCanvas}}" catchtap='disappearCanvas'>
+      <canvas class='maskCanvas' canvas-id="maskCanvas" catchlongtap='saveImg' style='width:550rpx; height:978rpx;'></canvas>
+      <button class='btn' catchtap='saveImg'>点我生成图片</button>
+  </view>
+  <!--*************canvas**************-->
+  <view class="save" style="position:absolute;right:0;top:0;z-index:9999;" catchtap='save'>保存啊</view>
+</view>

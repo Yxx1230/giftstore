@@ -1,0 +1,153 @@
+<view class='container'>
+  <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" indicator-color="rgba(221,221,221,1)" indicator-active-color='#666' class='banner'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 购买人头像昵称 -->
+  <view class='buyer'>
+    <image src='{{buyerAvater}}' class='buyer-avater'></image>
+    <text>醉颖儿购买了此商品</text>
+  </view>
+  <!-- 限时抢购 -->
+  <view class='flashSale'>
+    <view class='flashSale-lf'>
+      <text class='text34'>抢购价</text>
+      <text class='text34'>￥</text>
+      <text class='text60'>49.9</text>
+      <text class='text24'>专柜价</text>
+      <text class='text24 text-line'>59.9</text>
+    </view>
+    <view class='flashSale-rg'>
+      <view>距离结束</view>
+      <view>
+        <text class='time'>44</text>:
+        <text class='time'>44</text>:
+        <text class='time'>44</text>:
+        <text class='time'>44</text>
+      </view>
+    </view>
+  </view>
+  <!-- 福利名称 -->
+  <view class='fuli-title'>G.U.M米菲兔日本原装进口牙膏牙刷套装儿童口腔专家推荐，精心呵护宝宝的牙齿</view>
+  <!-- 分享奖励 快递 邮戳 -->
+  <view class='fuli-box' catchtap='rewardShow'>
+    <view class='share-reward'>
+      <text class='reward-text'>分享奖励</text>
+      <text>¥5.00</text>
+      <image src='/images/fulidetail/right.png' class='rightImg'></image>
+    </view>
+    <view class='express'>
+      <text>快递</text>全国包邮（新疆、西藏、内蒙、甘肃无法发货）
+    </view>
+    <view class='postmark'></view>
+  </view>
+  <!-- 已售出 剩余 -->
+  <view class='sold-box'>
+    <view class='sold-top'>
+      <text class='sold-text'>已售出420件</text>剩余80件
+    </view>
+    <swiper class='sold-bottom' display-multiple-items='6' autoplay='true' interval="2000" duration="500" circular='true' next-margin='6rpx'>
+      <block wx:for='{{avatarList}}'>
+        <swiper-item>
+          <image class='avatar-item' src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 评论专区 -->
+  <view class='comment'>
+    <view class='comment-top'>
+      <text>评论专区（12）</text>
+      <navigator class='comment-rg' hover-class="none" url='/pages/fuliDetail/comment/comment'>全部评论
+        <image src='/images/fulidetail/right.png' class='comment-rgImg'></image>
+      </navigator>
+    </view>
+    <navigator  hover-class="none" url='/pages/fuliDetail/comment/comment'>
+    <scroll-view class='comment-scroll' scroll-x style="width: 100%">
+      <view class='comment-item' wx:for="{{commentList}}">
+        <view class='comment-item-lf'>
+          <view class='comment-item-top'>
+            <image class='comment-avatar' src='{{item.avatar}}'></image>
+            <text>{{item.nickName}}</text>
+          </view>
+          <view class='comment-item-bot'>{{item.text}}</view>
+        </view>
+        <view class='comment-item-rg' wx:if='{{item.commentImg}}'>
+          <image src='{{item.commentImg}}'></image>
+          <text class='commentImgNum'>4张</text>
+        </view>
+      </view>
+    </scroll-view>
+    </navigator>
+  </view>
+  <!-- 图文详情 -->
+  <view class='detail'>
+    <view class='detail-title'>图文详情</view>
+    <view>
+      <block wx:for='{{detailList}}'>
+        <image wx:if="{{item.type=='img'}}" src='{{item.img}}'></image>
+        <text wx:if="{{item.type=='text'}}">{{item.text}}</text>
+      </block>
+    </view>
+  </view>
+  <!-- 热门推荐 -->
+  <view class='recommend'>
+    <view class='detail-title'>热门推荐</view>
+    <scroll-view class='recommend-scroll' scroll-x style="width: 100%">
+      <view class='recommend-item' wx:for="{{recommendList}}" catchtap='recommend'>
+        <image src='{{item.img}}'></image>
+        <view class='recommend-name'>{{item.name}}</view>
+        <view class='recommend-price'>¥ {{item.price1}}
+          <text class='recommend-lineprice'>¥ {{item.price2}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 分享 -->
+  <view>
+    <button class='share' open-type="share" catchtap='onShareAppMessage'  hover-class="none"></button>
+  </view>
+  <!-- 底部 -->
+  <view class='footer'>
+    <view class='footer-lf'>
+      <view class='foot-ic ic-shop' catchtap='toShop'>店铺</view>
+      <view class='foot-ic ic-kefu' catchtap='callphone'>咨询</view>
+      <view class='foot-ic ic-order' catchtap='toOrder'>订单</view>
+    </view>
+    <view class='footer-rg'>
+      <view class='btn-pink' catchtap='sendGift'>赠送好友</view>
+      <view class='btn-yellow' catchtap='selfBuy'>自己购买</view>
+
+    </view>
+  </view>
+  <!-- 分享奖励弹框 -->
+  <view class='reward-alert' wx:if='{{rewardShow==1}}'>
+    <view class='reward-content'>
+      <view class='reward-logo'></view>
+      <view class='reward-title'>收入说明</view>
+      <view class='reward-item reward-pink'>
+        <text class='reward-item-lf pink-lf'>分享奖励</text>
+        <text>¥5.00</text>
+      </view>
+      <view class='reward-item reward-yellow'>
+        <text class='reward-item-lf yellow-lf'>福粉返佣</text>
+        <text>¥5.00</text>
+      </view>
+      <view class='reward-line'></view>
+      <view class='reward-text-lg'>分享奖励：</view>
+      <view class='reward-text-xs'>自购可获得分享奖励；用户通过您分享的分享卡或链接购买福利，您可与好友均分分享奖励；</view>
+      <view class='reward-text-lg'>福粉返佣：</view>
+      <view class='reward-text-xs'>您的福粉每次分享产生购买，您即可再享收益；</view>
+      <view class='reward-btn'>
+        
+        <button  open-type="share" hover-class="none">链接分享</button>
+        
+        <!-- <view>分享卡分享</view> -->
+      </view>
+      <view class='reward-close' catchtap='rewardClose'></view>
+    </view>
+  </view>
+</view>

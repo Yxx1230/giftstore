@@ -1,0 +1,90 @@
+<view style='overflow:hidden'>
+    <view class='banner'>
+      <image class='order_ban' src='/images/order/order_ban.png' />
+      <image wx:if='{{!isTui}}' class='ban_df'  src='/images/order/ban_df.png' />
+      <image wx:if='{{isTui}}' class='ban_df'  src='/images/order/ban_tu.png'/>
+      <view class='ban_txt'>
+          <text wx:if='{{!isTui}}'>待付款</text>
+          <text wx:if='{{isTui}}'>已退款</text>
+          <text wx:if='{{!isTui}}' style='font-size:24rpx'>需付款：¥150.00</text>
+          <text wx:if='{{isTui}}'>退款成功</text>
+      </view>
+    </view>
+    <view class='last'>
+      <view class='ban_detail {{isTui?"ban_fu":"ban_dai"}}'>
+          <view class='ban_circle'></view>
+          <view class='ban_circle_right'></view>
+          <image class='ban_kf' catchtap='tocall'  src='/images/order/ban_kf.png' />
+          <view class='ban_first'>
+            <view style='padding:0 20rpx'>
+                  <view class='ban_line'>
+                          <image class='ban_org' src='/images/order/org.png'/>
+                          <view style='font-size:28rpx;margin:0 12rpx'>商家名称</view>
+                          <image class='ban_od'  src='/images/order/od_right.png'/>
+                  </view>
+                  <view >
+                    <view class='ban_flex' catchtap='toFulidetail'>
+                        <view style='display:flex'>
+                            <image class='ban_gift' src='/images/order/order_gift.png' />
+                            <view>牛奶味大核桃</view>
+                        </view>
+                        <view class='ban_text'>
+                            <text>¥50.00</text>
+                            <text style='text-align:right;color:#9a9999'>x3</text>
+                        </view>
+                    </view>
+                  </view>
+                  <view class='ban_l_txt'>
+                    <text>商品总额</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+                  <view class='ban_l_txt'>
+                    <text>运费</text>
+                    <text style='color:#696969'>¥0.00</text>
+                  </view>
+                  <view class='ban_l_txt'>
+                    <text wx:if='{{!isTui}}'>需付款</text>
+                    <text wx:if='{{isTui}}'>实付款</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+            </view>
+          </view>
+          <view class='ban_dashed'></view>
+          <view class='ban_second'>
+            <view style='font-size:28rpx'>订单信息</view>
+                  <view class='ban_s_txt'>
+                    <text>订单编号</text>
+                    <text>1231456</text>
+                  </view>
+                  <view class='ban_s_txt'>
+                    <text>支付类型</text>
+                    <text>送礼订单</text>
+                  </view>
+                  <view class='ban_s_txt'>
+                    <text>下单时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+                  <view wx:if='{{isTui}}' class='ban_s_txt'>
+                    <text>下单方式</text>
+                    <text>微信支付</text>
+                  </view>
+                    <view wx:if='{{isTui}}' class='ban_s_txt'>
+                    <text>付款时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+                    <view wx:if='{{isTui}}' class='ban_s_txt'>
+                    <text>退款时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+          </view>
+      </view>
+      
+    
+    </view>
+    
+    <view class='ban_foot'>
+          <view class='ban_del'>删除订单</view>
+          <view wx:if='{{!isTui}}' class='ban_pay' catchtap='topay'>去支付</view>
+          <view wx:if='{{isTui}}' class='ban_pay'>再次送礼</view>
+    </view>
+</view>

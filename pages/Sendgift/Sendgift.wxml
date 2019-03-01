@@ -1,0 +1,141 @@
+<view class='showpage' wx:if='{{isopenpage ==0}}'>
+  <view class="content">
+    <view class="gift_con">
+      <view class="top_bar">我送了您一份礼物赶快来领取吧</view>
+      <view style="border:1rpx solid transparent;"></view>
+      <!-- 语音 -->
+      <view class="detail" wx:if="{{statetype ==0}}">
+        <view class="detail_bar"></view>
+        <view class="detailred"></view>
+        <view class="from">To：兔子Amy</view>
+        <view class="main">“祝您新春快乐，万事如意！！”</view>
+        <view class="radio clearfix" catchtap='playvoice'>
+          <view class="action">
+            <view class=" {{isplay?'voicePlay':'bg'}}"></view>
+          </view>
+          <view style="border:1rpx solid transparent;"></view>
+          <view class="actionTs">
+            祝福语音 00′32″
+          </view>
+        </view>
+        <view class="dl_view clearfix">
+          <view class="dt_img">
+            <image mode="widthFix" src="/images/order/draw_x.png"></image>
+          </view>
+          <view class="dd_text">
+            来自露露酱的祝福
+          </view>
+        </view>
+        <!-- 邮戳 -->
+        <view class='posterfixed'>
+          <image mode="widthFix" src='https://www.fuxingfuli.com/images/giftstore/guoancomplogo.png'></image>
+        </view>
+      </view>
+      <!-- 视频 -->
+      <view class="detail" wx:if="{{statetype ==1}}">
+        <view class="detail_bar"></view>
+        <view class="detailred"></view>
+        <view class="from">To：兔子Amy</view>
+        <view class="main">“祝您新春快乐，万事如意！！”</view>
+        <view class="radio clearfix" catchtap='lookvideo'>
+          <view class="action">
+            <view class="video_play"></view>
+          </view>
+          <view style="border:1rpx solid transparent;"></view>
+          <view class="actionTs">
+            祝福视频 00′32″
+          </view>
+        </view>
+        <view class="dl_view clearfix">
+          <view class="dt_img">
+            <image mode="widthFix" src="/images/order/draw_x.png"></image>
+          </view>
+          <view class="dd_text">
+            来自露露酱的祝福
+          </view>
+        </view>
+      </view>
+      <!-- 无语音视频 -->
+      <view class="detail" wx:if="{{statetype ==2}}">
+        <view class="detail_bar"></view>
+        <view class="detailred"></view>
+        <view class="from">To：兔子Amy</view>
+        <view class="main">“祝您新春快乐，万事如意！！”</view>
+        <view class="from"></view>
+        <view class="dl_view clearfix">
+          <view class="dt_img">
+            <image mode="widthFix" src="/images/order/draw_x.png"></image>
+          </view>
+          <view class="dd_text">
+            来自露露酱的祝福
+          </view>
+        </view>
+      </view>
+
+      <view class='Ts'>
+        <view class="ts_word">送您的礼物</view>
+        <view class="line"></view>
+      </view>
+      <view class="product">
+        <view class="product_img">
+          <image mode="widthFix" src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+        </view>
+        <view class="product_word">萌趣小猪14K金珍珠红绳项链套装</view>
+      </view>
+    </view>
+  </view>
+  <view class="fixed_bg" wx:if="{{btn_state ==1}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="set_address" bindtap='setAddress'>填写地址 收下好友礼物</view>
+    <view class="set_word">快点击上方按钮，填地址收下好友礼物</view>
+  </view>
+  <view class="fixed_bg" wx:if="{{btn_state ==2}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="double_btn">
+      <view>礼品仓库</view>
+      <view>自己领取</view>
+    </view>
+  </view>
+  <view class="fixed_bg" wx:if="{{btn_state ==3}}">
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="setaddress" catchtap='closepre'>
+      <view>关闭预览</view>
+    </view>
+  </view>
+  <!-- 视频弹框 -->
+  <view class="video_bg" wx:if="{{isShowVideo}}">
+    <view class="c_view">
+      <view class="dl_view clearfix">
+        <view class="dt_img">
+          <image mode="widthFix" src="/images/order/draw_x.png"></image>
+        </view>
+        <view class="dd_textes">
+          来自露露酱的祝福
+        </view>
+      </view>
+      <video controls src='https://ugcws.video.gtimg.com/uwMRJfz-r5hgYaQXGdGnCwQsKf_dEsnq3UJztMoyPd8/y0838dd29ik.p702.1.mp4?sdtfrom=v1010&guid=89f6428b080a0295efd4605e5858899c&vkey=B88FE7E5D2C06E4CEC54D8B95857066A1189F116E807E7E80CD54F8451DE273EE6DCF7660E76AD855313794D36746FA2B42E7C8DEA48C335FDCFF7348215C0D16C22919736DDB51B5CE6E45635D9D9E926A2E56347489DFC9809E9AD0B623F0745B680E14A5D2550AF4B6DDA679D71A8D1D3E61F0DF54E14'></video>
+      <view class="SendWord">“祝您新春快乐！万事如意！！”</view>
+    </view>
+    <view class="close" bindtap='closeVideo'></view>
+  </view>
+</view>
+<view class='showpage' wx:if='{{isopenpage ==1}}'>
+  <view class='headertop'>
+    <!-- <template is="Tmpl" data="{{wxAppendData}}" /> -->
+    <image class='snow_img' wx:for="{{appendData}}" wx:key="index" style='left:{{item.left1}}px;' animation="{{List[index].animationData}}" src='{{item.src}}'></image>
+  </view>
+  <view class="snow">
+    <view id="audio_btn" class="{{playllp?'rotate':''}}" catchtap='closeauido'>
+
+    </view>
+  </view>
+  <!-- 拆红包动画效果-->
+  <view class="open open_top {{idopen?'on':''}}">
+  </view>
+  <view class="open_icon {{idopen?'on':''}}" catchtap='openhb'></view>
+  <view class="open open_bottom {{idopen?'on':''}}">
+    <view class="send_gift">送您一份礼物</view>
+    <!-- <view class="send_giftText">${adminUser.customerName}</view> -->
+  </view>
+
+</view>

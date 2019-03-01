@@ -1,0 +1,218 @@
+page{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.receive-content {
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  padding: 16rpx;
+}
+.receive-num {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 88rpx;
+  background: #f0f0f0;
+  border-radius: 15rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*禁用样式*/
+.num-op .disabled {
+  color: #ccc;
+}
+.please {
+  margin: 0 auto;
+  font-size: 25rpx;
+  color: #333;
+  margin-top: 30rpx;
+  line-height: 60rpx;
+}
+
+.wechat {
+  float: right;
+  width: 280rpx;
+  height: 60rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  padding-left: 72rpx;
+  line-height: 60rpx;
+  background: #07b906 url('https://www.fuxingfuli.com/images/giftstore/wechat.png') no-repeat left center;
+  background-size: 39rpx 33rpx;
+  background-position-x: 25rpx;
+}
+
+.info-box {
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.info-item {
+  width: 100%;
+  height: 88rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.info-item:last-child {
+  border: none;
+}
+
+.info-item text {
+  width: 200rpx;
+}
+.gift_fixed{
+  width: 100%;
+   height: 100rpx;
+  box-shadow: 0px -1px 2px rgb(194, 193, 193);
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.gift_fixed text{
+  color: #f5063a;
+}
+.small{
+  font-size: 24rpx;
+  margin-left: 20rpx
+}
+.Submit_gift{
+  width: 223rpx;
+  background: #f5063a;
+  color: #fff;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.confirm_order{
+    margin-top:20rpx;
+    background:#fff;
+    padding: 10rpx 20rpx 100rpx 20rpx
+}
+.Form_line{
+  height: 103rpx;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  border-bottom: 1rpx solid #e7e7e7
+}
+.Form_org{
+  width: 63rpx;
+  height: 63rpx
+}
+.order_shop{
+  font-size: 26rpx;
+  margin-left: 20rpx
+}
+.conGift_first{
+  margin-top: 10rpx;
+  display: flex;
+  font-size: 26rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e7e7e7
+}
+.confirm_detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.confirm_detail text{
+  color: #f5063a;
+}
+.buy_Gift{
+    width:199rpx;
+    height:151rpx;
+    margin-right: 22rpx
+}
+.totalnumbg {
+  width: 100%;
+  border-radius: 7rpx;
+  font-size: 26rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #e7e7e7
+}
+.totalnumed {
+  height: 54rpx;
+  line-height: 52rpx;
+}
+.Numberstext {
+  color: #999;
+}
+.stepper {
+  width: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 50rpx;
+  text-align: center;
+  float: left;
+  color: #333;
+  font-size: 40rpx;
+  border: 1rpx solid #d2d1d1;
+}
+
+.subnum {
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+/*数值*/
+
+.stepper input {
+  padding: 0;
+  margin: 0 auto;
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #333;
+  outline: none;
+  font-size: 23rpx;
+  border: none;
+  border-top: 1rpx solid #d2d1d1;
+  border-bottom: 1rpx solid #d2d1d1;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  float: left;
+  resize: none;
+    min-height: 52rpx;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: #333;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  color: #333;
+}
+
+

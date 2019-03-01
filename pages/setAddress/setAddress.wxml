@@ -1,0 +1,65 @@
+
+<view class="content">
+  <view class="gift_con">
+    <view class='posterfixed'>
+      <image mode="widthFix" src='https://www.fuxingfuli.com/images/giftstore/guoancomplogo.png'></image>
+    </view>
+    <view class="top_bar">我送了您一份礼物赶快来领取吧</view>
+    <view style="border:1rpx solid transparent;"></view>
+    <view class="gift clearfix">
+      <view class="gift_img">
+        <image mode="widthFix" src="/images/order/draw_x.png"></image>
+      </view>
+      <view class="gift_word">
+        我送了您一份礼物赶快来领取吧我送了您一份礼物赶快来领取吧我送了您一份礼物赶快来领取吧我送了您一份礼物赶快来领取吧
+      </view>
+    </view>
+    <view class='receive-content'>
+      <view class='please clearfix'>
+        <view class='wechat' catchtap='openSetting'>一键获取微信地址</view>
+      </view>
+      <view class='info-box'>
+        <view class='info-item'>
+          <text>联系人</text>
+          <input placeholder='请输入联系人'></input>
+        </view>
+        <view class='info-item'>
+          <text>联系电话</text>
+          <input placeholder='请输入联系电话'></input>
+        </view>
+        <view class='info-item'>
+          <text>联系地址</text>
+          <input placeholder='请输入联系地址'></input>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="fixed_bg" wx:if="{{btn_state ==1}}">
+  <view style="border:1rpx solid transparent;"></view>
+  <view class="set_address" bindtap='setAddress'>填写地址 收下好友礼物</view>
+  <view class="set_word">快点击上方按钮，填地址收下好友礼物</view>
+</view>
+<view class="fixed_bg" wx:else="{{btn_state ==2}}">
+  <view style="border:1rpx solid transparent;"></view>
+  <view class="double_btn">
+    <view bindtap='after'>稍后再领</view>
+    <view bindtap='confirmAddress'>提交地址</view>
+  </view>
+</view>
+<!-- 视频弹框 -->
+<view class="video_bg" wx:if="{{isShowVideo}}">
+  <view class="c_view">
+    <view class="dl_view clearfix">
+      <view class="dt_img">
+        <image mode="widthFix" src="/images/order/draw_x.png"></image>
+      </view>
+      <view class="dd_textes">
+        来自露露酱的祝福
+      </view>
+    </view>
+    <video  controls src='https://ugcws.video.gtimg.com/uwMRJfz-r5hgYaQXGdGnCwQsKf_dEsnq3UJztMoyPd8/y0838dd29ik.p702.1.mp4?sdtfrom=v1010&guid=89f6428b080a0295efd4605e5858899c&vkey=B88FE7E5D2C06E4CEC54D8B95857066A1189F116E807E7E80CD54F8451DE273EE6DCF7660E76AD855313794D36746FA2B42E7C8DEA48C335FDCFF7348215C0D16C22919736DDB51B5CE6E45635D9D9E926A2E56347489DFC9809E9AD0B623F0745B680E14A5D2550AF4B6DDA679D71A8D1D3E61F0DF54E14'></video>
+    <view class="SendWord">“祝您新春快乐！万事如意！！”</view>
+  </view>
+  <view class="close" bindtap='closeVideo'></view>
+</view>

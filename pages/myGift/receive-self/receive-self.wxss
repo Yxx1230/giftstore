@@ -1,0 +1,197 @@
+page {
+  background: url('https://www.fuxingfuli.com/images/giftstore/receive-bj.png') no-repeat top center;
+  background-size: 100%;
+}
+
+.receive-content {
+  width: 680rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 4rpx #f4f4f4;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  padding: 16rpx;
+}
+
+.receive-title {
+  width: 100%;
+  height: 146rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/receive-square.png') no-repeat center;
+  background-size: 100%;
+  font-size: 27rpx;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.receive-gift {
+  width: 71rpx;
+  height: 72rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/receive-gift.png') no-repeat center;
+  background-size: 100%;
+  margin-right: 20rpx;
+}
+
+.receive-total {
+  font-size: 30rpx;
+  color: #ff554e;
+  margin-top: 40rpx;
+  font-family: '黑体';
+  /* font-weight: bold; */
+}
+
+.receive-num {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 88rpx;
+  background: #f0f0f0;
+  border-radius: 15rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text000 {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.textbbb {
+  font-size: 24rpx;
+  color: #b6b5b5;
+}
+
+/*主容器*/
+
+.num-op {
+  width: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+/*加号和减号*/
+
+.num-op text {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  float: left;
+  color: #333;
+  font-size: 40rpx;
+  border: 1rpx solid #666;
+}
+
+/*数值*/
+
+.num-op input {
+  padding: 0;
+  margin: 0 auto;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #333;
+  outline: none;
+  font-size: 23rpx;
+  border: none;
+  border-top: 1rpx solid #666;
+  border-bottom: 1rpx solid #666;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+  float: left;
+  resize: none;
+  min-height: 40rpx;
+}
+
+/*普通样式*/
+
+
+.normal {
+  color: #333;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.subnum {
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+/*禁用样式*/
+
+.num-op .disabled {
+  color: #ccc;
+}
+
+.please {
+  width: 570rpx;
+  margin: 0 auto;
+  font-size: 25rpx;
+  color: #666;
+  margin-top: 30rpx;
+  line-height: 60rpx;
+}
+
+.wechat {
+  float: right;
+  width: 280rpx;
+  height: 60rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  padding-left: 72rpx;
+  line-height: 60rpx;
+  background: #07b906 url('https://www.fuxingfuli.com/images/giftstore/wechat.png') no-repeat left center;
+  background-size: 39rpx 33rpx;
+  background-position-x: 25rpx;
+}
+
+.info-box {
+  width: 570rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.info-item {
+  width: 100%;
+  height: 88rpx;
+  border-bottom: 1rpx solid #f9ad3c;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.info-item:first-child {
+  border-top: 1rpx solid #f9ad3c;
+}
+
+.info-item text {
+  width: 200rpx;
+}
+
+.pink-bg, .pink-bd {
+  width: 600rpx;
+  height: 80rpx;
+  color: #f4063a;
+  font-size: 36rpx;
+  position: fixed;
+  left: 50%;
+  margin-left: -300rpx;
+  bottom: 40rpx;
+  border: 1rpx solid #f4063a;
+  border-radius: 12rpx;
+  text-align: center;
+  line-height: 78rpx;
+}
+
+.pink-bg {
+  color: #fff;
+  background: #f4063a;
+  bottom: 152rpx;
+  line-height: 80rpx;
+}

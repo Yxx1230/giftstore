@@ -1,0 +1,74 @@
+<!--pages/Capitaled/Capitaled.wxml-->
+<view class="capital-container">
+  <view class='banner-box'>
+    <view class='banner-position'>
+      <text class="to-record" catchtap='onRecordTap' style='display:none;'>充值记录</text>
+      <text class='coin-text'>福钻</text>
+      <text class="coin-count">{{allCoinsNum}}</text>
+      <image class='recharge' catchtap='onRechargeTap' src="/images/icon/recharge.png"></image>
+    </view>
+  </view>
+  <view class='capital-tools' style='display:none;'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <text class="picker">{{array[index]}}</text>
+      <image class='dowm-icon' src="/images/icon/down.png"></image>
+    </picker>
+    <form bindsubmit="formSubmit">
+      <input class='search-inp' confirm-type="search" name="input"></input>
+      <button formType="submit" plain="true">
+        <image class='search-img' src='/images/icon/search.png'></image>
+        <text class='search-text'>搜索</text>
+      </button>
+    </form>
+  </view>
+  <view class='pay-date' style='display:none;'>
+    <view class='pay-date-text'>
+      <view class='date'>{{selectDate}}</view>
+
+      <view class="pay-count">支出{{capitalData[0].num}}福钻</view>
+    </view>
+    <view class='date-icon'>
+      <picker mode="date" value="{{date}}" fields="month" bindchange="bindDateChange">
+        <view class="picker">
+          当前选择: {{date}}
+        </view>
+      </picker>
+      <image src="/images/icon/date.png"></image>
+    </view>
+  </view>
+  <view class='capital-list'>
+    <view class="no-data" wx:if="{{capitalData.length==0}}">
+      <image class='nonebg' src="/images/icon/nonebg.png"></image>
+      <text>暂无数据...</text>
+    </view>
+    <view class='capital-item' wx:for="{{capitalData}}" wx:key='index'>
+      <view class='chong ' wx:if='{{item.type == 1}}'></view>
+      <view class='click ' wx:if='{{item.type == 2}}'></view>
+      <view class='buy ' wx:if='{{item.type == 3}}'></view>
+      <view class='gift' wx:if='{{item.type == 5}}'></view>
+      <view class='send' wx:if='{{(item.type != 1) &&(item.type != 2)&&(item.type != 3)&&(item.type != 5)}}'></view>
+      <view class='capital-info'>
+
+        <view class='user-name' wx:if="{{item.type==1}}">商户充值</view>
+        <view class='user-name' wx:if="{{item.type==2}}">{{item.nick_name}}分享[{{item.welfare_name}}]产生有效点击</view>
+        <view class='user-name' wx:if="{{item.type==3}}">{{item.nick_name}}分享[{{item.welfare_name}}]产生有效购买</view>
+        <view class='user-name' wx:if="{{item.type==5}}">{{item.nick_name}}分享[{{item.welfare_name}}]礼物成功领取返佣</view>
+        <view class='user-name' wx:if='{{(item.type != 1) &&(item.type != 2)&&(item.type != 3)&&(item.type != 5)}}'>开户赠送</view>
+        <view class="info-data">{{item.u_time}}</view>
+        <!-- <view>
+          <text class='user-name'>{{item.nick_name}}</text>
+          
+          <text class='action'>{{item.billing_name}}</text>
+        </view>
+        <text class='goods-name'>[{{item.welfare_name}}]</text>
+        <text class="info-data">{{item.create_time}}</text> -->
+      </view>
+      <view class='item-pay' wx:if='{{(item.type == 2)||(item.type == 3)||(item.type == 5)}}'>
+        <text class='item-pay-count'>-{{item.coins}}</text>福钻
+      </view>
+      <view class='item-pay' wx:if='{{(item.type != 2) &&(item.type != 3)&&(item.type != 5)}}'>
+        <text class='item-pay-count'>{{item.coins}}</text>福钻
+      </view>
+    </view>
+  </view>
+</view>

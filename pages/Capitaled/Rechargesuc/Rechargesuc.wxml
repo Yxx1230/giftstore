@@ -1,0 +1,16 @@
+<!--pages/Capitaled/Rechargesuc/Rechargesuc.wxml-->
+<!--pages/capital/Recharge_suc/Recharge_suc.wxml-->
+<view class='rechangebox'>
+  <view class="Success">
+    <view class="success_icon">
+      <image wx:if="{{rechargeState ==1}}" src="/images/icon/f_success.png" alt=""></image>
+      <image wx:if="{{rechargeState ==0}}" src="/images/icon/defeat.png" alt=""></image>
+    </view>
+    <view class="success_res">
+      <text wx:if="{{rechargeState ==1}}">您已成功充值 {{conis}} 福钻</text>
+      <text wx:if="{{rechargeState ==0}}">充值失败</text>
+    </view>
+    <!-- <view class="success_res" >{{'正在查询结果'}}</view> -->
+    <view class="select_res" catchtap="mycoins">查看福钻明细</view>
+  </view>
+</view>

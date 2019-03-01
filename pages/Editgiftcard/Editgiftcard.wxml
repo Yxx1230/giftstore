@@ -1,0 +1,40 @@
+<!--pages/Editgiftcard/Editgiftcard.wxml-->
+<view class='container'>
+  <view class="contentWarp">
+    <view class="view-bg">
+      <image src='{{bgImg}}' mode='widthFix' bindload='loadbg' class='bgImg'></image>
+    </view>
+    <view class='touchWrap' style='left:0;top:0;position:absolute;' catchtap="upload">
+      <image src="{{logosrc}}" mode='widthFix' style="width:50px;"></image>
+    </view>
+    <!-- <view class='touchWrap' style='left:0;bottom:0;position:absolute;'>
+      <text>我是原佳豪</text>
+    </view> -->
+  </view>
+  <!--*************canvas**************-->
+  
+  <view class='canvasWrap' wx:if="{{showCanvas}}" bindtap='disappearCanvas'>
+        <canvas class='maskCanvas' canvas-id="maskCanvas" bindlongtap='saveImg' style='width:550rpx; height:978rpx;'></canvas>
+      <view>
+        <!-- <image src='{{shareImg}}' class='shareimg'></image> -->
+      </view> 
+
+      <view class='footerbtn clearfix'>
+        <view class='fleft warehouse' catchtap='towarehouse'>下载贺卡</view>
+        <view class='fleft Sendfriend'  catchtap='givefriend'>分享</view>
+      </view>
+  </view>
+  
+  <!--*************canvas**************-->
+  <!-- <view class="save" style="position:absolute;right:0;top:0;z-index:99;" bindtap='save'>保存啊</view> -->
+   <view class='fixedbtn'>
+      <view class='grayexplain'>选中贺卡中文字或图片可进行修改</view>
+      <view class='btnexplain clearfix'>
+        <view class='fleft leftgifty'>
+          <view class='changeicon '></view>
+          <view >更换礼品贺卡样式</view>
+        </view>
+        <view class='fright giftcard' catchtap='togiftcards'>生成送礼贺卡</view>
+      </view>
+   </view>
+</view>

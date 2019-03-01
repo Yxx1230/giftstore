@@ -1,0 +1,83 @@
+<view>
+  <image class='foot_btn' src='/images/order/foot_btn.png' />
+  <view class='foot_pos'>
+    <view class='foot_nav'>
+      <view class='headertab'>
+        <!-- <view class='foot_text' wx:for='{{Nametype}}' wx:key='index'>
+                    <view bindtap='getItem' data-act='{{index}}' class='all_type {{index==0?"rt":"lt"}} {{item.active?"color":""}}'>{{item.name}}</view>
+                    <view wx:if='{{item.active}}' class='line {{index==0?"pr":"pl"}}'></view> 
+                </view>  -->
+        <view class="tabitem {{flType == 0 ? 'tabactive' : ''}}" data-currenttab='0' catchtap='navTap'>福利</view>
+        <view class="tabitem {{flType == 1 ? 'tabactive' : ''}}" data-currenttab='1' catchtap='navTap'>店铺</view>
+
+      </view>
+      <view class='foot_sep'>
+        <view class='foot_type' bindtap='getType' data-act='{{1}}'>
+          <image class='foot_ig' src='/images/order/ly.png' />
+          <text class='{{type== 1?"txt":""}}'>浏览</text>
+        </view>
+        <view wx:if='{{flType ==1}}' class='foot_type' bindtap='getType' data-act='{{2}}'>
+          <image class='foot_ig' src='/images/order/sc.png' />
+          <text class='{{type== 2?"txt":""}}'>收藏</text>
+        </view>
+        <view class='foot_type' bindtap='getType' data-act='{{3}}'>
+          <image class='foot_ig' src='/images/order/mg.png' />
+          <text class='{{type== 3?"txt":""}}'>买过</text>
+        </view>
+        <view wx:if='{{flType ==1}}' class='foot_type' bindtap='getType' data-act='{{4}}'>
+          <image class='foot_ig' src='/images/order/xd.png' />
+          <text class='{{type== 4?"txt":""}}'>新店</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if='{{flType == 0}}' class='recommendlist'>
+      <view class='recommendinfo' wx:for="{{welnameList}}" wx:key="index" catchtap='tofulidetail'>
+        <image src='{{item.welfare_img}}' class='recommendimg'></image>
+        <view class='retitle'>{{item.welfare_name}}</view>
+        <view class='repricesm clearfix'>
+          <view class='fleft priceleft'>
+            <text class='pricesmes'>¥</text>
+            <text>{{item.welprice}}</text>
+          </view>
+          <text class='bought'>{{item.welbuy}}人买</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if='{{flType == 1}}' class='foot_shop'>
+      <view wx:for='{{shopList}}' wx:key="index" class='ftos'>
+        <view catchtap='tocmppage'data-id='{{index}}'>
+          <view class='fos'>
+            <image class='fos_img' src='https://www.fuxingfuli.com/images/giftstore/ypceimg.png' />
+          </view>
+          <view class='welcmpname'>GUM旗舰店</view>
+          <view class='shopreicon'>
+            <view class='fshop'></view>
+          </view>
+          <view class='fulifarenum'>福利数量:20件</view>
+        </view>
+        <view class='fulilistimg'>
+          <view class='like_tel' catchtap='phone'></view>
+          <view class='line_foot'></view>
+          <view wx:if='{{!item.isGz}}' bindtap='getGz' data-act='{{index}}' class='likewsc'></view>
+          <view wx:if='{{item.isGz}}' bindtap='getGz' data-act='{{index}}' class='likesc'></view>
+        </view>
+        <view class='fot_tag'>
+          <image src='http://img.fxs100.cn/files/data/1/image/750/1545288002762.jpg' catchtap='tofulidetail' />
+          <image src='http://img.fxs100.cn/files/data/1/image/750/1544753770184.jpg' catchtap='tofulidetail' />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{flag}}'>
+    <view class='foot_modal'>
+    </view>
+    <view class='foot_md'>
+      <view style='position: relative'>
+        <view class='foot_r'></view>
+        <view bindtap='getShow' class='foot_del'></view>
+        <view wx:if='{{shopList[isGz].isGz}}' class='foot_gz'>关注成功</view>
+        <view wx:else class='foot_gz'>取消关注成功</view>
+      </view>
+    </view>
+  </view>
+</view>

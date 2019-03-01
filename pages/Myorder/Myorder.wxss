@@ -1,0 +1,377 @@
+.order_page{
+    background:#f4f3f3;
+    width: 100%;
+    overflow: hidden
+}
+.order_img{
+    width:52rpx;
+    height:42rpx;
+     padding-top: 67rpx
+}
+.order_img1{
+    width:49rpx;
+    height:44rpx;
+     padding-top: 65rpx
+}
+.order_img2{
+    width:49rpx;
+    height:40rpx;
+     padding-top: 69rpx
+}
+.order_img3{
+    width:49rpx;
+    height:47rpx;
+    padding-top: 62rpx
+}
+.order_img4{
+    width:51rpx;
+    height:42rpx;
+    padding-top: 67rpx
+}
+.order_icons{
+  position: relative
+}
+.circle{
+  background: #f4063a;
+  color: #fff;
+  width: 42rpx;
+  height: 42rpx;
+  border-radius: 50%;
+  font-size: 28rpx;
+  position: absolute;
+  line-height: 42rpx;
+  top: 45rpx;
+  left: 40rpx
+}
+.order_nav{
+    width:100%;
+    height: 200rpx;
+    background: #fff;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.order_txt{
+  font-size: 24rpx;
+  padding-top: 15rpx;
+}
+.order_mid{
+  position: relative;
+   margin-top: -38rpx;
+}
+.order_bg{
+    width: 100%;
+    height: 676rpx
+}
+.order_title{
+  position: absolute;
+  display: flex;
+  justify-content: space-between; 
+  width: 692rpx;
+  height: 29px;
+  top: 94rpx;
+  left: 29rpx;
+  z-index: 100
+}
+.order_s{
+  width: 8rpx;
+  height: 29rpx;
+  background-color: #fff;
+  margin-right: 11rpx;
+}
+.order_my{
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 30rpx;
+  height: 29rpx;
+  line-height: 29rpx
+}
+.order_gift{
+  width: 100%;
+  position: absolute;
+  top: 108rpx;
+  text-align: center;
+}
+.order_num{
+  color: #fff;
+  font-size: 26rpx;
+}
+.order_num1{
+  font-size: 100rpx;
+  background: linear-gradient(to bottom,#fff,#dfdd52);
+  -webkit-background-clip: text;
+  color: transparent
+}
+.order_btn{
+  width: 532rpx;
+  height: 82rpx;
+  background-image: linear-gradient(#fff,#fed8d8);
+  text-align: center;
+  color: #ff4859;
+  line-height: 82rpx;
+  font-weight: bolder;
+  border-radius: 52.5rpx;
+  position: absolute;
+  left: 110rpx;
+  bottom: 40rpx
+}
+.recommend-scroll {
+  position: absolute;
+  top:333rpx ;
+  left:30rpx ;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.recommend-scroll .order_item{
+    display: inline-block;
+  background: #fff;
+  /* width: 423rpx;
+  height: 210rpx; */
+  margin-right: 18rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+  color: #333333;
+  /* font-weight: bolder; */
+  padding:30rpx 30rpx;
+  box-sizing: border-box;
+  font-family: '黑体';
+}
+.ordernum{
+  font-size:24rpx;
+  display:flex;
+  margin-top:15rpx;
+}
+.ordernumed{
+  font-size:24rpx;
+  display:flex;
+  margin-top:12rpx;
+}
+.order_detail{
+  width: 160rpx;
+  height: 120rpx;
+  /* padding: 49rpx 21rpx 0 30rpx */
+}
+.orderc{
+  margin-left: 20rpx;
+}
+.orderright{
+  font-size:26rpx;
+  margin-left: 24rpx;
+  /* float: right; */
+}
+.order_name{
+  width:120rpx;
+  overflow:hidden;
+  font-size:30rpx;
+  text-overflow:ellipsis;
+}
+.order_late{
+  background: #fff;
+  margin: 20rpx 30rpx 20rpx 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx
+}
+.order_all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  padding: 29rpx 25rpx;
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #eae9e9
+}
+.od_rg{
+  width: 11rpx;
+  height: 21rpx;
+  margin-left: 22rpx;
+  margin-top: 6rpx;
+}
+.order_zg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  font-size: 26rpx;
+  margin: 23rpx 18rpx 21rpx 20rpx;
+}
+.order_zi{
+  width: 43rpx;
+  height: 46rpx;
+  margin-right: 15rpx
+}
+.order_list{
+  margin: 0 21rpx 0 21rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  border-top: 1rpx solid #eae9e9;
+  font-size: 26rpx;
+  padding: 21rpx 0 0 0
+}
+.order_list_img{
+  width: 165rpx;
+  height: 90rpx;
+  margin: 0 23rpx 50rpx 0
+}
+.or_txt{
+  height: 90rpx;
+  display: flex;
+  flex-direction:  column;
+  justify-content: space-between
+}
+.order_kf{
+  width: 27rpx;
+  height: 30rpx;
+  margin: 0 16rpx 0 0
+}
+.order_sp{
+  font-size: 26rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 34rpx 21rpx 0 21rpx;
+   border-bottom: 1rpx solid #eae9e9;
+  padding-bottom: 30rpx;
+  color: #666666
+}
+.or_bt{
+  width: 136rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  margin-left: 21rpx
+}
+.bw{
+  border: 1rpx solid #ccc;
+}
+.br{
+  border: 1rpx solid #f5063a;
+  color: #f5063a
+}
+
+.logistics {
+  width: 100%;
+  height: auto;
+  color: #666;
+  font-size: 28rpx;
+  background: #fff;
+  padding: 32rpx;
+  line-height: 40rpx;
+  margin-top: 32rpx;
+}
+
+.checkLogistics-alert{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.checkLogistics-alert-content {
+  width: 638rpx;
+  height: 980rpx;
+  overflow-y: scroll;
+  background: #fff;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  font-size: 26rpx;
+  color: #797979;
+  position: relative;
+}
+.cehckheader{
+  width: 100%;
+  padding: 30rpx 0 20rpx 0;
+  border-bottom: 1px solid #cbcecb;
+}
+.logistics-company {
+  width: 100%;
+  height: auto;
+  /* border-bottom: 1px solid #cbcecb; */
+  /* padding: 50rpx; */
+  font-size: 28rpx;
+  color: #808080;
+  line-height: 40rpx;
+  /* padding-bottom: 28rpx; */
+  float: left;
+}
+
+.order-number {
+  color: #000;
+}
+
+.order-tel {
+  color: #0090ff;
+}
+
+.logistics-info {
+  padding: 32rpx;
+}
+
+.logistics-status {
+  color: #f97a00;
+}
+
+.logistics-info-item {
+  display: flex;
+  /* margin-bottom: 10rpx; */
+  align-items: center;
+}
+
+.logistics-info-item:first-child view {
+  color: #f97a00;
+}
+
+.data {
+  width: 146rpx;
+  margin-right: 25rpx;
+}
+
+.icon {
+  width: 0;
+}
+
+.status-addr {
+  flex: 1;
+}
+
+.addr {
+  margin-top: 20rpx;
+}
+
+.kuaidiPhone {
+  display: none;
+}
+
+.checkLogistics-alert-content::-webkit-scrollbar {
+  display: none;
+}
+.closetab{
+  width:40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+  /* position: relative; */
+  float: right;
+  box-sizing: border-box;
+
+}
+.checkLogistics-alert-content .close {
+  width:32rpx;
+  height: 32rpx;
+  /* position: absolute;
+  top: 30rpx; */
+  /* right:20rpx; */
+  /* float: right; */
+}
+.company-name {
+  font-size: 28rpx;
+  height: #666;
+  margin: 0 40rpx;
+}
+
+
+

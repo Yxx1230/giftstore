@@ -1,0 +1,81 @@
+{
+  "pages": [
+
+    "pages/index/index",
+    "pages/receive/receive",
+    "pages/openpage/openpage",
+    "pages/tmpl/tmpl",
+    "pages/pay/pay",
+    "pages/Dragzoom/Dragzoom",
+    "pages/Diamond/Diamond",
+    "pages/Capitaled/Recharge/Recharge",
+    "pages/Capitaled/Rechargesuc/Rechargesuc",
+    "pages/Capitaled/Capitaled",
+    "pages/Buygift/Buygift",
+    "pages/confirmOrder/confirmOrder",
+    "pages/mysucpay/mysucpay",
+    "pages/myGift/Mygift/myGift",
+    "pages/myGift/Giftdetails/Giftdetails",
+    "pages/myGift/receive-self/receive-self",
+    "pages/myGift/Givegiftset/Givegiftset",
+    "pages/myGift/Preview/Preview",
+    "pages/Companypage/Company/Companypage",
+    "pages/Companypage/Spcompanypage/Spcompanypage",
+    "pages/Companypage/Searchpage/Searchpage",
+    "pages/fuliDetail/fuliDetail",
+    "pages/fuliDetail/comment-publish/comment-publish",
+    "pages/fuliDetail/comment/comment",
+    "pages/Editcard/Editcard",
+    "pages/Showimg/Showimg",
+    "pages/Myorder/Myorder",
+    "pages/Myorder/Allorder/Allorder",
+    "pages/Myorder/orderDetail/orderDetail",
+    "pages/Myorder/indent/indent",
+    "pages/Myorder/orderForm/orderForm",
+    "pages/Myorder/orderSelf/orderSelf",
+    "pages/Myorder/drawOrder/drawOrder",
+    "pages/Myorder/cashOrder/cashOrder",
+    "pages/Myorder/receiveGift/receiveGift",
+    "pages/Mycenter/my/Mycenter",
+    "pages/Mycenter/mynews/mynews",
+    "pages/Mycenter/myshare/myshare",
+    "pages/Mycenter/setting/setting",
+    "pages/Mycenter/footMark/footMark",
+    "pages/Mycenter/Luckymoneypage/Luckymoneypage",
+    "pages/Cutpictures/upload/upload",
+    "pages/storeHouse/storeHouse",
+    "pages/Sendgift/Sendgift",
+    "pages/setAddress/setAddress"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f4063a",
+    "navigationBarTitleText": "礼物微店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f71f4e",
+    "backgroundColor": "#f7f7f7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "好物",
+        "iconPath": "/images/icon/ywgood.png",
+        "selectedIconPath": "/images/icon/ygoods.png"
+      },
+      {
+        "pagePath": "pages/Myorder/Myorder",
+        "text": "订单",
+        "iconPath": "/images/icon/yorder.png",
+        "selectedIconPath": "/images/icon/ymyordericons.png"
+      },
+      {
+        "pagePath": "pages/Mycenter/my/Mycenter",
+        "text": "我的",
+        "iconPath": "/images/icon/ymyicon.png",
+        "selectedIconPath": "/images/icon/ymypicon.png"
+      }
+    ]
+  }
+}

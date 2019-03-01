@@ -1,0 +1,80 @@
+<!--pages/Mycenter/myshare/myshare.wxml-->
+<view class='myShare-container'>
+  <view class="view">
+    <view class="share_top clearfix">
+      <view class="share_topleft">
+        <view class='sharefuli'>
+          <view class='shareicfuli'></view>福利分享数量(条)
+        </view>
+        <view id="shareCount">50</view>
+      </view>
+      <view class="share_topright">
+        <view class='sharefuli'>
+          <view class='jianglinum'></view>奖励福钻数量(个)
+        </view>
+        <view id="CountCoins">1500</view>
+      </view>
+    </view>
+    <view class="bg"></view>
+    <!--列表-->
+    <view class="share_list">
+    <!-- 福利商品 -->
+      <view class="begin_bg" wx:for='{{list}}' wx:key='index'  wx:if='{{item.isshowtype !=1}}'>
+        <view class="share_msgtop clearfix">
+          <image class="img" src="{{item.shareImg}}"></image>
+          <view class="msg">
+            <view class='sharetitle'>{{item.welfareName}}</view>
+            <view class='sharetime'>{{item.createTime}}分享</view>
+            <view class='sharetext'>
+              <text>分享{{item.shareCount}}次</text>
+            </view>
+          </view>
+          <view class="fubinum">
+              <view class='fubicolor'></view>
+              <view>{{item.coinsTotal}}福钻</view>
+          </view>
+        </view>
+        <view class="share_msgbtm clearfix">
+          <view class='btnicone'>
+            <view class='btnview'></view>
+            <text>{{item.viewCount}}次访问</text>       
+          </view>
+          <view class='btnicone'>
+            <view class='btnbuy'></view>
+            <text>{{item.num}}人有效购买</text>  
+          </view>
+            <view class='shares'  catchtap='onDetailTap' data-img='{{item.shareImg}}' data-name='{{item.welfareName}}' data-welfareid='{{item.welfareId}}' data-phpid='{{item.phpId}}' data-link='{{item.detailTwoDimension}}'></view>
+        </view>
+      </view>
+      <!-- 福利商品下架 -->
+      <view class="begin_graybg" wx:for='{{list}}' wx:key='index' wx:if='{{item.isshowtype ==1}}'>
+        <view class="share_msgtop clearfix">
+          <image class="img" src="{{item.shareImg}}"></image>
+          <view class='graybgimg'></view>
+          <view class="msg">
+            <view class='sharetitle'>{{item.welfareName}}</view>
+            <view class='sharetime'>{{item.createTime}}分享</view>
+            <view class='sharetext'>
+              <text>分享{{item.shareCount}}次</text>
+            </view>
+          </view>
+          <view class="fubinum">
+              <view class='fubicolor'></view>
+              <view>{{item.coinsTotal}}福钻</view>
+          </view>
+        </view>
+        <view class="share_msgbtm clearfix">
+          <view class='btnicone'>
+            <view class='btnview'></view>
+            <text>{{item.viewCount}}次访问</text>       
+          </view>
+          <view class='btnicone'>
+            <view class='btnbuy'></view>
+            <text>{{item.num}}人有效购买</text>  
+          </view>
+            <view class='grayshares'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

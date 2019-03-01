@@ -1,0 +1,297 @@
+.foot_btn{
+  width: 100%;
+  height: 197rpx
+}
+.foot_pos{
+  position: relative;
+  top: -163rpx;
+  z-index: 100
+}
+.foot_nav{
+  height: 261rpx;
+  margin: 0 31rpx;
+  background: #ffffff;
+  box-shadow: 0px 1rpx 8rpx #cfcfcf;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.foot_text{
+  width: 303rpx;
+  height: 77rpx;
+  position: relative
+}
+.rt{
+  text-align: right;
+  padding-right: 9rpx
+}
+.lt{
+  text-align: left;
+   padding-left: 9rpx
+}
+.all_type{
+  overflow: hidden;
+  width: 100%;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 20rpx 0
+}
+.line{
+  background: #f4063a;
+  width: 82rpx;
+  height: 5rpx;
+}
+.pr{
+  position: absolute;
+  right: 0
+}
+.pl{
+  position: absolute;
+  left: 0;
+}
+.color{
+  color: #f4063a
+}
+.foot_ig{
+  width: 80rpx;
+  height: 80rpx
+}
+.foot_type{
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center
+}
+.foot_type text{
+  margin-top: 5rpx
+}
+.foot_sep{
+  margin-top: 35rpx;
+  display: flex;
+  justify-content: space-around
+}
+.txt{
+  color: #fb6e79
+}
+/* 推荐福利 */
+.recommendlist,.foot_shop{
+  width: 100%;
+  margin: 31rpx 31rpx;
+}
+.recommendinfo{
+  width: 330rpx;
+  height: auto;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10rpx;
+  border:1px solid #dddddd;
+  float: left;
+  box-shadow: 1px 1px 6px #ddd;
+  margin-bottom: 20rpx;
+}
+.recommendimg{
+  width: 100%;
+  height: 155rpx;
+  border-radius: 10rpx;
+}
+.recommendinfo:nth-child(odd) {
+  margin-right: 30rpx;
+}
+.ftos:nth-child(odd) {
+  margin-right: 30rpx;
+}
+.retitle{
+  width: 100%;
+  height: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.repricesm{
+  color: #f94444;
+  font-size: 34rpx;
+}
+
+.priceleft{
+  display: flex;
+  align-items: center;  
+}
+.pricesm {
+  font-size: 24rpx;
+  margin-right: 12rpx;
+}
+.pricesmes{
+    font-size: 24rpx;
+  margin-right: 5rpx;
+}
+.bought {
+  color: #999999;
+  font-size: 20rpx;
+  float: right;
+  margin-top: 15rpx;
+}
+.foot_modal{
+  position: fixed;
+  z-index: 110;
+  background: #797979;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+  color: #fff;
+}
+.foot_md{
+  width: 521rpx;
+  height: 281rpx;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  left: 0;
+  margin: auto;
+  z-index: 1000;
+  border-radius: 10rpx;
+}
+.foot_r{
+  width: 92rpx;
+  height: 92rpx;
+  position: absolute;
+  top: 65rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url(https://www.fuxingfuli.com/images/giftstore/right.png) no-repeat;
+  background-size: 100%;
+}
+.foot_del{
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  top: 19rpx;
+  right: 21rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/del.png) no-repeat;
+  background-size: 100%;
+}
+.foot_gz{
+  position: absolute;
+  top: 180rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28rpx
+}
+.ftos{
+  width: 331rpx;
+  height: auto;
+  background: #fff;
+  border-radius: 20rpx;
+  border:1px solid #dddddd;
+float:left;
+box-shadow:1px 1px 6px #ddd;
+margin-bottom:20rpx;
+}
+.fos{
+  display: flex;
+  justify-content: center
+}
+.fos_img{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: 1rpx solid #edeaea;
+  margin-top: 20rpx;
+}
+.fshop{
+  width:132rpx;
+  height: 32rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/shiming.png) no-repeat;
+  background-size: 100%;
+  margin:  15rpx auto;
+}
+
+.line_foot{
+  width: 2rpx;
+  height: 22rpx;
+  background: #e5e4e4;
+  margin: 0 20rpx 0 20rpx
+}
+.fot_tag{
+  display: flex;
+  justify-content: space-around;
+  margin-top:20rpx;
+  padding-bottom: 20rpx
+}
+.fot_tag image{
+  width: 136rpx;
+  height: 86rpx;
+}
+
+/* tab切换改的样式 */
+.headertab{
+width:100%;
+clear:both;
+line-height:55rpx;
+display:flex;
+justify-content:center;
+margin-top: 20rpx;
+}
+.tabitem{
+font-size:30rpx;
+width:80rpx;
+margin:0 40rpx;
+text-align:center;
+position: relative;
+}
+.tabactive {
+  color: #f4063a;
+  border-bottom:4rpx solid #f4063a;
+}
+
+.fulifarenum{
+  text-align:center;
+  font-size:20rpx;
+  color:#c6c6c6;
+  /* margin-top:15rpx; */
+}
+.welcmpname{
+  text-align:center;
+  margin-top:20rpx
+}
+.shopreicon{
+  width: 100%;
+}
+.fulilistimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20rpx;
+}
+.like_tel{
+  width: 28rpx;
+  height: 29rpx;
+  background: url(https://www.fuxingfuli.com/images/view/like/like_tel.png) no-repeat;
+  background-size: 100%;
+}
+.likewsc{
+  width: 29rpx;
+  height: 28rpx;
+  background: url(https://www.fuxingfuli.com/images/view/like/aixin_wei.png) no-repeat;
+  background-size: 100%;
+}
+.likesc{
+  width: 28rpx;
+  height: 29rpx;
+  background: url(https://www.fuxingfuli.com/images/view/like/aixin_xuan.png) no-repeat;
+  background-size: 100%;
+
+}

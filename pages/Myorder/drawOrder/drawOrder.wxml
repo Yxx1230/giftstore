@@ -1,0 +1,103 @@
+<view style='position: relative;overflow:hidden'>
+    <view class='drawner'>
+      <image class='order_draw' src='/images/order/order_ban.png' />
+      <image wx:if='{{isDra}}' class='draw_df'  src='/images/order/draw_cp.png' />
+      <image  wx:if='{{!isDra}}' class='draw_df'  src='/images/order/draw_dl.png'/>
+      <view class='draw_txt'>
+          <text wx:if='{{!isDra}}'>待领取</text>
+          <text wx:if='{{isDra}}'>礼物已领完</text>
+          <text wx:if='{{!isDra}}' style='font-size:24rpx;margin-top:17rpx'>共3件商品,还有2件未领取</text>
+           <text wx:if='{{!isDra}}' style='font-size:24rpx'>赠送中的礼物共有0件已领取</text>
+          <text wx:if='{{isDra}}' style='font-size:24rpx;margin-top:17rpx'>您赠送的礼物已被好友领完了</text>
+      </view>
+    </view>
+    <view class='drawnav'>
+      <view style='font-size:28rpx;margin-bottom:24rpx'>领取信息</view>
+      <view style='height:70rpx;margin-bottom:25rpx'>
+        <image class='draw_tx' src='/images/order/draw_t.png' />
+        <image class='draw_tx' src='/images/order/draw_x.png' />
+      </view>
+      <view style='display:flex; justify-content:  space-between;'>
+        <view class='draw_Nt' catchtap='togiftset'>
+            <image class='draw_note' src='/images/order/draw_e.png'/>
+            <text>送礼记录</text>
+        </view>
+        <view class='draw_Nt' catchtap='getGift'>
+            <image class='draw_note' src='/images/order/draw_n.png'/>
+            <text>领取记录</text>
+        </view>
+      </view>
+    </view>
+    <view class='last'>
+      <view class='draw_detail {{isDra?"draw_fu":"draw_dai"}}'>
+          <view class='draw_circle'></view>
+          <view class='draw_circle_right'></view>
+          <image class='draw_kf' catchtap='tocall' src='/images/order/ban_kf.png' />
+          <view class='draw_first'>
+            <view style='padding:0 20rpx'>
+                  <view class='draw_line'>
+                          <image class='draw_org' src='/images/order/org.png'/>
+                          <view style='font-size:28rpx;margin:0 12rpx'>商家名称</view>
+                          <image class='draw_od'  src='/images/order/od_right.png'/>
+                  </view>
+                  <view>
+                    <view class='draw_flex' catchtap='toFulidetail'>
+                        <view style='display:flex'>
+                            <image class='draw_gift' src='/images/order/order_gift.png' />
+                            <view>牛奶味大核桃</view>
+                        </view>
+                        <view class='draw_text'>
+                            <text>¥50.00</text>
+                            <text style='text-align:right;color:#9a9999'>x3</text>
+                        </view>
+                    </view>
+                  </view>
+                  <view class='draw_l_txt'>
+                    <text>商品总额</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+                  <view class='draw_l_txt'>
+                    <text>运费</text>
+                    <text style='color:#696969'>¥0.00</text>
+                  </view>
+                  <view class='draw_l_txt'>
+                    <!-- <text wx:if='{{!isDra}}'>需付款</text> -->
+                    <text>实付款</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+            </view>
+          </view>
+          <view class='draw_dashed'></view>
+          <view class='draw_second'>
+            <view style='font-size:28rpx;margin-bottom:20rpx'>订单信息</view>
+                  <view class='draw_s_txt'>
+                    <text>订单编号</text>
+                    <text>1231456</text>
+                  </view>
+                  <view class='draw_s_txt'>
+                    <text>支付类型</text>
+                    <text>送礼订单</text>
+                  </view>
+                  <view  class='draw_s_txt'>
+                    <text>下单方式</text>
+                    <text>微信支付</text>
+                  </view>
+                  <view class='draw_s_txt'>
+                    <text>下单时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+                  <view  class='draw_s_txt'>
+                    <text>付款时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+                  <view wx:if='{{isDra}}' class='draw_s_txt'>
+                    <text>完成时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+          </view>
+      </view>
+    </view>
+    <view class='draw_foot' catchtap='toFulidetail'>
+         继续赠送礼物给好友
+    </view>
+</view>

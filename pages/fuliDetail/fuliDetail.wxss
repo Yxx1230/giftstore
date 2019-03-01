@@ -1,0 +1,582 @@
+page {
+  background: #f3f3f3;
+  padding-bottom: 130rpx;
+}
+
+.banner {
+  height: 405rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 405rpx;
+}
+
+.buyer {
+  display: inline-block;
+  width: auto;
+  height: 60rpx;
+  background: rgba(0, 0, 0, 0.7);
+  padding-left: 80rpx;
+  padding-right: 15rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  position: fixed;
+  top: 313rpx;
+  left: 24rpx;
+  z-index: 9;
+}
+
+.buyer-avater {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 5rpx;
+  left: 15rpx;
+}
+
+.flashSale {
+  width: 100%;
+  height: 100rpx;
+  background: #f83553;
+  padding: 0 24rpx;
+  color: #fff;
+}
+
+.flashSale-lf {
+  float: left;
+  margin-top: 8rpx;
+}
+
+.text34 {
+  font-size: 34rpx;
+  margin-right: 4rpx;
+}
+
+.text60 {
+  font-size: 60rpx;
+  margin-right: 8rpx;
+}
+
+.text24 {
+  font-size: 24rpx;
+  margin-left: 4rpx;
+}
+
+.text-line {
+  text-decoration: line-through;
+}
+
+.flashSale-rg {
+  float: right;
+  font-size: 24rpx;
+  text-align: right;
+  padding-top: 10rpx;
+}
+
+.time {
+  display: inline-block;
+  background: #fff;
+  color: #f83553;
+  padding: 0 4rpx;
+  border-radius: 4rpx;
+  margin-top: 10rpx;
+  margin-right: 8rpx;
+}
+
+.time:last-child {
+  margin-right: 0;
+}
+
+.fuli-title {
+  width: 100%;
+  height: 140rpx;
+  color: #000;
+  font-size: 30rpx;
+  padding: 0 24rpx;
+  padding-top: 29rpx;
+  background: #fff;
+}
+
+.fuli-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  padding: 30rpx 0rpx 30rpx;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.share-reward {
+  color: #ff0017;
+  font-size: 24rpx;
+  padding: 0 24rpx;
+}
+
+.reward-text {
+  font-size: 22rpx;
+  background: #ffe8e5;
+  padding: 6rpx 10rpx;
+  border-radius: 10rpx;
+  margin-right: 14rpx;
+}
+
+.rightImg {
+  float: right;
+  width: 11rpx;
+  height: 21rpx;
+  margin-top: 8rpx;
+}
+
+.express {
+  font-size: 26rpx;
+  color: #333;
+  padding: 0 24rpx;
+  margin-top: 30rpx;
+  padding-top: 28rpx;
+  border-top: 1rpx solid #f3f3f3;
+}
+
+.express text {
+  color: #666;
+  margin-right: 20rpx;
+}
+
+.postmark {
+  width: 258rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 17rpx;
+  right: 48rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/postmark.png') no-repeat center;
+  background-size: 100%;
+}
+
+.sold-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  font-size: 22rpx;
+  color: #f93939;
+  margin-top: 10rpx;
+}
+
+.sold-top {
+  padding: 0 24rpx;
+  padding-top: 24rpx;
+}
+
+.sold-text {
+  color: #484848;
+  margin-right: 15rpx;
+}
+
+.sold-bottom {
+  padding-left: 24rpx;
+  padding-bottom: 24rpx;
+  margin-top: 25rpx;
+  height: 90rpx;
+}
+
+.avatar-item {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30rpx;
+}
+
+.comment {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 10rpx;
+}
+
+.comment-top {
+  padding: 0 24rpx;
+  color: #333;
+  font-size: 26rpx;
+  padding-top: 24rpx;
+}
+
+.comment-rg {
+  float: right;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.comment-rgImg {
+  width: 10rpx;
+  height: 16rpx;
+  margin-left: 14rpx;
+}
+
+.comment-scroll {
+  margin-top: 25rpx;
+  padding-left: 24rpx;
+  padding-bottom: 24rpx;
+  background: #fff;
+  height: 270rpx;
+  white-space: nowrap;
+}
+
+.comment-item {
+  display: inline-block;
+  width: auto;
+  height: 240rpx;
+  border: 1rpx solid #f4f4f4;
+  border-radius: 6rpx;
+  margin-right: 26rpx;
+  padding: 0 18rpx;
+  box-shadow: 0px 1rpx 8rpx #cfcfcf;
+}
+
+.comment-item-lf {
+  float: left;
+  padding: 18rpx 0;
+}
+
+.comment-item-top {
+  font-size: 22rpx;
+  color: #666;
+  line-height: 46rpx;
+}
+
+.comment-avatar {
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 12rpx;
+  margin-top: -3rpx;
+}
+
+.comment-item-bot {
+  font-size: 24rpx;
+  color: #333;
+  width: 200rpx;
+  white-space: pre-wrap;
+  margin-top: 23rpx;
+}
+
+.comment-item-rg {
+  float: left;
+  position: relative;
+}
+
+.comment-item-rg image {
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.commentImgNum {
+  position: absolute;
+  top: 12rpx;
+  left: 182rpx;
+  padding: 6rpx 8rpx;
+  border-radius: 20rpx;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 18rpx;
+  letter-spacing: 4rpx;
+}
+
+.detail {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  padding: 33rpx 24rpx;
+  margin-top: 10rpx;
+}
+
+.detail-title {
+  text-align: center;
+  font-size: 34rpx;
+  color: #000;
+  height: auto;
+  overflow: hidden;
+}
+
+.detail text, .detail image {
+  display: block;
+  margin-top: 30rpx;
+  clear: both;
+  width: 100%;
+  font-size: 26rpx;
+}
+
+.recommend {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+  padding-left: 24rpx;
+}
+
+.recommend-scroll {
+  display: inline-block;
+  width: auto;
+  height: 266rpx;
+  border-top: 1rpx solid #eee;
+  margin-top: 28rpx;
+  white-space: nowrap;
+  padding-top: 30rpx;
+}
+
+.recommend-item {
+  display: inline-block;
+  width: 190rpx;
+  height: 203rpx;
+  margin-right: 30rpx;
+}
+
+.recommend-item image {
+  width: 100%;
+  height: 102rpx;
+  border-radius: 6rpx;
+}
+
+.recommend-name {
+  width: 100%;
+  font-size: 22rpx;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  white-space: pre-wrap;
+  min-height: 62rpx;
+}
+
+.recommend-price {
+  font-size: 24rpx;
+  color: #f93939;
+}
+
+.recommend-lineprice {
+  font-size: 20rpx;
+  color: #777;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+
+.share {
+  width: 116rpx;
+  height: 116rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/share.png') no-repeat center;
+  background-size: 100%;
+  position: fixed;
+  right: 24rpx;
+  bottom: 150rpx;
+  z-index: 99;
+}
+
+.footer {
+  width: 100%;
+  height: 100rpx;
+  box-shadow: 0px -1px 2px rgb(194, 193, 193);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #fff;
+}
+
+.footer-lf, .footer-rg {
+  float: left;
+}
+
+.footer-lf {
+  width: 320rpx;
+  display: flex;
+  justify-content: space-around;
+  color: #333;
+  font-size: 22rpx;
+  text-align: center;
+}
+
+.foot-ic {
+  padding: 0 4px;
+  padding-top: 63rpx;
+}
+
+.ic-shop {
+  background: url('https://www.fuxingfuli.com/images/giftstore/ic-shop.png') no-repeat center 12rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.ic-kefu {
+  background: url('https://www.fuxingfuli.com/images/giftstore/ic-kefu.png') no-repeat center 12rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.ic-order {
+  background: url('https://www.fuxingfuli.com/images/giftstore/ic-order.png') no-repeat center 12rpx;
+  background-size: 40rpx 40rpx;
+}
+
+.footer-rg {
+  width: 430rpx;
+  height: 100%;
+  display: flex;
+  font-size: 34rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.btn-yellow {
+  flex: 1;
+  height: 100%;
+  background: -webkit-linear-gradient(135deg, #f78a0b, #ffbc19); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(135deg, #f78a0b, #ffbc19); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(135deg, #f78a0b, #ffbc19); /* Firefox 3.6 - 15 */
+  background: linear-gradient(135deg, #f78a0b, #ffbc19); /* 标准的语法 */
+}
+
+.btn-pink {
+  flex: 1;
+  height: 100%;
+  background: -webkit-linear-gradient(135deg, #f83553, #fc615f); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(135deg, #f83553, #fc615f); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(135deg, #f83553, #fc615f); /* Firefox 3.6 - 15 */
+  background: linear-gradient(135deg, #f83553, #fc615f); /* 标准的语法 */
+}
+
+.reward-alert {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.reward-content {
+  width: 620rpx;
+  height: auto;
+  background: #fff;
+  border-radius: 12rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -310rpx;
+  top: 262rpx;
+  padding: 30rpx;
+}
+
+.reward-logo {
+  width: 375rpx;
+  height: 264rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/reward-logo.png') no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -187rpx;
+  top: -130rpx;
+}
+
+.reward-title {
+  margin-top: 100rpx;
+  text-align: center;
+  color: #f84f38;
+  font-size: 44rpx;
+  margin-bottom: 20rpx;
+}
+
+.reward-item {
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+
+.reward-pink {
+  color: #ff0017;
+}
+
+.reward-yellow {
+  color: #fb970b;
+}
+
+.reward-item-lf {
+  font-size: 22rpx;
+  display: inline-block;
+  width: 108rpx;
+  height: 34rpx;
+  text-align: center;
+  margin-right: 14rpx;
+  border-radius: 6rpx;
+}
+
+.pink-lf {
+  background: #ffe8e5;
+}
+
+.yellow-lf {
+  background: #ffeecf;
+}
+
+.reward-line {
+  width: 100%;
+  height: 1rpx;
+  background: #eee;
+  margin-bottom: 10rpx;
+  margin-top: 30rpx;
+}
+
+.reward-text-lg {
+  color: #333;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.reward-text-xs {
+  font-size: 24rpx;
+  color: #888;
+  margin-top: 20rpx;
+}
+
+.reward-btn {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reward-btn button {
+  width: 265rpx;
+  height: 74rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/reward-bg.png') no-repeat center;
+  background-size: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 74rpx;
+  font-size: 32rpx;
+  margin-top: 35rpx;
+}
+.reward-close{
+  width: 68rpx;
+  height: 68rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/reward-close.png') no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -34rpx;
+  bottom: -90rpx;
+}

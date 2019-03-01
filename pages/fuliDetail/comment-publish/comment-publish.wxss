@@ -1,0 +1,46 @@
+page {
+  background: #f3f3f3;
+}
+
+.form {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  padding: 30rpx 20rpx;
+}
+
+textarea {
+  width: 100%;
+  height: 240rpx;
+  background: #f6f6f6;
+  padding: 20rpx;
+}
+
+.reply-ta {
+  color: #999;
+  font-size: 24rpx;
+}
+.uploadImg{
+  width: 166rpx;
+  height: 166rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/f_uploadImg.png') no-repeat center;
+  background-size: 100%;
+  margin-top: 30rpx;
+}
+button {
+  width: 710rpx;
+  height: 90rpx;
+  background: #fe3657;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 90rpx;
+  position: fixed;
+  left: 50%;
+  margin-left: -355rpx;
+  bottom: 30rpx;
+  z-index: 99;
+  border-radius: 45rpx;
+}

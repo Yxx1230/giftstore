@@ -1,0 +1,10 @@
+<!--pages/Showimg/Showimg.wxml-->
+<view class="img-view">
+  <image  mode='widthFix' src="{{imgSrc}}"></image>
+  <view class="bottom">
+    <view  class='uploadbtn'   bindtap='save'>下载贺卡</view>
+    <button class='sharebtn'  open-type="share">分享</button>
+
+  </view>
+  <canvas class='maskCanvas' canvas-id="maskCanvas" style='width:550px; height:978px;'></canvas>
+</view>

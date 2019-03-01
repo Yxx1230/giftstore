@@ -1,0 +1,2 @@
+<!-- <web-view src="https://pro.mpbox.cn/gift_store/index.html?123"></web-view> -->
+<web-view src='{{src}}' ></web-view>

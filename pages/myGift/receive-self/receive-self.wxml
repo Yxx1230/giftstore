@@ -1,0 +1,39 @@
+<view class='container'>
+  <view></view>
+  <view class='receive-content'>
+    <view class='receive-title'>
+      <view class='receive-gift'></view>
+      <text>填写收货地址，自己领取礼物或帮助好友领取礼物</text>
+    </view>
+    <view class='receive-total'>共 20 件礼物可以被领取</view>
+    <view class='receive-num'>
+      <view class='text000'>自己领取的礼物件数：<text class='textbbb'>(需少于剩余礼物数)</text>
+      </view>
+      <view class='num-op'>
+        <text class="subnum" data-index="0">-</text>
+        <input type="number" data-index="0" value="{{1}}" />
+        <text class="normal" data-index="0">+</text>
+      </view>
+    </view>
+    <view class='please'>
+      <text>请填写收货地址</text>
+      <text class='wechat' catchtap='openSetting'>一键获取微信地址</text>
+    </view>
+    <view class='info-box'>
+      <view class='info-item'>
+        <text>联系人</text>
+        <input placeholder='请输入联系人'></input>
+      </view>
+      <view class='info-item'>
+        <text>联系电话</text>
+        <input placeholder='请输入联系电话'></input>
+      </view>
+      <view class='info-item'>
+        <text>联系地址</text>
+        <input placeholder='请输入联系地址'></input>
+      </view>
+    </view>
+  </view>
+  <view class='pink-bg' catchtap='returnform'>立即领取</view>
+  <view class='pink-bd' catchtap='returnpage'>先不领了 下次再说</view>
+</view>

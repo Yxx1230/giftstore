@@ -1,0 +1,30 @@
+<!--pages/myGift/Preview/Preview.wxml-->
+
+<view class='previewbg'>
+  <view class='topicon'></view>
+  <view class='btnicon'></view>
+
+  <view class='aicon'>
+    <view class='toptb'>链接分享样式</view>
+  </view>
+  <view class='precontent clearfix'>
+    <image class='img' src='https://www.fuxingfuli.com/images/giftstore/yaimg.png'></image>
+    <view class='whitebox'>
+      <view class='wtop'>我买了一份礼物给你，赶快来领取吧！</view>
+      <view class='bbtn'>小小的礼物，载着重重的情谊，飞到你身边，祝你幸福!</view>
+      <view class='imgyicon'></view>
+      <view class="jiao">
+      </view>
+    </view>
+
+  </view>
+  <view class='cicon'>
+    <view class='cntb'>贺卡分享样式</view>
+  </view>
+  <view class='imgicon'></view>
+
+  <view class='btnfooter clearfix'>
+    <view class='closepre' catchtap='tocloseshow'>关闭预览</view>
+    <view class='sucpre' catchtap='toseeshow'>预览领取效果</view>
+  </view>
+</view>

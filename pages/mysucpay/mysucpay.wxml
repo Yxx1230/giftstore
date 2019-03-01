@@ -1,0 +1,18 @@
+<!--pages/mysucpay/mysucpay.wxml-->
+
+  <view class='headertop'>
+    <view class='sharebox'>
+      <view class='myshare' catchtap='tofulidetail'>
+        <text>分享福利即有机会赢千万福钻</text>
+        <view class='graytext'>每个通过您的分享链接领取福利您将获得3福钻</view>
+      </view>
+    </view>
+      <view class='lookorder'  catchtap='seeorder'>查看我的订单</view>
+  </view>
+  <view class='gztx'>
+      <view class='btnbg'>
+        <view>关注福星社小程序及时获取福钻入账通知</view>
+        <view class='togauznhu'></view>
+         <view class="product_word">添加到我的小程序</view>
+      </view>
+  </view>

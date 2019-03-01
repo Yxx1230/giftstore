@@ -1,0 +1,135 @@
+.allorder{
+  overflow:hidden
+}
+.allorder_pic{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    padding:  0 33rpx 0 21rpx;
+    font-size: 26rpx;
+    color: #cccccc;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eae9e9
+}
+.picker_all{
+  width: 20rpx;
+  height: 14rpx;
+  margin: 33rpx 22rpx 0 21rpx
+}
+.picker{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.all_input{
+  margin:8px 16px 8px 11px;
+background:#f3f3f3;
+border-radius:10rpx;
+width: 60%;
+padding-left: 20rpx
+}
+.recommend-scroll {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+}
+.all_scoll{
+  display: inline-block;
+}
+.all_type{
+  overflow: hidden;
+  width: 160rpx;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-right:1px solid #dddddd;
+  text-align: center;
+  margin: 20rpx 0
+}
+.line{
+  background: #f4063a;
+  width: 120rpx;
+  height: 5rpx;
+  margin-left: 20rpx;
+}
+.color{
+  color: #f4063a
+}
+.od_rg{
+  width: 11rpx;
+  height: 21rpx;
+  margin-left: 22rpx;
+  margin-top: 6rpx;
+}
+.order_zg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  font-size: 26rpx;
+  margin: 23rpx 18rpx 21rpx 20rpx;
+}
+.order_zi{
+  width: 43rpx;
+  height: 46rpx;
+  margin-right: 15rpx
+}
+.order_list{
+  margin: 0 21rpx 0 21rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  font-size: 26rpx;
+  padding: 21rpx 0 0 0
+}
+.order_list_img{
+  width: 165rpx;
+  height: 90rpx;
+  margin: 0 23rpx 50rpx 0
+}
+.or_txt{
+  height: 90rpx;
+  display: flex;
+  flex-direction:  column;
+  justify-content: space-between
+}
+.order_kf{
+  width: 27rpx;
+  height: 30rpx;
+  margin: 0 16rpx 0 0
+}
+.order_sp{
+  font-size: 26rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 34rpx 21rpx 0 21rpx;
+   border-bottom: 1rpx solid #eae9e9;
+  padding-bottom: 30rpx;
+  color: #666666
+}
+.or_bt{
+  width: 136rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  margin-left: 21rpx
+}
+.bw{
+  border: 1rpx solid #eae9e9
+}
+.br{
+  border: 1rpx solid #f5063a;
+  color: #f5063a
+}
+.all_box{
+  margin: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow:1px 1px 6px #ddd;
+  padding: 0.1px
+}

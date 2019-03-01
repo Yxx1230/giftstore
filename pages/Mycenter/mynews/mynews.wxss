@@ -1,0 +1,246 @@
+/* pages/Mycenter/mynews/mynews.wxss */
+
+.newsPage {
+}
+
+.active {
+  /* width:100%;
+   height: 96rpx; */
+  border-bottom: 5rpx solid #f71c4c;
+  color: #f71c4c;
+}
+
+.topTab {
+  width: 100%;
+  height: 96rpx;
+  background: url('https://www.fuxingfuli.com/images/web/images/x.png') no-repeat center center #fff;
+  background-size: 7rpx 75rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fuli .fulitab {
+  background: url('https://www.fuxingfuli.com/images/giftstore/mycoinnews.png') no-repeat center;
+  background-size: 30rpx 36rpx;
+  background-position-x: 133rpx;
+  padding-left: 40rpx;
+}
+
+.sfulitab {
+  background: url(https://www.fuxingfuli.com/images/giftstore/mytnews.png) no-repeat center;
+  background-size: 30rpx 36rpx;
+  background-position-x: 133rpx;
+  padding-left: 40rpx;
+}
+
+.topTab text {
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 96rpx;
+  font-size: 26rpx;
+}
+
+.newstab {
+  background: url('https://www.fuxingfuli.com/images/giftstore/mynewsnews.png') no-repeat center;
+  background-size: 37rpx 36rpx;
+  background-position-x: 133rpx;
+  padding-left: 40rpx;
+}
+
+.snewstab {
+  background: url(https://www.fuxingfuli.com/images/giftstore/mysenews.png) no-repeat center;
+  background-size: 37rpx 36rpx;
+  background-position-x: 133rpx;
+  padding-left: 40rpx;
+}
+
+.newsLists {
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+}
+
+.coinsnews {
+  background: #fff;
+  padding: 10rpx 30rpx 30rpx 30rpx;
+  /* height:520rpx; */
+  border-radius: 9rpx;
+  box-shadow: 0 0 8rpx #ccc;
+  margin-bottom: 30rpx;
+}
+
+.addcoins {
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #f4063a;
+  border-bottom: 3rpx dashed #e6e6e6;
+}
+
+.newsconis {
+  width: 24rpx;
+  height: 24rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/mynewsnews.png) no-repeat center;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 10rpx;
+  /* background-position-x: 110rpx; */
+}
+
+/* .addcoins image{
+  width:32rpx;
+  height: 32rpx;
+  padding-right:18rpx;
+} */
+
+.coins {
+  text-align: center;
+}
+
+.coins .coins1 {
+  color: #666;
+  font-size: 24rpx;
+  margin-top: 14rpx;
+}
+
+.coins .coins2 {
+  color: #f4063a;
+  font-size: 75rpx;
+}
+
+.coins .coins3 {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.coins .coins4 {
+  width: 30rpx;
+  height: 3rpx;
+  background: #b3b3b3;
+  margin: 0 auto;
+  margin-top: 24rpx;
+  margin-bottom: 10rpx;
+}
+
+.fubicoins .coinsleft, .coinsright {
+  float: left;
+  width: 50%;
+  font-size: 26rpx;
+}
+
+.coinsleft, .coinsright view {
+  text-align: center;
+}
+
+.coinsnums {
+  /* color: #666; */
+}
+
+.cointext {
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.fubiOrder {
+  /* position: relative;
+   top: 40rpx; *//* bottom:20rpx; */
+  margin-bottom: 25rpx;
+  margin-top: 130rpx;
+  width: 100%;
+}
+
+.fuliwelname {
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background: #fa325e;
+  border-radius: 8rpx;
+  margin: 0 auto;
+}
+
+/* 福利列表 */
+
+.welnameinfo {
+  width: 100%;
+  background: #fff;
+  padding: 20rpx 30rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  box-shadow: #cfcfcf 0rpx 0rpx 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.weltop {
+  width: 100%;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.weltuijian {
+  font-size: 24rpx;
+  color: #f33b3d;
+  float: left;
+  /* width: 150rpx; */
+}
+
+.weltuiicon {
+  width: 21rpx;
+  height: 28rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/mynewstuijian.png) no-repeat center;
+  background-size: 100%;
+  float: left;
+  margin-right: 10rpx;
+}
+
+.weltime {
+  float: right;
+  font-size: 22rpx;
+  color: #b0b0b0;
+}
+
+.welimg {
+  width: 100%;
+  height: 300rpx;
+  margin: 20rpx 0 30rpx 0;
+}
+
+.welimg image {
+  width: 100%;
+  height: 100%;
+}
+
+.welnamete {
+  width: 475rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.welbun {
+  float: right;
+  font-size: 28rpx;
+  color: #f4063a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welarrow {
+  width: 16rpx;
+  height: 28rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ywelarrow.png) no-repeat center;
+  background-size: 100%;
+  display: inline-block;
+  margin-left: 10rpx;
+}

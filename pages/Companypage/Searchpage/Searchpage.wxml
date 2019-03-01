@@ -1,0 +1,47 @@
+<!--pages/Companypage/Searchpage/Searchpage.wxml-->
+  <!-- 搜索页面 -->
+  <view class='searchbox'>
+    <view class='classifytop clearfix'>
+      <view class='boxsearch'>
+        <input class='classifyinp' type='text' bindconfirm="searchBtn" confirm-type='search' onblur="Blurtab" placeholder='请输入福利名称'></input>
+      </view>
+      <view class='clboxsearch' catchtap='searchBtn'>搜索</view>
+    </view>
+    <view class='csearchbtn' wx:if="{{searchcontent}}">
+      <view class='btnboxsearch clearfix'>
+        <view class='fleft'>历史记录</view>
+        <view class='fright rightarr' catchtap='isdelitem'>
+          <view class='btndelbox'></view>
+        </view>
+      </view>
+      <view class='classifyinfo clearfix'>
+        <view class='boxsearchitem' wx:for="{{searchitemList}}" wx:key="index" catchtap='searchBtn'>{{item.searchname}}</view>
+      </view>
+    </view>
+    <view wx:if="{{searchList !='' && searchcontent==false}}">
+      <view class="welfare-content ">
+        <!-- 福利内容 -->
+        <view class='welfare-item clearfix' wx:for='{{welfareList}}' catchtap='onSwiperTap' wx:key="index" wx:if="{{welfareList.length < 3 }}">
+          <view class='welfare-thumb'>
+            <image src='{{item.welfare_img}}'></image>
+          </view>
+          <view class='welfare-info'>
+            <view class='welfare-nametitle'>{{item.welfare_name}}</view>
+            <view class='welfare-addr'>
+              <text class='addricon'></text>
+              <!-- <image src='/images/icon/address.png'></image> -->
+              <text class='addrtext'>{{item.region}}</text>
+            </view>
+            <view class='welfare-price'>
+              <text class='welfare-price-sm'>¥</text>
+              <text class='welfare-price-pink'>{{item.paymoney}}</text>
+              <text class='welfare-bought'>{{item.welfare_virtual_num}}人买</text>
+            </view>
+          </view>
+        </view>
+        <!-- 无更多福利内容 -->
+        <view class='nohavefuli' wx:if="{{welfareList.length >2 }}">无更多福利内容</view>
+      </view>
+    </view>
+    
+  </view>

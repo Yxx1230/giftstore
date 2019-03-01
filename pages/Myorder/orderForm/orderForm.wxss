@@ -1,0 +1,253 @@
+
+.Formner{
+ position: relative;
+ z-index: 10
+}
+.order_Form{
+  height: 283rpx;
+  width: 100%;
+}
+.Form_df{
+  width: 190rpx;
+  height: 180rpx;
+  position: absolute;
+  top: 19rpx;
+  right: 30rpx
+}
+.Form_txt{
+  position: absolute;
+  top: 70rpx;
+  left: 60rpx;
+  color: #fff;
+  display: flex;
+  flex-direction:  column;
+  font-size: 30rpx
+}
+.Form_txt text{
+  height: 34rpx;
+  line-height: 34rpx
+}
+.Form_foot{
+    position:fixed;
+    bottom:33rpx;
+    border-radius:45rpx;
+    text-align:center;
+  background:#fa3f55;
+  width: 580rpx;
+  height: 89rpx;
+  margin-left:86rpx;
+  color:#fff;
+  line-height:89rpx;
+  font-size:30rpx
+}
+
+.Form_del{
+  border: 1rpx solid #c9c9c9;
+  color: #c9c9c9;
+  border-radius: 50rpx
+}
+.Form_pay{
+  border: 1rpx solid #fa3f55;
+  background: #fa3f55;
+  color: #fff;
+  border-radius: 50rpx
+}
+.Form_detail{
+  margin: 20rpx 20rpx 0 23rpx;
+  position: relative;
+  height: 562rpx;
+  top: -80rpx;
+  background: #fff;
+  box-shadow: 0px 1rpx 8rpx #cfcfcf;
+}
+.last{
+  margin-bottom: 80rpx
+}
+.Form_bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+.Form_kf{
+  /* width: 227rpx;
+  height: 61rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 242rpx; */
+  width: 228rpx;
+  height: 60rpx;
+  background: #f5f5f5;
+  color: #666666;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 242rpx;
+  border-radius: 35rpx;
+ 
+}
+.kefu{
+  width: 28rpx;
+  height: 26rpx;
+   background: url('https://www.fuxingfuli.com/images/giftstore/callkefu.png') no-repeat center;
+   display: block;
+  background-size: 100%;
+  margin-right: 14rpx;
+}
+.Form_first{
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.Form_line{
+  height: 103rpx;
+  display: flex;
+  align-items: center;
+  color: #666666
+}
+.Form_org{
+  width: 63rpx;
+  height: 63rpx
+}
+.Form_od{
+  width: 13rpx;
+  height: 22rpx;
+}
+.Form_gift{
+  width: 153rpx;
+  height: 79rpx;
+  margin-right: 13rpx
+}
+.Form_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  font-size: 26rpx;
+  height: 79rpx;
+  margin-bottom: 25rpx
+}
+.Form_text{
+  height: 90rpx;
+  display: flex;
+  flex-direction:  column;
+}
+.Form_s_txt{
+   font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999999
+}
+.Form_dashed{
+  height: 1rpx;
+  border: 1rpx dashed #dddddd;
+  width: 84%;
+  position: absolute;
+  top: 234rpx;
+  left: 60rpx
+}
+.Form_second{
+  position: absolute;
+  top: 284rpx;
+  width: 100%;
+  padding: 0 20rpx
+}
+.Form_circle{
+  width: 46rpx;
+  height: 46rpx;
+  background: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 214rpx;
+  left: -23rpx
+}
+.Form_circle_right{
+   width: 46rpx;
+  height: 46rpx;
+  background: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: 214rpx;
+  right: -23rpx;
+}
+.Formnav{
+  height: 286rpx;
+   margin: 0 20rpx 0 23rpx;
+   padding: 26rpx 35rpx 0 30rpx;
+  position: relative;
+  top:-80rpx;
+  background: #fff;
+   box-shadow: 0px 1rpx 8rpx #cfcfcf;
+   z-index: 99;
+   border-radius: 10rpx;
+}
+.Form_message{
+  height: 232rpx;
+  background: #fff;
+  box-shadow: 0px 1rpx 8rpx #cfcfcf;
+   margin: 0 20rpx 40rpx 23rpx;
+   position: relative;
+   top: -60rpx;
+   padding: 20rpx 20rpx
+}
+.Form_tx{
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  margin:0 22rpx 0 0
+}
+.Form_note{
+  position: absolute;
+  width: 32rpx;
+  height: 40rpx;
+  top: 24rpx;
+  left: 50rpx;
+}
+.Form_Nt{
+  position: relative;
+  width: 311rpx;
+  height: 89rpx;
+  font-size: 30rpx;
+  color: #707070;
+  line-height: 89rpx;
+  border: 1rpx solid #eeeeee;
+  text-align: center;
+  border-radius: 50rpx
+}
+.fo_foot{
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 101rpx;
+  display: flex;
+  justify-content:  flex-end;
+}
+.fo_foot view{
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  margin-right: 26rpx;
+  margin-top: 22rpx
+}
+.form_del{
+  border: 1rpx solid #c9c9c9;
+  color: #c9c9c9;
+  border-radius: 50rpx
+}
+.form_pay{
+  border: 1rpx solid #fa3f55;
+  background: #fa3f55;
+  color: #fff;
+  border-radius: 50rpx
+}

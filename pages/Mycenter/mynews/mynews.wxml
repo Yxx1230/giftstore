@@ -1,0 +1,67 @@
+<!--pages/Mycenter/mynews/mynews.wxml-->
+<view class="newsPage">
+  <view class='topTab'>
+    <view class="fuli">
+      <text class="{{currentTab==0?'sfulitab':'fulitab'}} {{currentTab==0?'active':''}}" data-current="0" catchtap='navTap'>福利</text>
+    </view>
+    <view class="news">
+      <text class="{{currentTab==1?'newstab':'snewstab'}}  {{currentTab==1?'active':''}}" data-current="1" catchtap='navTap'>通知</text>
+    </view>
+  </view>
+  <!-- 福利列表 -->
+  <view class='newsLists' wx:if='{{currentTab==0}}'>
+  <!-- 推荐福利 -->
+    <view class='welnameinfo' wx:for="{{welfareList}}" wx:key="index">
+      <view class='weltop clearfix'>
+        <view class='weltuijian'>
+          <view class='weltuiicon'></view>
+          <text>推荐福利</text>
+        </view>
+        <view class='weltime'>{{item.createtime}}</view>
+      </view>
+      <view class='welimg' catchtap='fulidetail'>
+        <image src="{{item.welfare_img}}"></image>
+      </view>
+      <view class='weltitle clearfix' catchtap='fulidetail'>
+        <view class='welnamete'>{{item.welfare_name}}</view>
+        <view class='welbun'>查看详情
+          <text class='welarrow'></text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- 通知列表 -->
+  <view class="newsLists" wx:if='{{currentTab==1}}'>
+    <view class="coinsnews" wx:for="{{returnList}}" wx:key="index">
+      <view class="addcoins">
+        <!-- <image src="https://www.fuxingfuli.com/images/fuli/tz.png"></image> -->
+        <view class="newsconis"></view>
+        <text>福钻增加通知</text>
+      </view>
+      <view class="coins">
+        <view class="coins1">{{item.billingName}}</view>
+        <view class="coins2">{{item.num}}</view>
+        <view class="coins3">增加福钻</view>
+        <view class="coins4"></view>
+      </view>
+      <view class="fubicoins">
+        <view class="coinsleft">
+          <view class='coinsnums'>{{item.totalNumNow}}</view>
+          <view class='cointext'>当前总福钻</view>
+        </view>
+        <view class="coinsright">
+          <view class='coinsnums'>{{item.time}}</view>
+          <view class='cointext'>交易时间</view>
+        </view>
+      </view>
+      <view class="fubiOrder" data-img='{{item.welfare_img}}' data-name='{{item.welfare_name}}' data-welfareid='{{item.fuliId}}' data-link='{{item.fuliUrl}}' data-phpid='{{item.php_id}}' catchtap='onWelfareTap'>
+        <!-- <image src="https://www.fuxingfuli.com/images/fuli/xx_b.png"></image> -->
+        <view class='fuliwelname' catchtap='fulidetail'>福利详情</view>
+      </view>
+
+    </view>
+  </view>
+
+
+</view>

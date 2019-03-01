@@ -1,0 +1,184 @@
+<!--pages/Givegiftset/Givegiftset.wxml-->
+<view>
+  <view class='bannertop'></view>
+  <!-- 送礼设置内容 -->
+  <view class='contentbox'>
+    <!-- 送礼方式 -->
+    <view class='giftmethod'>
+      <view class='giftuser'>
+        <image class='userphoto' src="https://www.fuxingfuli.com/images/giftstore/yuserphoto.png"></image>
+
+        <text class='usertext'>露露酱有 <text class='numcolor'>{{giftnum}}</text> 件礼物可送出</text>
+      </view>
+      <view class='clearfix moremethod'>
+        <text class='fleft ' wx:if="{{currenttype =='0'}}">打包送一人</text>
+        <text class='fleft ' wx:if="{{currenttype =='1'}}">群发多人抢</text>
+        <text class='fright setmore' catchtap='changemethod'>更多送礼方式></text>
+      </view>
+      <view class='totalnumbg '>
+        <view class='clearfix'>
+          <view class='fleft totalnumed'>
+            <view class='fleft '>本次送礼总数：</view>
+            <view class='fleft Numberstext'>(需少于剩余礼物数)</view>
+          </view>
+          <view class="AddNumbers fright">
+            <view class="stepper clearfix">
+              <!-- 减号 -->
+              <text class="subnum {{minusStatus}}" bindtap="bindMinus" data-index="0">-</text>
+              <!-- 数值 -->
+              <input type="number" bindchange="bindManual" data-index="0" value="{{num}}" />
+              <!-- 加号 -->
+              <text class="normal" bindtap="bindPlus" data-index="0">+</text>
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{currenttype =='1'}}" class='moreperson clearfix'>
+          <view class='fleft totalnumed'>
+            <view class='fleft '>每人领取份数：</view>
+            <view class='fleft Numberstext'>(每人单次领取礼物数)</view>
+          </view>
+          <view class="AddNumbers fright">
+            <view class="stepper clearfix">
+              <!-- 减号 -->
+              <text class="subnum  {{minusStatues}}" bindtap="bindMinus" data-index="1">-</text>
+              <!-- 数值 -->
+              <input type="number" bindchange="bindManuals" data-index="1" value="{{eachnum}}" />
+              <!-- 加号 -->
+              <text class="normal" bindtap="bindPlus" data-index="1">+</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+    <!-- 祝福语 -->
+    <view class='giftmethod'>
+      <textarea wx:if='{{isBless}}' maxlength='13'  placeholder='传达心意写下祝福语' value='{{blessword}}'></textarea>
+      <text wx:else class='giftmethodTxt'>传达心意写下祝福语</text>
+    </view>
+    <!-- 视频录音 -->
+    <view class='giftvideo'>
+      <view class='globalfontsize clearfix'>
+        <view class='fleft tabstate'>
+          <text wx:if='{{currentTab == 0}}'>用视频看见你的祝福</text>
+          <text wx:if='{{currentTab == 1}}'>用录音传递你的祝福</text>
+          <text class='videotext'>(左右滑动可切换)</text>
+        </view>
+        <view class='fright'>
+          <view class=' remake' wx:if='{{videoshow == true &&currentTab == 0}}' catchtap='remakevideo'>重录</view>
+          <view class=' remake' wx:if='{{auidoshow == true &&currentTab == 1}}' catchtap='remakeauido'>重录</view>
+        </view>
+      </view>
+      <swiper autoplay="{{autoplay}}" class='bannerswiper' circular="{{autoplay}}" bindchange='swiperTab'>
+        <block>
+          <swiper-item>
+            <view class='videoswiper' wx:if='{{videoshow == false}}'>
+              <view class='videocenter' catchtap='onvideoshow' wx:if='{{videoshow == false}}'>
+                <image class='videocoin' src="/images/icon/yviedo.png"></image>
+                <view class='luvideo'>点击录制视频，不超过30秒</view>
+              </view>
+            </view>
+            <view class='tranvideo' wx:if='{{videoshow == true}}'>
+              <view class='havevideo' wx:if='{{isvideoshow == false}}'>
+                <view class='videoposter' style="background:url('{{thumbTempFilePath}}') no-repeat;background-size:100%;">
+                </view>
+                <image class='videoimgr' src='{{thumbTempFilePath}}'></image>
+                <view class='playbtn' catchtap='toplayvideo'></view>
+              </view>
+              <video class='videosrc' wx:if='{{isvideoshow == true}}' custom-cache='{{false}}' src="{{videoSource}}" autoplay='{{autoplayvideo}}' controls></video>
+            </view>
+
+          </swiper-item>
+          <swiper-item>
+            <view class='luyinswiper'>
+              <view class='videocenter' bindlongpress="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd" wx:if='{{isauido == false}}'>
+                <image class='videocoin' src="/images/icon/yluyin.png"></image>
+                <view class='luvideo' wx:if='{{startluyin == true}}'>长按录制音频，不超过60秒</view>
+                <view class='luvideo' wx:if='{{startluyin == false}}'>点击结束录制音频</view>
+              </view>
+              <view class='playaudio' wx:if='{{isauido == true}}'>
+                <view class='audiotop' catchtap='voicestart'>
+                  <view class='audioleft'>
+                    <view class="ao  {{isplaystart ?'':'playone'}}"></view>
+                    <view class="ab {{isplaystart ?'':'playtwo'}}"></view>
+                    <view class="ac {{isplaystart ?'':'playthree'}}"></view>
+                    <view class="ad {{isplaystart ?'':'playfour'}}"></view>
+                    <view class="af {{isplaystart ?'':'playfive'}}"></view>
+                  </view>
+                  <view class="{{isplaystart ?'audioicon':'stopaudioicon'}}"></view>
+                  <view class='audioright'>
+                    <view class="ao {{isplaystart ?'':'playone'}}"></view>
+                    <view class="ab {{isplaystart ?'':'playtwo'}}"></view>
+                    <view class="ac {{isplaystart ?'':'playthree'}}"></view>
+                    <view class="ad {{isplaystart ?'':'playfour'}}"></view>
+                    <view class="af {{isplaystart ?'':'playfive'}}"></view>
+                  </view>
+                </view>
+                <view class='luvideo'>点击播放音频</view>
+
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='swipericon'>
+        <view class='swiperbtn'>
+          <text class="{{currentTab ==0?'leftsquare':'leftradius'}}"></text>
+          <text class="{{currentTab ==0?'leftradius':'leftsquare'}}"></text>
+        </view>
+      </view>
+    </view>
+    <!-- 设置分享标语 -->
+    <view class='setshare'>
+      <view class='clearfix'>
+        <view class='setsharetitle fleft'>设置分享标语</view>
+        <view class='arrowicon fright' catchtap='ishowshare'>
+          <view class='arrowbtn' wx:if='{{arrowtype == 0}}'></view>
+          <view class='arrowtop ' wx:if='{{arrowtype == 1}}'></view>
+        </view>
+      </view>
+      <view wx:if='{{arrowtype == 1}}' class='sharetitle'>
+        <textarea value='露露酱 买了一份礼物送给你！赶快点击领取哦！' class='sharetext'>
+        </textarea>
+
+      </view>
+
+
+    </view>
+
+
+  </view>
+  <!-- 抢先预览 -->
+  <view class='footerbtn clearfix' wx:if="{{ispre ==false}}">
+    <view class='fleft warehouse' catchtap='towarehouse'>抢先预览</view>
+    <view class='fleft Sendfriend' catchtap='givefriend'>送给朋友</view>
+  </view>
+  <!-- 关闭预览 -->
+  <view class='footerbtn clearfix' wx:if="{{ispre ==true}}">
+    <view class='awarehouse' catchtap='closepre'>关闭预览</view>
+
+  </view>
+  <!-- 打包送一人 -->
+  <view class="btnselce" wx:if='{{dabaobtn}}'>
+    <view class='zhezc' bindtap='clickzhezhao'></view>
+    <view class="selectbtn">
+      <view class="onetop" catchtap="changeone">打包送一人</view>
+      <view class="moretop" catchtap="changetwo">群发多人抢</view>
+      <view class="onetop " catchtap="closeedit">取消</view>
+
+    </view>
+  </view>
+  <!-- 制作礼物贺卡 -->
+  <view class="btnselce" wx:if='{{selectbtn}}'>
+    <view class='zhezc' catchtap='changeedit'></view>
+    <view class="selectbtn">
+      <button class="onetop" data-id="shareBtn" open-type="share" catchtap="changeonetop">链接形式送出</button>
+      <view class="onetop" catchtap="changemore">制作礼物贺卡</view>
+      <view class="moretop" catchtap="changestore">暂放仓库 以后再说</view>
+      <view class="onetop " catchtap="changeedit">取消</view>
+
+    </view>
+  </view>
+
+</view>

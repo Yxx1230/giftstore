@@ -1,0 +1,97 @@
+<view style='position: relative;overflow:hidden'>
+    <view class='selfner'>
+      <image class='order_self' src='/images/order/order_ban.png' />
+      <image  class='self_df'  src='/images/order/form_yf.png' />
+      <!-- <image  wx:if='{{!isself}}' class='self_df'  src='/images/order/Form_df.png'/> -->
+      <view class='self_txt'>
+          <text wx:if='{{!isself}}'>待发货</text>
+          <text wx:if='{{isself}}'>商家已发货</text>
+          <text wx:if='{{!isself}}' style='font-size:20rpx;margin-top:17rpx'>等待商家发货</text>
+          <text wx:if='{{isself}}' style='font-size:24rpx;margin-top:17rpx'>商家已发货，请注意查看物流状态</text> 
+      </view>
+    </view>
+    <view class='self_message'>
+        <view style='font-size:28rpx;margin-bottom:20rpx'>收获信息</view>
+                  <view class='self_s_txt'>
+                    <text>收货人</text>
+                    <text>张伟</text>
+                  </view>
+                  <view class='self_s_txt'>
+                    <text>联系电话</text>
+                    <text>15895248852</text>
+                  </view>
+                  <view  class='self_s_txt'>
+                    <text>收货地址</text>
+                    <text>北京海淀区奥北科技园</text>
+                  </view>
+    </view>
+    <view class='last'>
+      <view class='self_detail'>
+          <view class='self_circle'></view>
+          <view class='self_circle_right'></view>
+          <image class='self_kf' catchtap='tocall'  src='/images/order/ban_kf.png' />
+          <view class='self_first'>
+              <view style='padding:0 20rpx'>
+                  <view class='self_line'>
+                          <image class='self_org' src='/images/order/org.png'/>
+                          <view style='font-size:28rpx;margin:0 12rpx'>商家名称</view>
+                          <image class='self_od'  src='/images/order/od_right.png'/>
+                  </view>
+                  <view>
+                    <view class='self_flex' catchtap='toFulidetail'>
+                        <view style='display:flex'>
+                            <image class='self_gift' src='/images/order/order_gift.png' />
+                            <view>牛奶味大核桃</view>
+                        </view>
+                        <view class='self_text'>
+                            <text>¥50.00</text>
+                            <text style='text-align:right;color:#9a9999'>x3</text>
+                        </view>
+                    </view>
+                  </view>
+                  <view class='self_l_txt'>
+                    <text>商品总额</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+                  <view class='self_l_txt'>
+                    <text>运费</text>
+                    <text style='color:#696969'>¥0.00</text>
+                  </view>
+                  <view class='self_l_txt'>
+                    <text wx:if='{{!isTui}}'>需付款</text>
+                    <text wx:if='{{isTui}}'>实付款</text>
+                    <text style='color:#696969'>¥150.00</text>
+                  </view>
+         
+            </view>
+          </view>
+          <view class='self_dashed'></view>
+          <view class='self_second'>
+            <view style='font-size:28rpx;margin-bottom:20rpx'>订单信息</view>
+                  <view class='self_s_txt'>
+                    <text>订单编号</text>
+                    <text>1231456</text>
+                  </view>
+                  <view class='self_s_txt'>
+                    <text>支付类型</text>
+                    <text>送礼订单</text>
+                  </view>
+                  <view  class='self_s_txt'>
+                    <text>下单时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+                   <view  class='self_s_txt'>
+                    <text>付款时间</text>
+                    <text>2018-10-11 21:12:14</text>
+                  </view>
+          </view>
+      </view>
+    </view>
+    <view wx:if='{{!isself}}' catchtap='totalk' class='self_foot'>
+         提醒商家发货
+    </view>
+    <view wx:if='{{isself}}' class='fo_foot'>
+          <view class='self_del'>查看物流</view>
+          <view class='self_pay'>确认收货</view>
+    </view>
+</view>

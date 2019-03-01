@@ -1,0 +1,208 @@
+<!--pages/storeHouse/storeHouse.wxml-->
+<view class="house">
+  <view class="house-bar">
+    <view class="house-bar-view">
+      <view class="{{curHdIndex=='0'? 'on' : ''}}" bindtap='changeClass' data-id="0">礼物仓库</view>
+      <view class="{{curHdIndex=='1'? 'on' : ''}}" bindtap='changeClass' data-id="1">我送出的</view>
+      <view class="{{curHdIndex=='2'? 'on' : ''}}" bindtap='changeClass' data-id="2">我收到的</view>
+    </view>
+  </view>
+  <view class="house_con">
+    <view class="con_1 {{curHdIndex=='0'? 'active' : ''}}">
+      <view class="con_1_ps">礼物仓库共
+        <text>8</text>件礼物可送</view>
+      <scroll-view scroll-y='true' bindscrolltolower='lower' style="display:none;">
+      </scroll-view>
+      <view class="con-1-list">
+        <view class="list-item">
+          <image mode="widthFix" catchtap='togiftdetail' src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+          <view class="p_name">蒙自石榴蒙自石榴蒙自石榴蒙自石榴蒙自石榴蒙自石榴</view>
+          <view class="p_num">该礼物还剩余
+            <text>1</text>件可赠送</view>
+          <view class="btn-groupe">
+            <view class='givegift' catchtap='mygive'>自己领取</view>
+            <view class='givegift' catchtap='sendfriend'>送给好友</view>
+          </view>
+        </view>
+        <view class="list-item">
+          <image mode="widthFix" catchtap='togiftdetail' src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+          <view class="p_name">蒙自石榴</view>
+          <view class="p_num">该礼物还剩余
+            <text>1</text>件可赠送</view>
+          <view class="btn-groupe">
+            <view class='givegift' catchtap='mygive'>自己领取</view>
+            <view class='givegift' catchtap='sendfriend'>送给好友</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="con_2 {{curHdIndex=='1'? 'active' : ''}}">
+      <view class="con-2-list">
+        <view class="list-item">
+          <view class="item-title clearfix">
+            <view class='titleleft'>下单时间：2019-01-20 15:02:34</view>
+            <view class='titletype'>领取中</view>
+          </view>
+          <view catchtap='togiftdetail'>
+            <view class="p_dl clearfix">
+              <view class="p_dt">
+                <image mode="widthFix" src="https://www.fuxingfuli.com/images/giftstore/ypcimg.png"></image>
+              </view>
+              <view class="p_dd">
+                <view class="pdd-1">牛奶味大核桃牛奶味大核桃牛奶味大核桃</view>
+                <view class='pednum'>礼物共5件 已领取5件</view>
+              </view>
+              <view class='pdnum'>
+                <view class='pdprice'>¥ 20.00</view>
+                <view class='pdnumber'>x7</view>
+              </view>
+            </view>
+            <view class="pnumed">共5件商品 合计￥ 100.00</view>
+            <!--邮戳-->
+            <image class="engrave" mode="widthFix" src="../../images/order/draw_x.png" style="display:none;"></image>
+          </view>
+          <view class="btn-group">
+            <view class='lookwuliu' catchtap='callphone'>申请退款</view>
+            <view class='givegift' catchtap='mygive'>自己领取</view>
+            <view class='givegift' catchtap='sendfriend'>送给好友</view>
+          </view>
+        </view>
+        <view class="list-item">
+
+          <!--邮戳-->
+          <view class="item-title clearfix">
+            <view class='titleleft'>下单时间：2019-01-20 15:02:34</view>
+            <view class='titletype'>礼物已领完</view>
+          </view>
+          <view catchtap='togiftdetail'>
+            <view class="p_dl clearfix">
+              <view class="p_dt">
+                <image mode="widthFix" src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+              </view>
+              <view class="p_dd">
+                <view class="pdd-1">牛奶味大核桃牛奶味大核桃牛奶味大核桃</view>
+                <view class='pednum'>礼物共5件 已领取5件</view>
+              </view>
+              <view class='pdnum'>
+                <view class='pdprice'>¥ 20.00</view>
+                <view class='pdnumber'>x7</view>
+              </view>
+            </view>
+            <view class="pnumed">共5件商品 合计￥ 100.00</view>
+            <!--邮戳-->
+            <image class="engrave" mode="widthFix" src="/images/icon/giftsempty.png"></image>
+          </view>
+          <view class="btn-group" style="display:none;">
+            <view class='lookwuliu' catchtap='callphone'>申请退款</view>
+            <view class='givegift' catchtap='mygive'>自己领取</view>
+            <view class='givegift' catchtap='sendfriend'>送给好友</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="con_3 {{curHdIndex=='2'? 'active' : ''}}">
+      <view class="con-3-list">
+        <view class="list-item">
+          <view class="item-title">
+            领取时间：2019-01-20 15:02:34
+            <view>
+              <image src="../../images/order/draw_x.png"></image>
+              <text>露露酱紫</text>
+            </view>
+          </view>
+
+          <view class="p_dl clearfix" data-type='2' catchtap='toOrderForm'>
+            <view class="p_dt">
+              <image mode="widthFix" src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+            </view>
+            <view class="p_dd">
+              <view class='pdd-1'>
+                大核桃大核桃大核桃大核桃大核桃大核桃大核桃大核桃大核桃大核桃大核桃
+              </view>
+            </view>
+            <view class='pdnum'>共5件</view>
+          </view>
+          <view class="con_3_btn">
+            <view class="lx" catchtap='callphone'>
+              <text class='lxtext'></text>联系客服
+            </view>
+            <view class="btn-group">
+              <view class='lookwuliu' catchtap='logistics'>查看物流</view>
+              <view class='givegift' catchtap='togivegift'>我要送礼</view>
+            </view>
+          </view>
+        </view>
+        <view class="list-item">
+          <view class="item-title">
+            收仓时间：2019-01-20 15:02:34
+            <view>
+              <image src="../../images/order/draw_x.png"></image>
+              <text>露露酱紫</text>
+            </view>
+          </view>
+          <view class="p_dl clearfix" catchtap='togiftdetail'>
+            <view class="p_dt">
+              <image mode="widthFix" src="https://www.fuxingfuli.com/images/giftstore/ypcre.png"></image>
+            </view>
+            <view class="p_dd">
+              <view class='pdd-1'>
+                大核桃大核桃大核桃
+              </view>
+              <view class='pednum'>
+                礼物共5件 已领取5件
+              </view>
+            </view>
+            <view class='pdnum'>共5件</view>
+          </view>
+          <view class="con_3_btn">
+            <view class="lx" catchtap='callphone'>
+              <text class='lxtext'></text>联系客服
+            </view>
+            <view class="btn-group">
+              <view class='givegift' catchtap='togiftdetail'>查看详情</view>
+              <view class='givegift' catchtap='mygive'>自己领取</view>
+              <view class='givegift' catchtap='sendfriend'>送给好友</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 查看物流 -->
+<view class='checkLogistics-alert' wx:if='{{checkLogisticsTap == 0}}'>
+  <view class='checkLogistics-alert-content'>
+    <view class='cehckheader clearfix'>
+      <view class="closetab">
+        <image class="close" src='/images/icon/close.png' catchtap='closeTap'></image>
+      </view>
+      <view class="logistics-company">
+        <view class='company-name'>
+          <text>{{orderName}}：</text>
+          <text class="order-number">{{courierNumber}}</text>
+        </view>
+        <view class='company-name kuaidiPhone'>
+          <text>官方电话：</text>
+          <text class="order-tel">65332123</text>
+        </view>
+      </view>
+    </view>
+    <view class="logistics-info">
+      <view class="logistics-status" wx:if="{{status==0}}">在途中</view>
+      <view class="logistics-status " wx:if="{{status==1}}">已揽件</view>
+      <view class="logistics-status" wx:if="{{status==2}}">疑难件</view>
+      <view class="logistics-status " wx:if="{{status==3}}">已签收</view>
+      <view class="logistics-status" wx:if="{{status==4}}">已拒签</view>
+      <view class="logistics-info-item" wx:for="{{backMSG}}" wx:key="index">
+        <view class="data">
+          <text>{{item.time}}</text>
+        </view>
+        <view class="icon"></view>
+        <view class="status-addr">
+          <view class='addr'>{{item.context}}</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

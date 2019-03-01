@@ -1,0 +1,198 @@
+<!--pages/myGift/Giftdetails/Giftdetails.wxml-->
+<!-- 送礼详情 -->
+<view>
+<view class='giftheader'>
+  <view class='gifttotal'>
+    <view class='tsize'>礼物总数</view>
+    <view class='nmsize'>24</view>
+    <view class='csize'>
+      <text class='shengyu'>已领取14件</text>
+      <text>还剩余10件可送</text>
+    </view>
+  </view>
+  <view class='giftwelfare clearfix' catchtap='tofulidetail'>
+    <image src='https://www.fuxingfuli.com/images/giftstore/ypcre.png' class='welgimg'></image>
+    <view class='welfarecen'>
+      <view class='gifttiitle'>GUM儿童米菲兔牙膏afaf套装GUM儿童GUM儿童米菲兔牙膏米菲兔牙膏套装</view>
+      <view class='welprice'>¥ 26.00</view>
+    </view>
+  </view>
+</view>
+<view class='gifttab'>
+  <view class="gifttabitem {{currentTab == 0 ? 'tabactive' : ''}}" data-currenttab='0' catchtap='onMainTap'>送礼记录</view>
+  <view class="gifttabitem {{currentTab == 1 ? 'tabactive' : ''}}" data-currenttab='1' catchtap='onMainTap'>领取记录</view>
+</view>
+<!-- 送礼记录 -->
+<view class='givegiftlist' wx:if="{{currentTab == 0 && giftsList !=''}}">
+  <!-- <view class='giftitem' wx:for="{{giftsList}}" wx:key="index"> -->
+  <view class='giftitem'>
+    <view class='giftitemtop'>
+      <view>本次派送
+        <text class='colornum'>3</text>件,已领取
+        <text class='colornum'>2</text>件
+      </view>
+      <view class='givetype'>群发多人抢</view>
+    </view>
+    <view class='givetime'>2019-02-15 11:19:20</view>
+    <view class='giftgivebg'>
+      <view class='yellowbg'>
+        <view class='redrotate'></view>
+        <view class='giftblessed' >我们精心为您准备了一份礼物，希望您喜欢希望可以收下.希望您喜欢希望可以收下.希望您喜欢希望可以收下</view>
+      </view>
+      <view wx:if='{{noshowtext == false}}'>
+        <view class='giftperson'>
+          <view class='colornum'>看看谁领到了礼物</view>
+          <view class='giftpersondian'></view>
+        </view>
+        <view class='personinfo clearfix'>
+          <image class='personimg' src='https://www.fuxingfuli.com/images/giftstore/yuserphoto.png'></image>
+          <view class='persontext'>
+            <view class='asize'>小苏菲</view>
+            <view class='bsize'>2019-02-15</view>
+          </view>
+          <view class='personnum'>
+            <view class='psnumber'>X1</view>
+            <view class='bsnumber'>已领取</view>
+          </view>
+        </view>
+      </view>
+      <view class='giftbtn clearfix'>
+        <view class='giftvideo ' catchtap='lookvideo'>祝福视频</view>
+        <view class='addshare ' catchtap='sharegift'>再次分享礼物</view>
+      </view>
+      <view class='moretext' catchtap='clickmore' wx:if='{{noshowtext == true}}'>
+        <view class='mordview'>查看更多详情</view>
+        <view class='moreicone'></view>
+      </view>
+      <view class='moretext' catchtap='clickmore' wx:if='{{noshowtext == false}}'>
+        <view class='mordview'>收起更多详情</view>
+        <view class='moreiconb'></view>
+      </view>
+
+    </view>
+  </view>
+  <view class='giftitem'>
+    <view class='giftitemtop'>
+      <view>本次派送
+        <text class='colornum'>3</text>件,已领取
+        <text class='colornum'>0</text>件
+      </view>
+      <view class='givetype'>群发多人抢</view>
+    </view>
+    <view class='givetime'>2019-02-15 11:19:20</view>
+    <view class='giftgivebg'>
+      <view class='yellowbg'>
+        <view class='redrotate'></view>
+        <view class='giftblessed'>我们精心为您准备了一份礼物，希望您喜欢希望可以收下.希望您喜欢希望可以收下.希望您喜欢希望可以收下</view>
+      </view>
+      <view wx:if='{{noshowtext == false}}'>
+        <view class='nopeople'>
+
+        </view>
+      </view>
+      <view class='giftbtn clearfix'>
+        <view class='giftvideo ' catchtap='lookauido'>祝福语音</view>
+        <view class='addshare ' catchtap='sharegift'>再次分享礼物</view>
+      </view>
+      <view class='moretext' catchtap='clickmore' wx:if='{{noshowtext == true}}'>
+        <view class='mordview'>查看更多详情</view>
+        <view class='moreicone'></view>
+      </view>
+      <view class='moretext' catchtap='clickmore' wx:if='{{noshowtext == false}}'>
+        <view class='mordview'>收起更多详情</view>
+        <view class='moreiconb'></view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<!-- 领取记录 -->
+<view class='givegiftlist' wx:if="{{currentTab == 1 && giftsList !=''}}">
+  <view class='giveopenlist'>
+    <view class='giftgivebg'>
+      <view class='giftperson'>
+        <view class='colornum'>看看谁领到了礼物</view>
+        <view class='giftpersondian'></view>
+      </view>
+      <view class='ingogiftlist'>
+        <view class='personinfoes clearfix'>
+          <image class='personimg' src='https://www.fuxingfuli.com/images/giftstore/yuserphoto.png'></image>
+          <view class='persontext'>
+            <view class='asize'>小苏菲</view>
+            <view class='bsize'>2019-02-15</view>
+          </view>
+          <view class='personnum'>
+            <view class='psnumber'>X1</view>
+            <view class='bsnumber'>已领取</view>
+          </view>
+        </view>
+        <view class='personinfoes clearfix'>
+          <image class='personimg' src='https://www.fuxingfuli.com/images/giftstore/yuserphoto.png'></image>
+          <view class='persontext'>
+            <view class='asize'>小苏菲</view>
+            <view class='bsize'>2019-02-15</view>
+          </view>
+          <view class='personnum'>
+            <view class='psnumber'>X1</view>
+            <view class='bsnumber'>已收仓</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 视频弹框 -->
+<view class="video_bg" bindtap='closeVideo' wx:if="{{isShowVideo}}">
+  <view class="c_view">
+    <view class="dl_view clearfix">
+      <view class="dt_img">
+        <image mode="widthFix" src="/images/order/draw_x.png"></image>
+      </view>
+      <view class="dd_textes">
+        来自露露酱的祝福
+      </view>
+    </view>
+    <video controls src='https://ugcws.video.gtimg.com/uwMRJfz-r5hgYaQXGdGnCwQsKf_dEsnq3UJztMoyPd8/y0838dd29ik.p702.1.mp4?sdtfrom=v1010&guid=89f6428b080a0295efd4605e5858899c&vkey=B88FE7E5D2C06E4CEC54D8B95857066A1189F116E807E7E80CD54F8451DE273EE6DCF7660E76AD855313794D36746FA2B42E7C8DEA48C335FDCFF7348215C0D16C22919736DDB51B5CE6E45635D9D9E926A2E56347489DFC9809E9AD0B623F0745B680E14A5D2550AF4B6DDA679D71A8D1D3E61F0DF54E14'></video>
+    <view class="SendWord">“祝您新春快乐！万事如意！！”</view>
+  </view>
+  <view class="close" bindtap='closeVideo'></view>
+</view>
+<!-- 视频弹框 -->
+<view class="video_bg"  bindtap='closeVideo' wx:if="{{isShowauido}}">
+  <view class="c_view">
+    <view class="dl_view clearfix">
+      <view class="dt_img">
+        <image mode="widthFix" src="/images/order/draw_x.png"></image>
+      </view>
+      <view class="dd_textes">
+        来自露露酱的祝福
+      </view>
+    </view>
+    <view class='auidobox'>
+      <view class="radio clearfix" catchtap='playvoice'>
+        <view class="action">
+          <view class=" {{isplay?'voicePlay':'bg'}}"></view>
+        </view>
+        <view style="border:1rpx solid transparent;"></view>
+        <view class="actionTs">
+          祝福语音 00′32″
+        </view>
+      </view>
+    </view>
+    <view class="SendWord">“祝您新春快乐！万事如意！！”</view>
+  </view>
+  <view class="close" bindtap='closeVideo'></view>
+</view>
+
+<view class='nogift' wx:if="{{ giftsList ==''}}">
+  <view class='noimg'></view>
+</view>
+<!-- <view class='gooterbtn' wx:if="{{ giftsList !=''}}" catchtap='togetset'>继续派送礼物</view> -->
+
+<!-- <view class='footerbtn clearfix' wx:if="{{ giftsList ==''}}"> -->
+<view class='footerbtn clearfix'>
+  <view class='fleft warehouse' catchtap='towarehouse'>自己领取</view>
+  <view class='fleft Sendfriend' catchtap='givefriend'>送给朋友</view>
+</view>
+</view>

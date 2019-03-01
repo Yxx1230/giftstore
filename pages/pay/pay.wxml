@@ -1,0 +1,17 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay-container">
+  <view class="header_img" id="ToFuXing"></view>
+  <view class="need_pay">
+    <view class="pay_title">需支付金额</view>
+    <view class="pay_num">¥ {{totalPrice}}</view>
+  </view>
+  <view class="name_order">
+    <view class="shop_name">
+      <text>商品名称：</text><view>{{orderName}}</view></view>
+    <view class="order_num">
+      <text>订单号：</text>{{orderNumber}}</view>
+  </view>
+  <view id="confirmPay" catchtap='onPayTap'>
+    <view>确认支付 ¥ {{totalPrice}}</view>
+  </view>
+</view>

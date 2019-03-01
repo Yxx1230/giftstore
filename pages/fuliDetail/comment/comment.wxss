@@ -1,0 +1,234 @@
+page {
+  background: #f3f3f3;
+}
+
+.comment-list {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 30rpx 20rpx;
+}
+
+.comment-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 15rpx;
+  padding: 20rpx 22rpx;
+}
+
+.master-avatar {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+
+.text000 {
+  color: #000;
+  font-size: 24rpx;
+  line-height: 68rpx;
+}
+
+.comment-img {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.time {
+  font-size: 22rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-reply {
+  color: #444;
+  font-size: 24rpx;
+  width: 90rpx;
+  height: 44rpx;
+  text-align: center;
+  line-height: 44rpx;
+  border-radius: 22rpx;
+  background: #eee;
+}
+
+.comment-child {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-top: 1rpx solid #eee;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+  padding-left: 12rpx;
+}
+
+.child-avatar {
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+
+.text666 {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.publish {
+  width: 710rpx;
+  height: 90rpx;
+  background: #fe3657;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 90rpx;
+  position: fixed;
+  left: 50%;
+  margin-left: -355rpx;
+  bottom: 30rpx;
+  z-index: 99;
+  border-radius: 45rpx;
+}
+
+.reply-alert {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.reply-alert form {
+  width: 670rpx;
+  height: 408rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 320rpx;
+  left: 50%;
+  margin-left: -335rpx;
+  padding: 40rpx 30rpx 30rpx;
+}
+
+.text34 {
+  color: #000;
+  font-size: 34rpx;
+  text-align: center;
+}
+
+.reply-alert textarea {
+  width: 100%;
+  height: 180rpx;
+  background: #f6f6f6;
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+  padding: 20rpx;
+}
+
+.reply-ta {
+  color: #000;
+  font-size: 24rpx;
+}
+
+.reply-alert button {
+  width: 100%;
+  height: 70rpx;
+  border-radius: 47rpx;
+  color: #fff;
+  background: #fe3657;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.alert-close{
+  width: 62rpx;
+  height: 62rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/f_close.png') no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -31rpx;
+  top: 770rpx;
+}
+.clickbox{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+.trsbox{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 100;
+}
+.centerbox{
+  width: 670rpx;
+  padding: 32rpx 30rpx 30rpx 30rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  margin-top: 320rpx;
+  z-index: 111;
+  position: relative;
+}
+.huifu{
+  font-size: 34rpx;
+  text-align: center;
+}
+.recontent{
+  width: 100%;
+  background: #f6f6f6;
+  height: 180rpx;
+  border-radius: 8rpx;
+  font-size:24rpx;
+  /* color: #999999; */
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 30rpx auto;
+}
+.retextarea{
+  width:100%;
+  height:100%;
+  display:block;
+  position:relative;
+}
+.submitbtn{
+  width: 600rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  background: #fe3657;
+  border-radius: 30rpx;
+  margin: 0 auto;
+}
+.closeicon{
+  width:50rpx;
+  height:50rpx;
+  margin:30rpx auto;
+  background:url(https://www.fuxingfuli.com/images/giftstore/close.png) no-repeat;
+  background-size:100% 100%;
+  z-index: 111;
+}

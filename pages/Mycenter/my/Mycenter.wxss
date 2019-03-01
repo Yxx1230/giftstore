@@ -1,0 +1,500 @@
+/* pages/Mycenter/Mycenter.wxss */
+
+page {
+  width: 100%;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ymybg.png) no-repeat;
+  background-size: 100%;
+  background-color: #f2f2f2;
+}
+
+.avatarbg {
+  width: 145rpx;
+  height: 142rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+
+.mybanner {
+  width: 690rpx;
+  height: 320rpx;
+  background: #fff;
+  box-shadow: 1px 1px 6px #ede3e1;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: -60rpx;
+  position: relative;
+  padding-top: 72rpx;
+}
+
+.myavatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -64rpx;
+  top: -75rpx;
+}
+
+.my-name {
+  font-size: 32rpx;
+  color: #000;
+  text-align: center;
+}
+
+.my-level {
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.my-ecode {
+  width: 37rpx;
+  height: 37rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yerweima.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.my-func {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.my-func-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.likeicon {
+  width: 61rpx;
+  height: 52rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yshou.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.cardicon {
+  width: 55rpx;
+  height: 51rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/yecard.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.setupicon {
+  width: 57rpx;
+  height: 52rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ysetup.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.funtext {
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 15rpx;
+  text-align: center;
+}
+
+.my-coins {
+  width: 690rpx;
+  height: 120rpx;
+  background: url('https://www.fuxingfuli.com/images/fxsxcxImg/my/myCoins-bg.png') no-repeat center;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 18rpx;
+}
+
+.icon-coins {
+  width: 61rpx;
+  height: 48rpx;
+  margin: 36rpx 20rpx;
+  float: left;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ybconis.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
+
+.my-coins text {
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 120rpx;
+  float: left;
+}
+
+.my-coins .myCoins-num {
+  float: right;
+  margin-right: 24rpx;
+}
+
+.my-rights {
+  width: 690rpx;
+  height: 120rpx;
+  background: url('https://www.fuxingfuli.com/images/fxsxcxImg/my/myRights.png') no-repeat center;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.func-bar {
+  width: 690rpx;
+  height: auto;
+  overflow: hidden;
+  padding: 18rpx 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  margin: 0 auto;
+  margin-top: 22rpx;
+}
+
+.func-bar-item {
+  width: 145rpx;
+  height: 130rpx;
+  border-radius: 15rpx;
+  float: left;
+  font-size: 26rpx;
+  color: #666;
+  margin-left: 23rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.func-bar-item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.func-bar-item:nth-child(1) {
+  background-color: #fcfaee;
+}
+
+.func-bar-item:nth-child(2) {
+  background-color: #f4fff3;
+}
+
+.func-bar-item:nth-child(3) {
+  background-color: #fef6f6;
+}
+
+.func-bar-item:nth-child(4) {
+  background-color: #fef5f3;
+}
+
+.func-bar-item:nth-child(5) {
+  background-color: #f4fbff;
+  margin-top: 20rpx;
+}
+
+.func-bar-item:nth-child(6) {
+  background-color: #fff7fd;
+  margin-top: 20rpx;
+}
+
+.func-bar-item:nth-child(1) .func-bar-img {
+  width: 33rpx;
+  height: 45rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymytrack.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item:nth-child(2) .func-bar-img {
+  width: 46rpx;
+  height: 46rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymyshare.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item:nth-child(3) .func-bar-img {
+  width: 49rpx;
+  height: 44rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymyhome.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item:nth-child(4) .func-bar-img {
+  width: 44rpx;
+  height: 46rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymymessage.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item:nth-child(5) .func-bar-img {
+  width: 42rpx;
+  height: 46rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymyyijian.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item:nth-child(6) .func-bar-img {
+  width: 46rpx;
+  height: 46rpx;
+  background: url('https://www.fuxingfuli.com/images/giftstore/ymybang.png') no-repeat center;
+  background-size: 100%;
+}
+
+.func-bar-item text {
+  margin-top: 12rpx;
+}
+
+.spread {
+  width: 690rpx;
+  height: 120rpx;
+  background: url('https://www.fuxingfuli.com/images/fxsxcxImg/my/spread.png') no-repeat center;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.superior-alert {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.superior-content {
+  width: 562rpx;
+  height: 640rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -320rpx;
+  left: 50%;
+  margin-left: -281rpx;
+  background: #fff;
+}
+
+.superior-close {
+  width: 84rpx;
+  height: 84rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/images/my/close.png')no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -24rpx;
+  top: -28rpx;
+}
+
+.superior-banner {
+  width: 100%;
+  height: 320rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/images/my/superior-banner.png')no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.superior-info {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: -86rpx;
+  text-align: center;
+}
+
+.superior-avator image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  border: 5rpx solid #fab6b4;
+}
+
+.name-sex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25rpx;
+}
+
+.superior-name {
+  color: #626161;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.superior-sex.male {
+  display: block;
+  width: 27rpx;
+  height: 27rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/images/my/male.png')no-repeat;
+  background-size: 100% 100%;
+  margin-left: 20rpx;
+}
+
+.superior-sex.female {
+  display: block;
+  width: 27rpx;
+  height: 27rpx;
+  background: url('https://www.fuxingfuli.com/images/xcx/images/my/female.png')no-repeat;
+  background-size: 100% 100%;
+  margin-left: 20rpx;
+}
+
+.time-count {
+  width: 100;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 58rpx;
+}
+
+.become-time {
+  border-right: 1rpx solid #cdcbcb;
+  padding-right: 45rpx;
+}
+
+.time-count-title {
+  color: #626161;
+  font-size: 24rpx;
+}
+
+.time-text {
+  color: #000;
+  font-size: 24rpx;
+}
+
+.count-text {
+  font-size: 24rpx;
+  color: #fb560a;
+}
+
+.superior-alert-btn {
+  width: 480rpx;
+  height: 67rpx;
+  text-align: center;
+  line-height: 67rpx;
+  background: #f45552;
+  color: #fab6b4;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+
+/* 未收藏小程序提醒 */
+
+.remindbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 11;
+  overflow-y: hidden;
+  /* padding: 0rpx 40rpx;
+  box-sizing: border-box; */
+}
+
+.remindbtn {
+  width: 670rpx;
+  /* height: 470rpx; */
+  padding: 0rpx 30rpx 40rpx 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -335rpx;
+  margin-top: -235rpx;
+  border-radius: 15rpx;
+}
+
+.remindtop {
+  width: 100%;
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #777;
+}
+
+.successicon {
+  width: 34rpx;
+  height: 34rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ysuccess.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+
+.addmyces {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 40rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.addgray {
+  width: 100%;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  background: #f3f3f3;
+  border-radius: 15rpx;
+}
+
+.additerm {
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  color: #777;
+}
+
+.additrms {
+  width: 44rpx;
+  height: 17rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/scsarrow.png) no-repeat center;
+  background-size: 100%;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  display: inline-block;
+}
+
+.clickr {
+  width: 75rpx;
+  height: 75rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/ythrflow.png) no-repeat center;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.addxcr {
+  width: 75rpx;
+  height: 75rpx;
+  background: url(https://www.fuxingfuli.com/images/giftstore/addxcvr.png) no-repeat center;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.addbtnea {
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #777;
+  margin-top: 30rpx;
+}
